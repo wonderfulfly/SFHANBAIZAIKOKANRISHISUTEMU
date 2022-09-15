@@ -154,7 +154,7 @@ public class A002GridDataConstant {
 		itemBean.TableID = "";
 		itemBean.FieldID = "";
 		itemBean.ReadOnly = "0";
-		itemBean.RelData = "L00016";
+		itemBean.RelData = "L00002";
 		itemBean.DefaultValue = "";
 		itemBean.DbFlg = "1";
 		beanList.add(itemBean);

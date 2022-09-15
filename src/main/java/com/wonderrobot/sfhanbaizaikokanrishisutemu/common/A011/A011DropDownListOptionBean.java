@@ -40,7 +40,7 @@ public class A011DropDownListOptionBean {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		try {
 			
-			if ("P00011".equals(pageID)) {
+			if ("P00013".equals(pageID)) {
 				if ("105".equals(subID)) {
 					returnVal = A011KAHEI(selectedVaule);
 				} else if ("97".equals(subID)) {

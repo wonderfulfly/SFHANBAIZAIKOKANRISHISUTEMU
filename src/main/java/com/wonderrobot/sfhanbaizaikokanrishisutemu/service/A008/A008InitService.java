@@ -143,12 +143,12 @@ public class A008InitService {
 
 		String returnVal = null;
 		
-		returnVal = A008GridDataConstant.getGridStrSet(null, "P00008", "23", 0, 1);
+		returnVal = A008GridDataConstant.getGridStrSet(null, "P00010", "23", 0, 1);
 		jsonObj.setScript("r", "setGrid23();$('div#_ingrid_Grid23_0_b').find('input:button').button();setCalendar();");
 		jsonObj.setHtml("dragB23", returnVal);
 		jsonObj.setReturnID("h", "dragB23");
 		
-		A008GridDataConstant.setGridDataToSession("P00008", "23", null, request);
+		A008GridDataConstant.setGridDataToSession("P00010", "23", null, request);
 
 	}
 

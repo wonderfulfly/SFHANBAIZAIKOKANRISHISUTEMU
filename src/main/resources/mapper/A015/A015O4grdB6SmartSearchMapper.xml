@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A015.A015O4grdB6SmartSearchMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A015.A015O4grdB6SmartSearchEntity" id="A015O4grdB6SmartSearchEntityMap">
+		<result property="A1KAISHAID" column="A1KAISHAID" />
+		<result property="A1KAISHAMEI" column="A1KAISHAMEI" />
+		<result property="A1KAISHARYAKUSHOU" column="A1KAISHARYAKUSHOU" />
+		<result property="A1ADORESU" column="A1ADORESU" />
+		<result property="A1RENRAKUSAKI" column="A1RENRAKUSAKI" />
+		<result property="A1SHIHARAIKIGEN" column="A1SHIHARAIKIGEN" />
+		<result property="A1KAISHAKUBUN" column="A1KAISHAKUBUN" />
+	</resultMap>
+	<!-- null -->
+	<select id="A015O4grdB6SmartSearch"  resultMap="A015O4grdB6SmartSearchEntityMap">
+		SELECT N1.A1KAISHAID,N1.A1KAISHAMEI,N1.A1KAISHARYAKUSHOU,N1.A1ADORESU,N1.A1RENRAKUSAKI,N1.A1SHIHARAIKIGEN,N1.A1KAISHAKUBUN, '' nullAlsa0 FROM (SELECT A1.KAISHAID AS A1KAISHAID ,A1.KAISHAMEI A1KAISHAMEI ,A1.KAISHARYAKUSHOU A1KAISHARYAKUSHOU ,A1.ADORESU A1ADORESU ,A1.RENRAKUSAKI A1RENRAKUSAKI ,A1.SHIHARAIKIGEN A1SHIHARAIKIGEN ,A1.KAISHAKUBUN A1KAISHAKUBUN FROM `KAISYA` A1 WHERE 1=1 )N1<where>1=1 
+<if test="KAISHAID != null and KAISHAID != ''">
+AND   N1.A1KAISHAID =  #{KAISHAID} 
+</if>
+<if test="KAISHAMEI != null and KAISHAMEI != ''">
+AND   N1.A1KAISHAMEI =  #{KAISHAMEI} 
+</if></where> ORDER BY 1  LIMIT 50
+	</select>
+</mapper>

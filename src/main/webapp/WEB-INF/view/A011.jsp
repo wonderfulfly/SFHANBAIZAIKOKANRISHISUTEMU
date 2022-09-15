@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>P00011 - 注文管理詳細</title>
+<title>P00013 - 注文管理詳細</title>
     <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
     <!--[if IE]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -387,8 +387,8 @@ function resetDropdownListOptionStyle(targetObj) {
 }
   /* filter end */
   
-//*** Func Name: F20220915160753759 ***
-function F20220915160753759(o){
+//*** Func Name: F20220915174801892 ***
+function F20220915174801892(o){
   var row = getGridRowIndex(o,"rowseq");
 /*Grid「B18」の項目「数量」*「販売単価」*/
 var result = 0;
@@ -408,8 +408,8 @@ $('#HANBAIKINGAKU_'+row).blur();
 
 }
 
-//*** Func Name: F20220915160753776 ***
-function F20220915160753776(o){
+//*** Func Name: F20220915174801910 ***
+function F20220915174801910(o){
   var row = getGridRowIndex(o,"rowseq");
 /*Grid「B18」の項目「販売金額」の合計*/
 var result = 0;
@@ -436,8 +436,8 @@ $('#JPYGOUKEI').blur();
 
 }
 
-//*** Func Name: F20220915160753794 ***
-function F20220915160753794(o){
+//*** Func Name: F20220915174801928 ***
+function F20220915174801928(o){
   var row = getGridRowIndex(o,"rowseq");
 /*Grid「B18」の項目「販売金額」の合計*/
 var result = 0;
@@ -464,8 +464,8 @@ $('#RMBGOUKEI').blur();
 
 }
 
-//*** Func Name: F20220915160753811 ***
-function F20220915160753811(o){
+//*** Func Name: F20220915174801947 ***
+function F20220915174801947(o){
   var row = getGridRowIndex(o,"rowseq");
 /*Grid「B18」の項目「販売金額」の合計*/
 var result = 0;
@@ -602,23 +602,23 @@ function DoBeforeSave() {
 
 function doLinkTrans21(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00022.do?","0","","KYAKUSAKI,TANTOUSHA,CHUUBUNSHONO1,CHUUMONHIDZUKE1,NYUUKINKINGAKU1,","KYAKUSAKIMEISHOU,TANTOUSHA,CHUUBUNSHONO1,CHUUMONHIDZUKE1,JPYGOUKEI,","_self","","0","1133","340");
+ pageLinkTranfer("L00008.do?","0","","KYAKUSAKI,TANTOUSHA,CHUUBUNSHONO1,CHUUMONHIDZUKE1,NYUUKINKINGAKU1,","KYAKUSAKIMEISHOU,TANTOUSHA,CHUUBUNSHONO1,CHUUMONHIDZUKE1,JPYGOUKEI,","_self","","0","1133","340");
 }
 function doLinkTrans35(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00023.do?","0","","RYOUSHUUSHONO,CHUUBUNSHONO1,","RESHIITONO,CHUUBUNSHONO1,","_self","","0","1133","340");
+ pageLinkTranfer("L00009.do?","0","","RYOUSHUUSHONO,CHUUBUNSHONO1,","RESHIITONO,CHUUBUNSHONO1,","_self","","0","1133","340");
 }
 function doLinkTrans65(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00026.do?","0","","","","_self","","0","1150","486");
+ pageLinkTranfer("L00010.do?","0","","","","_self","","0","1150","486");
 }
 function doLinkTrans119(o){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00024.do?","1",o,"BUHINCHUUBUNSHOMEISAINO,BUHINCHUUBUNSHONO,KOUJIKANRIBANGOU1,SHANAIKOUJIBANGOU,","CHUUBUNSHOMEISAINO_,CHUUBUNSHONO1,SHANAIKOUJIBANGOU1,SHANAIKOUJIBANGOU1,","_self","","0","1619","9804");
+ pageLinkTranfer("L00016.do?","1",o,"BUHINCHUUBUNSHOMEISAINO,BUHINCHUUBUNSHONO,KOUJIKANRIBANGOU1,SHANAIKOUJIBANGOU,","CHUUBUNSHOMEISAINO_,CHUUBUNSHONO1,SHANAIKOUJIBANGOU1,SHANAIKOUJIBANGOU1,","_self","","0","1619","9804");
 }
 function doLinkTrans121(o){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00025.do?","1",o,"BUHINCHUUBUNSHONO,BUHINCHUUBUNSHOMEISAINO,KOUJIKANRIBANGOU1,SHANAIKOUJIBANGOU,","CHUUBUNSHONO1,CHUUBUNSHOMEISAINO_,SHANAIKOUJIBANGOU1,SHANAIKOUJIBANGOU1,","_self","","0","1619","9804");
+ pageLinkTranfer("L00017.do?","1",o,"BUHINCHUUBUNSHONO,BUHINCHUUBUNSHOMEISAINO,KOUJIKANRIBANGOU1,SHANAIKOUJIBANGOU,","CHUUBUNSHONO1,CHUUBUNSHOMEISAINO_,SHANAIKOUJIBANGOU1,SHANAIKOUJIBANGOU1,","_self","","0","1619","9804");
 }
 
 function inputDataCheck(){
@@ -728,7 +728,7 @@ Grid95 = $("#Grid95").aingrid({
  	rowsObjectId: 'RowGrid95',
  	colClasses:['grid-col-num','g1','g1','g3','g3','g1','g3','g3','g3','g3','g1','g1','g1','g1','g1','g1'],
  	resizableCols: false,
- 	url: 'A011GridFormFeed.do?pageID=P00011&subID=95',
+ 	url: 'A011GridFormFeed.do?pageID=P00013&subID=95',
  	extraParams: {},
  	paging: false,
  	recordsPerPage: recordNum,
@@ -1242,7 +1242,7 @@ SF販売在庫管理システム
 		</a>
 	</li>
 <li><span>注文書管理</span></li>
-	<li class="current"><em>注文管理詳細(P00011 - A011)</em></li>
+	<li class="current"><em>注文管理詳細(P00013 - A011)</em></li>
 </ul>
 </div>
 
@@ -1254,7 +1254,7 @@ SF販売在庫管理システム
   <input type=hidden name="WF_PRINTFILEID" id="WF_PRINTFILEID" value="" />
   <input type=hidden name="WF_PRINTFILEENCODE" id="WF_PRINTFILEENCODE" value="" />
   <input type=hidden name="pringFlg" id="pringFlg" value="">
-  <input type=hidden name="PageID" id="PageID" value="P00011"/>
+  <input type=hidden name="PageID" id="PageID" value="P00013"/>
   <input type=hidden name="SubID" id="SubID" value="">
   <input type=hidden name="pageRcds" id="pageRcds" value="5">
   <input type=hidden name="currentpage" id="currentpage" value="1"/>
@@ -1318,11 +1318,11 @@ SF販売在庫管理システム
 <td class='g1 o' _colid=1 style ='vertical-align:middle;'><div style="overflow:hidden;"><select id=KUBUN_0 name=KUBUN_0 data-bind='value: KUBUN' _req=0 class='editable' _subid=97 _itemname='区分' _gid='Grid95' _gflg='Grid95flg0' onChange ='getObj("KUBUN_0").value=this.value;cs($(this),"rowseq","Grid95flg","0");'  style='width:119px;height:27px;font-size:14px;color:#000000;font-weight:normal;'>
 WFC#ROW_DROPDOWNLIST_OPTIONS#WFC97WFC#ROW_DROPDOWNLIST_OPTIONS#WFC</select></div></td>
 <td class='g1 o' _colid=2 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='KOUMOKU_0'  name='KOUMOKU_0'  class='editable' style='width:136px;height:31px; padding:0 2px;text-align:center;font-size:14px;color:#000000;font-weight:normal;'  _subid='99'  _itemname='項目'  type='text'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
-<td class='g3 o' _colid=3 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='SUURYOU_0'  name='SUURYOU_0'  class='editable' style='width:89px;height:31px; padding:0 2px;text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='101'  _itemname='数量'  type='text'  onChange ='getObj("SUURYOU_0").value=this.value;F20220915160753759($(this));F20220915160753776($(this));F20220915160753794($(this));F20220915160753811($(this));cs($(this),"rowseq","Grid95flg","0");'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
-<td class='g3 o' _colid=4 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='HANBAITANKA_0'  name='HANBAITANKA_0'  class='editable' style='width:73px;height:31px; padding:0 2px;text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='103'  _itemname='販売単価'  _ire='###,###,##0'  _rge='1'  type='text'  onChange ='getObj("HANBAITANKA_0").value=this.value;F20220915160753759($(this));F20220915160753776($(this));F20220915160753794($(this));F20220915160753811($(this));cs($(this),"rowseq","Grid95flg","0");'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
-<td class='g1 o' _colid=5 style ='vertical-align:middle;'><div style="overflow:hidden;"><select id=KAHEI_0 name=KAHEI_0 data-bind='value: KAHEI' _req=0 class='editable' _subid=105 _itemname='貨幣' _gid='Grid95' _gflg='Grid95flg0' onChange ='getObj("KAHEI_0").value=this.value;F20220915160753776($(this));F20220915160753794($(this));F20220915160753811($(this));cs($(this),"rowseq","Grid95flg","0");'  style='width:54px;height:27px;font-size:14px;color:#000000;font-weight:normal;'>
+<td class='g3 o' _colid=3 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='SUURYOU_0'  name='SUURYOU_0'  class='editable' style='width:89px;height:31px; padding:0 2px;text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='101'  _itemname='数量'  type='text'  onChange ='getObj("SUURYOU_0").value=this.value;F20220915174801892($(this));F20220915174801910($(this));F20220915174801928($(this));F20220915174801947($(this));cs($(this),"rowseq","Grid95flg","0");'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
+<td class='g3 o' _colid=4 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='HANBAITANKA_0'  name='HANBAITANKA_0'  class='editable' style='width:73px;height:31px; padding:0 2px;text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='103'  _itemname='販売単価'  _ire='###,###,##0'  _rge='1'  type='text'  onChange ='getObj("HANBAITANKA_0").value=this.value;F20220915174801892($(this));F20220915174801910($(this));F20220915174801928($(this));F20220915174801947($(this));cs($(this),"rowseq","Grid95flg","0");'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
+<td class='g1 o' _colid=5 style ='vertical-align:middle;'><div style="overflow:hidden;"><select id=KAHEI_0 name=KAHEI_0 data-bind='value: KAHEI' _req=0 class='editable' _subid=105 _itemname='貨幣' _gid='Grid95' _gflg='Grid95flg0' onChange ='getObj("KAHEI_0").value=this.value;F20220915174801910($(this));F20220915174801928($(this));F20220915174801947($(this));cs($(this),"rowseq","Grid95flg","0");'  style='width:54px;height:27px;font-size:14px;color:#000000;font-weight:normal;'>
 WFC#ROW_DROPDOWNLIST_OPTIONS#WFC105WFC#ROW_DROPDOWNLIST_OPTIONS#WFC</select></div></td>
-<td class='g3 o' _colid=6 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='HANBAIKINGAKU_0'  name='HANBAIKINGAKU_0'  class='readonly' readOnly style='width:66px;height:31px; text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='107'  _itemname='販売金額'  _ire='###,###,##0'  _rge='1'  type='text'  onChange ='getObj("HANBAIKINGAKU_0").value=this.value;F20220915160753776($(this));F20220915160753794($(this));F20220915160753811($(this));cs($(this),"rowseq","Grid95flg","0");'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
+<td class='g3 o' _colid=6 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='HANBAIKINGAKU_0'  name='HANBAIKINGAKU_0'  class='readonly' readOnly style='width:66px;height:31px; text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='107'  _itemname='販売金額'  _ire='###,###,##0'  _rge='1'  type='text'  onChange ='getObj("HANBAIKINGAKU_0").value=this.value;F20220915174801910($(this));F20220915174801928($(this));F20220915174801947($(this));cs($(this),"rowseq","Grid95flg","0");'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
 <td class='g3 o' _colid=7 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='TSUKAMATSUNYUUKINGAKUJPY_0'  name='TSUKAMATSUNYUUKINGAKUJPY_0'  class='readonly' readOnly style='width:117px;height:31px; text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='109'  _itemname='仕入金額(JPY)'  _ire='###,###,##0.##'  _rge='1' onblur='changeSpecHtml(this);' type='text'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
 <td class='g3 o' _colid=8 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='TSUKAMATSUNYUUKINGAKURMB_0'  name='TSUKAMATSUNYUUKINGAKURMB_0'  class='readonly' readOnly style='width:99px;height:31px; text-align:right;padding-right:2px;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='111'  _itemname='仕入金額(RMB)'  _ire='###,###,##0.##'  _rge='1' onblur='changeSpecHtml(this);' type='text'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>
 <td class='g3 o' _colid=9 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='TSUKAMATSUNYUUKINGAKUUSD_0'  name='TSUKAMATSUNYUUKINGAKUUSD_0'  class='readonly' readOnly style='width:113px;height:31px; text-align:center;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='113'  _itemname='仕入金額(USD)'  _ire='###,###,##0.##'  _rge='1' onblur='changeSpecHtml(this);' type='text'  _gid='Grid95'  _gflg='Grid95flg0' ></div></td>

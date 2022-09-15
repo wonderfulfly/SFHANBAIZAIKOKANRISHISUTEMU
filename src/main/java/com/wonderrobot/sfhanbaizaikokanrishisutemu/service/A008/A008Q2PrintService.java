@@ -132,7 +132,7 @@ public class A008Q2PrintService {
 
    
 	@Log
-	private ArrayList<ArrayList<String>> P000085ChangeToArraList (List<A008Q2I00012PrintEntity> A008Q2I00012PrintEntityList) throws Exception {
+	private ArrayList<ArrayList<String>> P000105ChangeToArraList (List<A008Q2I00012PrintEntity> A008Q2I00012PrintEntityList) throws Exception {
 
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		try {
@@ -1834,7 +1834,7 @@ public class A008Q2PrintService {
 			templateFilePath = SpringPropertiesUtil.getPrint_template_file_path();
 			ext = ".xlsx";
 			outFileID = getOutFileID("領収書VIEW", timeStamp, 0, ext);
-			templateID = "20220915_160817761.xlsx";
+			templateID = "20220915_174827705.xlsx";
 			TemplateFileFullPath = System.getProperty("user.dir") + templateFilePath + "/" + templateID;
 			file = new File(TemplateFileFullPath);
 			if (file.exists()) {
@@ -1881,7 +1881,7 @@ public class A008Q2PrintService {
 			CHUUMONHIDZUKE = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("CHUUMONHIDZUKE")));
 			
 			A008Q2I00012PrintEntityList = A008Q2I00012PrintDao.A008Q2I00012Print (KYAKUSAKI,CHUUMONHIDZUKE);
-			outDataAy = P000085ChangeToArraList(A008Q2I00012PrintEntityList);
+			outDataAy = P000105ChangeToArraList(A008Q2I00012PrintEntityList);
 			
 			
 			OutPutDataConstant.createDirs (outFilePath);

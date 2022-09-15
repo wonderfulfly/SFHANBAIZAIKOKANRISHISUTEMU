@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>P00004 - 会社</title>
+<title>P00005 - 会社</title>
     <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
     <!--[if IE]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -1017,7 +1017,7 @@ SF販売在庫管理システム
 		</a>
 	</li>
 <li><span>会社管理</span></li>
-	<li class="current"><em>会社(P00004 - A004)</em></li>
+	<li class="current"><em>会社(P00005 - A004)</em></li>
 </ul>
 </div>
 
@@ -1029,7 +1029,7 @@ SF販売在庫管理システム
   <input type=hidden name="WF_PRINTFILEID" id="WF_PRINTFILEID" value="" />
   <input type=hidden name="WF_PRINTFILEENCODE" id="WF_PRINTFILEENCODE" value="" />
   <input type=hidden name="pringFlg" id="pringFlg" value="">
-  <input type=hidden name="PageID" id="PageID" value="P00004"/>
+  <input type=hidden name="PageID" id="PageID" value="P00005"/>
   <input type=hidden name="SubID" id="SubID" value="">
   <input type=hidden name="pageRcds" id="pageRcds" value="5">
   <input type=hidden name="currentpage" id="currentpage" value="1"/>

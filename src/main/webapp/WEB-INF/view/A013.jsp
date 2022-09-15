@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>P00012 - 部品管理画面</title>
+<title>P00014 - 部品管理画面</title>
     <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
     <!--[if IE]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -1555,7 +1555,7 @@ Grid99 = $("#Grid99").aingrid({
  	rowsObjectId: 'RowGrid99',
  	colClasses:['grid-col-num','g1','g1','g1','g3','g3','g1','g2','g1','g1','g3','g1','g2','g2','g3','g1','g1','g1','g1','g3','g2','g1','g1','g1'],
  	resizableCols: false,
- 	url: 'A013GridFormFeed.do?pageID=P00012&subID=99',
+ 	url: 'A013GridFormFeed.do?pageID=P00014&subID=99',
  	extraParams: {},
  	paging: false,
  	recordsPerPage: recordNum,
@@ -2068,7 +2068,7 @@ SF販売在庫管理システム
 		</a>
 	</li>
 <li><span>注文書管理</span></li>
-	<li class="current"><em>部品管理画面(P00012 - A013)</em></li>
+	<li class="current"><em>部品管理画面(P00014 - A013)</em></li>
 </ul>
 </div>
 
@@ -2080,7 +2080,7 @@ SF販売在庫管理システム
   <input type=hidden name="WF_PRINTFILEID" id="WF_PRINTFILEID" value="" />
   <input type=hidden name="WF_PRINTFILEENCODE" id="WF_PRINTFILEENCODE" value="" />
   <input type=hidden name="pringFlg" id="pringFlg" value="">
-  <input type=hidden name="PageID" id="PageID" value="P00012"/>
+  <input type=hidden name="PageID" id="PageID" value="P00014"/>
   <input type=hidden name="SubID" id="SubID" value="">
   <input type=hidden name="pageRcds" id="pageRcds" value="5">
   <input type=hidden name="currentpage" id="currentpage" value="1"/>
@@ -2197,10 +2197,10 @@ WFC#ROW_DROPDOWNLIST_OPTIONS#WFC121WFC#ROW_DROPDOWNLIST_OPTIONS#WFC</select></di
 <div id="dragB189"  style="position:absolute;top:1016px;left:286px;text-align:left;display:none;width:63px;height:24px;z-index:1;" class='userDiv' _ckf='0'><input id='SHOUHINNUMBER'  name='SHOUHINNUMBER'  value='${requestScope.SHOUHINNUMBER}'  class='editable' style='width:63px;height:24px;padding:0 2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;display:none;'  _subid='189'  _itemname='商品NUMBER'  type='text'  tabindex='94'></div>
 <div id="dragB191"  style="position:absolute;top:1760px;left:36px;text-align:left;width:35px;height:22px;z-index:1;" class='userDiv' _ckf='0'><label  style='display:table-cell;width:35px;height:23px;padding:0 2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;' _subid=191 class='' id="B69">      処理終了。 </label></div>
 <div id="dragB193"  style="position:absolute;top:9752px;left:30px;text-align:left;width:6px;height:22px;z-index:1;" class='userDiv' _ckf='0'><label  style='display:table-cell;width:6px;height:23px;padding:0 2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;' _subid=193 class='' id="A402">「項目処理」</label></div>
-<div id="dragB194"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00012194'  name='P00012194'  value='P00012194'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00012194","99;grdB16","1");}'  tabindex='-1'></div>
-<div id="dragB195"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00012195'  name='P00012195'  value='P00012195'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00012195","99;grdB16","1");}'  tabindex='-1'></div>
-<div id="dragB196"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00012196'  name='P00012196'  value='P00012196'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00012196","99;grdB16","1");}'  tabindex='-1'></div>
-<div id="dragB197"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00012197'  name='P00012197'  value='P00012197'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00012197","99;grdB16","1");}'  tabindex='-1'></div>
+<div id="dragB194"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00014194'  name='P00014194'  value='P00014194'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00014194","99;grdB16","1");}'  tabindex='-1'></div>
+<div id="dragB195"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00014195'  name='P00014195'  value='P00014195'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00014195","99;grdB16","1");}'  tabindex='-1'></div>
+<div id="dragB196"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00014196'  name='P00014196'  value='P00014196'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00014196","99;grdB16","1");}'  tabindex='-1'></div>
+<div id="dragB197"  style="position:absolute;top:10px;left:155px;text-align:left;display:none;width:100px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='P00014197'  name='P00014197'  value='P00014197'  style='width:100px;height:30px;padding:0 2px;text-align:center;font-weight:bold;display:none;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false); doSmartSearch("P00014197","99;grdB16","1");}'  tabindex='-1'></div>
 <div id="dragB5"  style="position:absolute;top:87px;left:188px;text-align:left;width:507px;height:35px;z-index:1;" class='userDiv' _ckf='0'><input id='TOKUISAKIUSER'  name='TOKUISAKIUSER'  value='${requestScope.BUHIN.getTOKUISAKI()}' data-bind='value: TOKUISAKIUSER' class='editable' style='width:507px;height:35px;padding:0 2px;text-align:left;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;'  _subid='5'  _itemname='得意先USER'  type='text'  tabindex='3'></div>
 <div id="dragB15"  style="position:absolute;top:87px;left:2360px;text-align:left;display:none;width:120px;height:35px;z-index:1;" class='userDiv' _ckf='0'><input id='MAISUU1'  name='MAISUU1'  value='${requestScope.BUHIN.getMAISUU()}' data-bind='value: MAISUU1' class='editable' style='width:120px;height:35px;padding:0 2px;text-align:center;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;display:none;'  _subid='15'  _itemname='枚数'  type='text'  tabindex='8'></div>
 <div id="dragB23"  style="position:absolute;top:147px;left:188px;text-align:left;width:507px;height:34px;z-index:1;" class='userDiv' _ckf='0'><input id='ASENBURIRAINMEISHOU'  name='ASENBURIRAINMEISHOU'  value='${requestScope.BUHIN.getASENBURIRAIN()}' data-bind='value: ASENBURIRAINMEISHOU' class='editable' style='width:507px;height:34px;padding:0 2px;text-align:left;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;'  _subid='23'  _itemname='アセンブリライン名称'  type='text'  tabindex='12'></div>

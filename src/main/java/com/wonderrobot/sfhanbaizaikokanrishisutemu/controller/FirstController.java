@@ -59,20 +59,20 @@ public class FirstController {
 		return "A002";
 	}
 	/**
-	 * A003を遷移 method
+	 * A014を遷移 method
 	 * 
 	 */
-	@RequestMapping("A003.do")
-	public String A003Page() {
-		return "A003";
+	@RequestMapping("A014.do")
+	public String A014Page() {
+		return "A014";
 	}
 	/**
-	 * A004を遷移 method
+	 * A015を遷移 method
 	 * 
 	 */
-	@RequestMapping("A004.do")
-	public String A004Page() {
-		return "A004";
+	@RequestMapping("A015.do")
+	public String A015Page() {
+		return "A015";
 	}
 	/**
 	 * A005を遷移 method

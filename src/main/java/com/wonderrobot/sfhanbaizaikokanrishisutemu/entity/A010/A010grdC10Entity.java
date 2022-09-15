@@ -21,13 +21,13 @@ public class A010grdC10Entity {
 	*	 CHUUMONHIDZUKE 注文日付
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00010CHUUMONHIDZUKE9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00012CHUUMONHIDZUKE9")
 	private String CHUUMONHIDZUKE;
    /**
 	*	 SHOUHINSOUGAKUJPY 商品総額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010SHOUHINSOUGAKUJPY19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00012SHOUHINSOUGAKUJPY19")
 	private String SHOUHINSOUGAKUJPY;
    /**
 	*	 SHANAIKOUJIBANGOU 社内工事番号
@@ -37,19 +37,19 @@ public class A010grdC10Entity {
 	*	 KYAKUSAKIID1 客先
 	*/
 
-	@NotBlank(message = "validate.msg_P00010KYAKUSAKIID1")
+	@NotBlank(message = "validate.msg_P00012KYAKUSAKIID1")
 	private String KYAKUSAKIID1;
    /**
 	*	 SHUTSUNYUUKOFURAGU 出入庫状態
 	*/
 
-	@NotBlank(message = "validate.msg_P00010SHUTSUNYUUKOFURAGU")
+	@NotBlank(message = "validate.msg_P00012SHUTSUNYUUKOFURAGU")
 	private String SHUTSUNYUUKOFURAGU;
    /**
 	*	 TANTOUSHAID1 担当者
 	*/
 
-	@NotBlank(message = "validate.msg_P00010TANTOUSHAID1")
+	@NotBlank(message = "validate.msg_P00012TANTOUSHAID1")
 	private String TANTOUSHAID1;
    /**
 	*	 KYAKUSAKITANTOU 客先担当
@@ -59,7 +59,7 @@ public class A010grdC10Entity {
 	*	 CHUUBUNSHONO 注文書NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00010CHUUBUNSHONO")
+	@NotBlank(message = "validate.msg_P00012CHUUBUNSHONO")
 	private String CHUUBUNSHONO;
    /**
 	* MITSUMORISHONO 見積書NOを設定

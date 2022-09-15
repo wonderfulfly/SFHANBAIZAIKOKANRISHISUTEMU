@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A014.A014O4grdC6SmartSearchMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A014.A014O4grdC6SmartSearchEntity" id="A014O4grdC6SmartSearchEntityMap">
+		<result property="A1BUMONID" column="A1BUMONID" />
+		<result property="A1BUMONMEI" column="A1BUMONMEI" />
+	</resultMap>
+	<!-- null -->
+	<select id="A014O4grdC6SmartSearch"  resultMap="A014O4grdC6SmartSearchEntityMap">
+		SELECT N1.A1BUMONID,N1.A1BUMONMEI, '' nullAlsa0 FROM (SELECT A1.BUMONID AS A1BUMONID ,A1.BUMONMEI A1BUMONMEI FROM `BUMON` A1 WHERE 1=1 )N1<where>1=1 
+<if test="BUMONID != null and BUMONID != ''">
+AND   N1.A1BUMONID =  #{BUMONID} 
+</if>
+<if test="BUMONMEI != null and BUMONMEI != ''">
+AND   N1.A1BUMONMEI =  #{BUMONMEI} 
+</if></where> ORDER BY 1  LIMIT 50
+	</select>
+</mapper>

@@ -25,7 +25,7 @@ public class A007grdB8Entity {
 	*	 ZAIKONO1 部品明細連番
 	*/
 
-	@NotBlank(message = "validate.msg_P00007ZAIKONO1")
+	@NotBlank(message = "validate.msg_P00009ZAIKONO1")
 	private String ZAIKONO1;
    /**
 	*	 TSUKAMATSUNYUUSAKI 仕入先
@@ -39,19 +39,19 @@ public class A007grdB8Entity {
 	*	 SHUTSUNYUUKOJIKAN 出入庫時間
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00007SHUTSUNYUUKOJIKAN9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00009SHUTSUNYUUKOJIKAN9")
 	private String SHUTSUNYUUKOJIKAN;
    /**
 	*	 SUURYOU 数量
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00007SUURYOU1")
+	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00009SUURYOU1")
 	private String SUURYOU;
    /**
 	*	 PRICE 単価
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00007PRICE19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00009PRICE19")
 	private String PRICE;
    /**
 	*	 SHUTSUNYUUKOJOUTAI 状態
@@ -69,7 +69,7 @@ public class A007grdB8Entity {
 	*	 ZAIKOSUURYOU 在庫数量
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00007ZAIKOSUURYOU1")
+	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00009ZAIKOSUURYOU1")
 	private String ZAIKOSUURYOU;
    /**
 	*	 SHOUHINNO 商品NO
@@ -79,7 +79,7 @@ public class A007grdB8Entity {
 	*	 CHUUBUNSHONO1 注文書NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00007CHUUBUNSHONO1")
+	@NotBlank(message = "validate.msg_P00009CHUUBUNSHONO1")
 	private String CHUUBUNSHONO1;
    /**
 	* CHUUBUNSHOMEISAINO 注文書明細NOを設定

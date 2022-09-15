@@ -52,21 +52,21 @@ public class A008GridDataConstant {
 		sBuffer.append("<td style ='display:none' width='0px' _colid=17><input id='RESHIITONO_9999999'  name='RESHIITONO_9999999'  value='WFC#COLUMN_VALUE#WFC57WFC#COLUMN_VALUE#WFC'  type='hidden' ></div></td>");
 		sBuffer.append("<td style ='display:none' width='0px' _colid=18><input id='CHUUBUNSHONO1_9999999'  name='CHUUBUNSHONO1_9999999'  value='WFC#COLUMN_VALUE#WFC59WFC#COLUMN_VALUE#WFC'  type='hidden' ></div></td>");
 		map.put("23", sBuffer.toString());
-		GridDataRowTDMap.put("P00008", map);
+		GridDataRowTDMap.put("P00010", map);
 
 		//GridRowStartTDMap data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<td class='g3 l' _colid=0><input style='float:left;' type=hidden id='Grid23delchkWFC#ROW_COUNT#WFC' name='Grid23delchkWFC#ROW_COUNT#WFC'>WFC#ROW_COUNT#WFC<input type=hidden id='Grid23flgWFC#ROW_COUNT#WFC' name='Grid23flgWFC#ROW_COUNT#WFC'></td>");
 		map.put("23", sBuffer.toString());
-		GridRowStartTDMap.put("P00008", map);
+		GridRowStartTDMap.put("P00010", map);
 
 		//Grid title data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<input type='hidden' name='initRowGrid23' id='initRowGrid23' value='9999999'><input type='hidden' name='RowGrid23' id='RowGrid23' value='9999999'><table id='Grid23' name ='Grid23' ><thead><tr><th style='text-align:center;'>No.</th><th style='overflow:hidden;text-align:center;'>客先*</th><th style='overflow:hidden;text-align:center;'>社内工事番号</th><th style='overflow:hidden;text-align:center;'>契約金額</th><th style='overflow:hidden;text-align:center;'>担当者</th><th style='overflow:hidden;text-align:center;'>受注日付</th><th style='overflow:hidden;text-align:center;'>入金予定日</th><th style='overflow:hidden;text-align:center;'>振出済み%</th><th style='overflow:hidden;text-align:center;'>振出日</th><th style='overflow:hidden;text-align:center;'>振出済み金額</th><th style='overflow:hidden;text-align:center;'>未振出%</th><th style='overflow:hidden;text-align:center;'>未振出金額</th><th style='overflow:hidden;text-align:center;'>入金済み%</th><th style='overflow:hidden;text-align:center;'>入金済み金額</th><th style='overflow:hidden;text-align:center;'>未入金%</th><th style='overflow:hidden;text-align:center;'>未入金金額</th><th style='overflow:hidden;text-align:center;'>編集</th><th style='display:none'>レシートNO</th><th style='display:none'>注文書NO</th></tr></thead>");
 		map.put("23", sBuffer.toString());
-		GridTitleItemMap.put("P00008", map);
+		GridTitleItemMap.put("P00010", map);
 
 		//Grid zero row data map
 		map = new HashMap<String, String>();
@@ -91,7 +91,7 @@ public class A008GridDataConstant {
 		sBuffer.append("<td style ='display:none' width='0px' _colid=17><input id='RESHIITONO_0'  name='RESHIITONO_0'  type='hidden' ></div></td>");
 		sBuffer.append("<td style ='display:none' width='0px' _colid=18><input id='CHUUBUNSHONO1_0'  name='CHUUBUNSHONO1_0'  type='hidden' ></div></td></tr>");
 		map.put("23", sBuffer.toString());
-		GridRowZeroMap.put("P00008", map);
+		GridRowZeroMap.put("P00010", map);
 
 		//Grid item map
 		mapList = new HashMap<String, ArrayList<ItemBean>>();
@@ -252,7 +252,7 @@ public class A008GridDataConstant {
 		itemBean.TableID = "";
 		itemBean.FieldID = "";
 		itemBean.ReadOnly = "0";
-		itemBean.RelData = "L00017";
+		itemBean.RelData = "L00012";
 		itemBean.DefaultValue = "";
 		itemBean.DbFlg = "1";
 		beanList.add(itemBean);
@@ -277,7 +277,7 @@ public class A008GridDataConstant {
 		itemBean.DbFlg = "0";
 		beanList.add(itemBean);
 		mapList.put("23", beanList);
-		GridItemSubIDMap.put("P00008", mapList);
+		GridItemSubIDMap.put("P00010", mapList);
 	}
 
 	/**

@@ -21,33 +21,33 @@ public class A013grdB16Entity {
 	*	 HINMEI 品名
 	*/
 
-	@NotBlank(message = "validate.msg_P00012HINMEI")
+	@NotBlank(message = "validate.msg_P00014HINMEI")
 	private String HINMEI;
    /**
 	*	 KOSUU 個数
 	*/
 
-	@NotBlank(message = "validate.msg_P00012KOSUU")
-	@Pattern(regexp = "^\\s*$|([+-]?\\d?)?",message = "validate.msg_P00012KOSUU2")
+	@NotBlank(message = "validate.msg_P00014KOSUU")
+	@Pattern(regexp = "^\\s*$|([+-]?\\d?)?",message = "validate.msg_P00014KOSUU2")
 	private String KOSUU;
    /**
 	*	 SOUKOSUU 総個数
 	*/
 
-	@NotBlank(message = "validate.msg_P00012SOUKOSUU")
-	@Pattern(regexp = "^\\s*$|([+-]?\\d?)?",message = "validate.msg_P00012SOUKOSUU2")
+	@NotBlank(message = "validate.msg_P00014SOUKOSUU")
+	@Pattern(regexp = "^\\s*$|([+-]?\\d?)?",message = "validate.msg_P00014SOUKOSUU2")
 	private String SOUKOSUU;
    /**
 	*	 TSUKAMATSUNYUUSAKI 仕入先
 	*/
 
-	@NotBlank(message = "validate.msg_P00012TSUKAMATSUNYUUSAKI")
+	@NotBlank(message = "validate.msg_P00014TSUKAMATSUNYUUSAKI")
 	private String TSUKAMATSUNYUUSAKI;
    /**
 	*	 KIBOUNOUKI 希望納期
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00012KIBOUNOUKI9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00014KIBOUNOUKI9")
 	private String KIBOUNOUKI;
    /**
 	*	 TANTOU 担当
@@ -61,7 +61,7 @@ public class A013grdB16Entity {
 	*	 KOUNYUUTANKA 購入単価
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00012KOUNYUUTANKA19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00014KOUNYUUTANKA19")
 	private String KOUNYUUTANKA;
    /**
 	*	 KAHEI 貨幣
@@ -71,19 +71,19 @@ public class A013grdB16Entity {
 	*	 TEHAIBI 購入日付
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00012TEHAIBI9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00014TEHAIBI9")
 	private String TEHAIBI;
    /**
 	*	 NYUUKABI 入荷日付
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00012NYUUKABI9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00014NYUUKABI9")
 	private String NYUUKABI;
    /**
 	*	 SHOUKEI 小計
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00012SHOUKEI19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00014SHOUKEI19")
 	private String SHOUKEI;
    /**
 	*	 KAKOTANKA 過去単価
@@ -93,31 +93,31 @@ public class A013grdB16Entity {
 	*	 CHUUBUNSHOMEISAINO1 注文書明細NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00012CHUUBUNSHOMEISAINO1")
+	@NotBlank(message = "validate.msg_P00014CHUUBUNSHOMEISAINO1")
 	private String CHUUBUNSHOMEISAINO1;
    /**
 	*	 CHUUBUNSHONO1 注文書NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00012CHUUBUNSHONO1")
+	@NotBlank(message = "validate.msg_P00014CHUUBUNSHONO1")
 	private String CHUUBUNSHONO1;
    /**
 	*	 KIBOUTANKA 希望単価
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00012KIBOUTANKA19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00014KIBOUTANKA19")
 	private String KIBOUTANKA;
    /**
 	*	 NYUUKAYOTEIBI 入荷予定日
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00012NYUUKAYOTEIBI9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00014NYUUKAYOTEIBI9")
 	private String NYUUKAYOTEIBI;
    /**
 	*	 HINBANNO 品番Nohide
 	*/
 
-	@NotBlank(message = "validate.msg_P00012HINBANNO")
+	@NotBlank(message = "validate.msg_P00014HINBANNO")
 	private String HINBANNO;
    /**
 	*	 KAKUTEIKUBUN2 確定区分
@@ -127,13 +127,13 @@ public class A013grdB16Entity {
 	*	 KOUJIKANRIBANGOU2 工事管理番号hide
 	*/
 
-	@NotBlank(message = "validate.msg_P00012KOUJIKANRIBANGOU2")
+	@NotBlank(message = "validate.msg_P00014KOUJIKANRIBANGOU2")
 	private String KOUJIKANRIBANGOU2;
    /**
 	*	 SEISAKUHINKUBUN 区分
 	*/
 
-	@NotBlank(message = "validate.msg_P00012SEISAKUHINKUBUN")
+	@NotBlank(message = "validate.msg_P00014SEISAKUHINKUBUN")
 	private String SEISAKUHINKUBUN;
    /**
 	* HINBANNO1 品番NOを設定

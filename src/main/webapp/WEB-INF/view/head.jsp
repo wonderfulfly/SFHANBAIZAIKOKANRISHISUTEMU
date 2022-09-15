@@ -38,33 +38,33 @@ i.menu_fa {
 <div class='tabnav' style='padding-top: 1px;display:none;'><ul id='mainmenu'><li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='社員管理' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>社員管理</a>
 <ul style="display:none;">
   <li ><a href='A002.do?PageID=P00002&init=0' onclick='clearSession=true;' target='_self' title='社員検索' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>社員検索</a></li>
-  <li ><a href='A003.do?PageID=P00003&init=0' onclick='clearSession=true;' target='_self' title='部門' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>部門</a></li>
+  <li ><a href='A014.do?PageID=P00004&init=0' onclick='clearSession=true;' target='_self' title='部門検索' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>部門検索</a></li>
 </ul><!--DDD8-0-->
 </li>
 <li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='会社管理' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>会社管理</a>
 <ul style="display:none;">
-  <li ><a href='A004.do?PageID=P00004&init=0' onclick='clearSession=true;' target='_self' title='会社' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>会社</a></li>
+  <li ><a href='A015.do?PageID=P00006&init=0' onclick='clearSession=true;' target='_self' title='会社検索' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>会社検索</a></li>
 </ul><!--DDD8-0-->
 </li>
 <li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='データインタフェース' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>データインタフェース</a>
 <ul style="display:none;">
-  <li ><a href='A005.do?PageID=P00005&init=0' onclick='clearSession=true;' target='_self' title='データインタフェース' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>データインタフェース</a></li>
+  <li ><a href='A005.do?PageID=P00007&init=0' onclick='clearSession=true;' target='_self' title='データインタフェース' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>データインタフェース</a></li>
 </ul><!--DDD8-0-->
 </li>
 <li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='商品管理' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>商品管理</a>
 <ul style="display:none;">
-  <li ><a href='A006.do?PageID=P00006&init=0' onclick='clearSession=true;' target='_self' title='商品' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>商品</a></li>
+  <li ><a href='A006.do?PageID=P00008&init=0' onclick='clearSession=true;' target='_self' title='商品' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>商品</a></li>
 </ul><!--DDD8-0-->
 </li>
 <li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='注文書管理' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>注文書管理</a>
 <ul style="display:none;">
-  <li ><a href='A007.do?PageID=P00007&init=0' onclick='clearSession=true;' target='_self' title='商品入庫画面' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>商品入庫画面</a></li>
-  <li ><a href='A010.do?PageID=P00010&init=0' onclick='clearSession=true;' target='_self' title='注文管理検索' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>注文管理検索</a></li>
+  <li ><a href='A007.do?PageID=P00009&init=0' onclick='clearSession=true;' target='_self' title='商品入庫画面' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>商品入庫画面</a></li>
+  <li ><a href='A010.do?PageID=P00012&init=0' onclick='clearSession=true;' target='_self' title='注文管理検索' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>注文管理検索</a></li>
 </ul><!--DDD8-0-->
 </li>
 <li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='入金管理' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>入金管理</a>
 <ul style="display:none;">
-  <li ><a href='A008.do?PageID=P00008&init=0' onclick='clearSession=true;' target='_self' title='入金管理検索' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>入金管理検索</a></li>
+  <li ><a href='A008.do?PageID=P00010&init=0' onclick='clearSession=true;' target='_self' title='入金管理検索' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>入金管理検索</a></li>
 </ul><!--DDD6-0-->
 </li>
 </ul></div>

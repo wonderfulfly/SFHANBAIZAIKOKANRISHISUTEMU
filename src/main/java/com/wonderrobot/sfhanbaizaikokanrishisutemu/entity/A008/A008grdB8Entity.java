@@ -21,7 +21,7 @@ public class A008grdB8Entity {
 	*	 SHOUHINSOUGAKUJPY 契約金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00008SHOUHINSOUGAKUJPY19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010SHOUHINSOUGAKUJPY19")
 	private String SHOUHINSOUGAKUJPY;
    /**
 	*	 TANTOUSHAID 担当者
@@ -31,13 +31,13 @@ public class A008grdB8Entity {
 	*	 CHUUMONHIDZUKE1 受注日付
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00008CHUUMONHIDZUKE19")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00010CHUUMONHIDZUKE19")
 	private String CHUUMONHIDZUKE1;
    /**
 	*	 SHIHARAIHIDZUKE 入金予定日
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00008SHIHARAIHIDZUKE9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00010SHIHARAIHIDZUKE9")
 	private String SHIHARAIHIDZUKE;
    /**
 	*	 FURIDASHIZUMIWARIAI 振出済み%
@@ -47,13 +47,13 @@ public class A008grdB8Entity {
 	*	 FURIDASHIZUMIHIDZUKE 振出日
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00008FURIDASHIZUMIHIDZUKE9")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00010FURIDASHIZUMIHIDZUKE9")
 	private String FURIDASHIZUMIHIDZUKE;
    /**
 	*	 FURIDASHIZUMIKINGAKU 振出済み金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00008FURIDASHIZUMIKINGAKU19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010FURIDASHIZUMIKINGAKU19")
 	private String FURIDASHIZUMIKINGAKU;
    /**
 	*	 NYUUKINWARIAI 未振出%
@@ -63,7 +63,7 @@ public class A008grdB8Entity {
 	*	 NYUUKINGAKU 未振出金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00008NYUUKINGAKU19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010NYUUKINGAKU19")
 	private String NYUUKINGAKU;
    /**
 	*	 NYUUKINZUMIWARIAI 入金済み%
@@ -73,7 +73,7 @@ public class A008grdB8Entity {
 	*	 NYUUKINZUMIKINGAKU 入金済み金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00008NYUUKINZUMIKINGAKU19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010NYUUKINZUMIKINGAKU19")
 	private String NYUUKINZUMIKINGAKU;
    /**
 	*	 MINYUUKINWARIAI 未入金%
@@ -83,7 +83,7 @@ public class A008grdB8Entity {
 	*	 MINYUUKINKINGAKU 未入金金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00008MINYUUKINKINGAKU19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010MINYUUKINKINGAKU19")
 	private String MINYUUKINKINGAKU;
    /**
 	*	 RESHIITONO レシートNO
@@ -97,7 +97,7 @@ public class A008grdB8Entity {
 	*	 KYAKUSAKIID 客先
 	*/
 
-	@NotBlank(message = "validate.msg_P00008KYAKUSAKIID")
+	@NotBlank(message = "validate.msg_P00010KYAKUSAKIID")
 	private String KYAKUSAKIID;
    /**
 	* SHANAIKOUJIBANGOU 社内工事番号を設定

@@ -106,7 +106,7 @@ public class A005C4ExportService {
 
    
 	@Log
-	private ArrayList<Map<String, String>> P000051ChangeToArraList (List<A005C4I00005ExportEntity> A005C4I00005ExportEntityList) throws Exception {
+	private ArrayList<Map<String, String>> P000071ChangeToArraList (List<A005C4I00005ExportEntity> A005C4I00005ExportEntityList) throws Exception {
 
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		try {
@@ -220,7 +220,7 @@ public class A005C4ExportService {
 
    
 	@Log
-	private ArrayList<String> P000051getFieldList () throws Exception {
+	private ArrayList<String> P000071getFieldList () throws Exception {
 
 		ArrayList<String> returnList = null;
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
@@ -246,7 +246,7 @@ public class A005C4ExportService {
 
    
 	@Log
-	private ArrayList<String> P000051getColumnWidthList () throws Exception {
+	private ArrayList<String> P000071getColumnWidthList () throws Exception {
 
 		ArrayList<String> returnList = null;
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
@@ -272,7 +272,7 @@ public class A005C4ExportService {
 
    
 	@Log
-	private Map<String, Map<String, String>> P000051getBreakMap () throws Exception {
+	private Map<String, Map<String, String>> P000071getBreakMap () throws Exception {
 
 		Map<String, Map<String, String>> returnMap = null;
 		Map<String, String> map = null;
@@ -290,7 +290,7 @@ public class A005C4ExportService {
 
    
 	@Log
-	private ArrayList<InOutPrintBean> P000051getHeadText () throws Exception {
+	private ArrayList<InOutPrintBean> P000071getHeadText () throws Exception {
 
 		ArrayList<InOutPrintBean> returnList = null;
 		InOutPrintBean iopbean = null;
@@ -322,7 +322,7 @@ public class A005C4ExportService {
 
    
 	@Log
-	private List<Map<String, String>> P000051getPrintItemDataMap () throws Exception {
+	private List<Map<String, String>> P000071getPrintItemDataMap () throws Exception {
 
 		List<Map<String, String>> returnList = null;
 		Map<String, String> map = null;
@@ -340,7 +340,7 @@ public class A005C4ExportService {
 
    
 	@Log
-	private ArrayList<String> P000051getFieldType () throws Exception {
+	private ArrayList<String> P000071getFieldType () throws Exception {
 
 		ArrayList<String> returnList = null;
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
@@ -396,16 +396,16 @@ public class A005C4ExportService {
 
 			initSheetStyle();
 			
-			fieldList = P000051getFieldList();
-			columnList = P000051getColumnWidthList();
+			fieldList = P000071getFieldList();
+			columnList = P000071getColumnWidthList();
 			createMerged(0, 0, 0, fieldList.size());
 			createMerged(1, 0, 1, fieldList.size());
 			setTyoHyoName(title);
 
-			BreakMap = P000051getBreakMap();
+			BreakMap = P000071getBreakMap();
 			breakDataMap = new HashMap<String, List<Integer>>();
-			headText = P000051getHeadText().get(0).getLabel_id();
-			printItemDataMap = P000051getPrintItemDataMap();
+			headText = P000071getHeadText().get(0).getLabel_id();
+			printItemDataMap = P000071getPrintItemDataMap();
 			
 			for (int i = 0; i < printItemDataMap.size(); i++) {
 				site = printItemDataMap.get(i).get("CELL_SITE");
@@ -476,7 +476,7 @@ public class A005C4ExportService {
 								compareKey = null;
 							}
 
-							fieldTypeList = P000051getFieldType();
+							fieldTypeList = P000071getFieldType();
 							if ("1".equals(fieldTypeList.get(j-1))) {
 								rtext = getRichTextString(rowi.get(fieldList.get(j - 1)));
 								cell.setCellValue(rtext);
@@ -780,7 +780,7 @@ public class A005C4ExportService {
 		try {
 			
 			A005C4I00005ExportEntityList = A005C4I00005ExportDao.A005C4I00005Export ();
-			outDataAy = P000051ChangeToArraList(A005C4I00005ExportEntityList);
+			outDataAy = P000071ChangeToArraList(A005C4I00005ExportEntityList);
 			
 			ext = ".xlsx";
 			encode = "UTF-8";

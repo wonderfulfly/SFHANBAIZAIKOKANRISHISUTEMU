@@ -59,13 +59,13 @@ public class A013DataCheckEntity {
 	*	 BUHINCHUUBUNSHONO 部品注文書NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00012BUHINCHUUBUNSHONO")
+	@NotBlank(message = "validate.msg_P00014BUHINCHUUBUNSHONO")
 	private String BUHINCHUUBUNSHONO;
    /**
 	*	 SEISAKUSUUQTY 製作数QTY
 	*/
 
-	@Pattern(regexp = "^\\s*$|([+-]?\\d?)?",message = "validate.msg_P00012SEISAKUSUUQTY2")
+	@Pattern(regexp = "^\\s*$|([+-]?\\d?)?",message = "validate.msg_P00014SEISAKUSUUQTY2")
 	private String SEISAKUSUUQTY;
    /**
 	*	 TANTOUSHA1 担当者
@@ -75,7 +75,7 @@ public class A013DataCheckEntity {
 	*	 KOUJIKANRIBANGOU1 工事管理番号
 	*/
 
-	@NotBlank(message = "validate.msg_P00012KOUJIKANRIBANGOU1")
+	@NotBlank(message = "validate.msg_P00014KOUJIKANRIBANGOU1")
 	private String KOUJIKANRIBANGOU1;
    /**
 	*	 SHUKKANO1 出荷NO
@@ -85,25 +85,25 @@ public class A013DataCheckEntity {
 	*	 JPYGOUKEI JPY合計
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00012JPYGOUKEI19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00014JPYGOUKEI19")
 	private String JPYGOUKEI;
    /**
 	*	 RMBGOUKEI RMB合計
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00012RMBGOUKEI19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00014RMBGOUKEI19")
 	private String RMBGOUKEI;
    /**
 	*	 USDGOUKEI USD合計
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00012USDGOUKEI19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00014USDGOUKEI19")
 	private String USDGOUKEI;
    /**
 	*	 BUHINCHUUBUNSHOMEISAINO 部品注文書明細NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00012BUHINCHUUBUNSHOMEISAINO")
+	@NotBlank(message = "validate.msg_P00014BUHINCHUUBUNSHOMEISAINO")
 	private String BUHINCHUUBUNSHOMEISAINO;
    /**
 	*	 Grid99 grdB16

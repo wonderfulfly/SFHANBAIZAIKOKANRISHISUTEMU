@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>P00005 - データインタフェース</title>
+<title>P00007 - データインタフェース</title>
     <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
     <!--[if IE]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -999,7 +999,7 @@ SF販売在庫管理システム
 		</a>
 	</li>
 <li><span>データインタフェース</span></li>
-	<li class="current"><em>データインタフェース(P00005 - A005)</em></li>
+	<li class="current"><em>データインタフェース(P00007 - A005)</em></li>
 </ul>
 </div>
 
@@ -1011,7 +1011,7 @@ SF販売在庫管理システム
   <input type=hidden name="WF_PRINTFILEID" id="WF_PRINTFILEID" value="" />
   <input type=hidden name="WF_PRINTFILEENCODE" id="WF_PRINTFILEENCODE" value="" />
   <input type=hidden name="pringFlg" id="pringFlg" value="">
-  <input type=hidden name="PageID" id="PageID" value="P00005"/>
+  <input type=hidden name="PageID" id="PageID" value="P00007"/>
   <input type=hidden name="SubID" id="SubID" value="">
   <input type=hidden name="pageRcds" id="pageRcds" value="5">
   <input type=hidden name="currentpage" id="currentpage" value="1"/>
@@ -1042,8 +1042,7 @@ SF販売在庫管理システム
   <div id="target" style="position:absolute;border:0px" class="animsition">
   
 <div id="dragB1"  style="position:absolute;top:72px;left:150px;text-align:left;width:240px;height:70px;z-index:1;" class='userDiv' _ckf='0'><input id='C4'  name='C4'  value='関連データエクスポート'  style='width:240px;height:70px;padding:0 2px;text-align:center;vertical-align:middle;font-size:16px;color:#ffffff;font-weight:bold;background:#0c0c0c;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false);if(confirm("ファイルを出力してもよろしいですか？")) {ajaxDoExport("A005","C4");} else {SF.setServerExecute(true);}}'  tabindex='1' class='button_blue' _sf_class='button_blue'></div>
-<div id="dragB3"  style="position:absolute;top:190px;left:150px;text-align:left;width:240px;height:72px;z-index:1;" class='userDiv' _ckf='0'><input id='C9'  name='C9'  value='部門インポート'  style='width:240px;height:72px;padding:0 2px;text-align:center;vertical-align:middle;font-size:16px;color:#ffffff;font-weight:bold;background:#0c0c0c;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false);ajaxDoImport("部門インポート","A005","C9","","","","");}'  tabindex='2' class='button_blue' _sf_class='button_blue'></div>
-<div id="dragB5"  style="position:absolute;top:310px;left:150px;text-align:left;width:240px;height:72px;z-index:1;" class='userDiv' _ckf='0'><input id='C14'  name='C14'  value='会社インポート'  style='width:240px;height:72px;padding:0 2px;text-align:center;vertical-align:middle;font-size:16px;color:#ffffff;font-weight:bold;background:#0c0c0c;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false);ajaxDoImport("会社インポート","A005","C14","0","UTF-8",",","0");}'  tabindex='3' class='button_blue' _sf_class='button_blue'></div>
+<div id="dragB3"  style="position:absolute;top:190px;left:150px;text-align:left;width:240px;height:72px;z-index:1;" class='userDiv' _ckf='0'><input id='C9'  name='C9'  value='部門インポート'  style='width:240px;height:72px;padding:0 2px;text-align:center;vertical-align:middle;font-size:16px;color:#ffffff;font-weight:bold;background:#0c0c0c;' type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false);ajaxDoImport("部門インポート","A005","C9","0","UTF-8",",","0");}'  tabindex='2' class='button_blue' _sf_class='button_blue'></div>
    </div>
    
   <UL id=imgMenu class=contextMenu style="display:none">

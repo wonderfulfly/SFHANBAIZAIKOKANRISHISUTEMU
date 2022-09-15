@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>P00008 - 入金管理検索</title>
+<title>P00010 - 入金管理検索</title>
     <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
     <!--[if IE]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -468,7 +468,7 @@ function DoBeforeSave() {
 
 function doLinkTrans55(o){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00017.do?","1",o,"CHUUBUNSHONO1,RYOUSHUUSHONO,","CHUUBUNSHONO1_,RESHIITONO_,","_self","","0","1133","340");
+ pageLinkTranfer("L00012.do?","1",o,"CHUUBUNSHONO1,RYOUSHUUSHONO,","CHUUBUNSHONO1_,RESHIITONO_,","_self","","0","1133","340");
 }
 
 function inputDataCheck(){
@@ -578,7 +578,7 @@ Grid23 = $("#Grid23").aingrid({
  	rowsObjectId: 'RowGrid23',
  	colClasses:['grid-col-num','g1','g1','g3','g1','g2','g2','g1','g2','g3','g1','g3','g1','g3','g1','g3','g1','g1','g1'],
  	resizableCols: false,
- 	url: 'A008GridFormFeed.do?pageID=P00008&subID=23',
+ 	url: 'A008GridFormFeed.do?pageID=P00010&subID=23',
  	extraParams: {},
  	paging: true,
  	recordsPerPage: recordNum,
@@ -1091,7 +1091,7 @@ SF販売在庫管理システム
 		</a>
 	</li>
 <li><span>入金管理</span></li>
-	<li class="current"><em>入金管理検索(P00008 - A008)</em></li>
+	<li class="current"><em>入金管理検索(P00010 - A008)</em></li>
 </ul>
 </div>
 
@@ -1103,7 +1103,7 @@ SF販売在庫管理システム
   <input type=hidden name="WF_PRINTFILEID" id="WF_PRINTFILEID" value="" />
   <input type=hidden name="WF_PRINTFILEENCODE" id="WF_PRINTFILEENCODE" value="" />
   <input type=hidden name="pringFlg" id="pringFlg" value="">
-  <input type=hidden name="PageID" id="PageID" value="P00008"/>
+  <input type=hidden name="PageID" id="PageID" value="P00010"/>
   <input type=hidden name="SubID" id="SubID" value="">
   <input type=hidden name="pageRcds" id="pageRcds" value="5">
   <input type=hidden name="currentpage" id="currentpage" value="1"/>

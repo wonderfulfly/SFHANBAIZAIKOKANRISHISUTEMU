@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>P00007 - 商品入庫画面</title>
+<title>P00009 - 商品入庫画面</title>
     <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
     <!--[if IE]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -660,7 +660,7 @@ Grid19 = $("#Grid19").aingrid({
  	rowsObjectId: 'RowGrid19',
  	colClasses:['grid-col-num','g1','g1','g1','g1','g1','g1','g2','g3','g3','g1','g1','g1','g1','g3','g1'],
  	resizableCols: false,
- 	url: 'A007GridFormFeed.do?pageID=P00007&subID=19',
+ 	url: 'A007GridFormFeed.do?pageID=P00009&subID=19',
  	extraParams: {},
  	paging: true,
  	recordsPerPage: recordNum,
@@ -1174,7 +1174,7 @@ SF販売在庫管理システム
 		</a>
 	</li>
 <li><span>注文書管理</span></li>
-	<li class="current"><em>商品入庫画面(P00007 - A007)</em></li>
+	<li class="current"><em>商品入庫画面(P00009 - A007)</em></li>
 </ul>
 </div>
 
@@ -1186,7 +1186,7 @@ SF販売在庫管理システム
   <input type=hidden name="WF_PRINTFILEID" id="WF_PRINTFILEID" value="" />
   <input type=hidden name="WF_PRINTFILEENCODE" id="WF_PRINTFILEENCODE" value="" />
   <input type=hidden name="pringFlg" id="pringFlg" value="">
-  <input type=hidden name="PageID" id="PageID" value="P00007"/>
+  <input type=hidden name="PageID" id="PageID" value="P00009"/>
   <input type=hidden name="SubID" id="SubID" value="">
   <input type=hidden name="pageRcds" id="pageRcds" value="5">
   <input type=hidden name="currentpage" id="currentpage" value="1"/>

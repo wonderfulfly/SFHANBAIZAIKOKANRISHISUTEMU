@@ -51,7 +51,7 @@ public class A013AA71Service {
 		excelDataBean.setFooterCenter("%page% / %numPages%");
 		PrintByFunction excelPrint = new PrintByFunction();
 		excelPrint.setExcelDataBean(excelDataBean);
-		outFileID = excelPrint.print("製作部品List.xlsx", "20220915_160820712.xlsx", jsonObj);
+		outFileID = excelPrint.print("製作部品List.xlsx", "20220915_174830866.xlsx", jsonObj);
 		return outFileID;
 
 	}
@@ -249,7 +249,7 @@ public class A013AA71Service {
 				setInstalBean(sheeBean, excelDataBean);
 				outFileID = printData(excelDataBean, jsonObj);
 				
-				FileDownLoadJsonSet.setFunctionPrintJsonObj(outFileID, "P00012", "35", jsonObj);
+				FileDownLoadJsonSet.setFunctionPrintJsonObj(outFileID, "P00014", "35", jsonObj);
 			} else {
 				jsonObj.setMessageValue("e", "シート名は空白に設定できません。「改シート条件項目」を指定する場合、条件項目の値に空白があるか確認してください。");
 			}

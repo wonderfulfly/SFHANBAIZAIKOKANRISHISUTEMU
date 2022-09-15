@@ -468,7 +468,7 @@ function DoBeforeSave() {
 
 function doLinkTrans45(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00014.do?","0","","","","_self","","0","974","309");
+ pageLinkTranfer("L00011.do?","0","","","","_self","","0","974","309");
 }
 
 function inputDataCheck(){

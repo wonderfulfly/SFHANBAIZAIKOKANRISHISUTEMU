@@ -17,13 +17,13 @@ public class A004DataCheckEntity {
 	*	 KAISHAID1 会社ID
 	*/
 
-	@NotBlank(message = "validate.msg_P00004KAISHAID1")
+	@NotBlank(message = "validate.msg_P00005KAISHAID1")
 	private String KAISHAID1;
    /**
 	*	 KAISHAMEI1 会社名
 	*/
 
-	@NotBlank(message = "validate.msg_P00004KAISHAMEI1")
+	@NotBlank(message = "validate.msg_P00005KAISHAMEI1")
 	private String KAISHAMEI1;
    /**
 	*	 KAISHARYAKUSHOU1 会社略称
@@ -41,7 +41,7 @@ public class A004DataCheckEntity {
 	*	 SHIHARAIKIGEN1 支払期限
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00004SHIHARAIKIGEN11")
+	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00005SHIHARAIKIGEN11")
 	private String SHIHARAIKIGEN1;
    /**
 	*	 KAISHAKUBUN1 会社区分

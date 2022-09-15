@@ -27,13 +27,13 @@ public class A009DataCheckEntity {
 	*	 RYOUSHUUSHONO 領収書NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00009RYOUSHUUSHONO")
+	@NotBlank(message = "validate.msg_P00011RYOUSHUUSHONO")
 	private String RYOUSHUUSHONO;
    /**
 	*	 CHUUBUNSHONO1 注文書NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00009CHUUBUNSHONO1")
+	@NotBlank(message = "validate.msg_P00011CHUUBUNSHONO1")
 	private String CHUUBUNSHONO1;
    /**
 	*	 NYUUKINYOTEIHIDZUKE 入金予定日付
@@ -51,13 +51,13 @@ public class A009DataCheckEntity {
 	*	 CHUUMONHIDZUKE1 注文日付
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00009CHUUMONHIDZUKE19")
+	@Pattern(regexp = "^\\s*$|(^((\\d{2}(([02468][048])|([13579][26]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|([1-2][0-9])))))|(\\d{2}(([02468][1235679])|([13579][01345789]))[\\-\\/\\s]((((0?[13578])|(1[02]))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\\-\\/\\s]((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\\-\\/\\s]((0?[1-9])|(1[0-9])|(2[0-8])))))))?",message = "validate.msg_P00011CHUUMONHIDZUKE19")
 	private String CHUUMONHIDZUKE1;
    /**
 	*	 NYUUKINKINGAKU1 入金金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00009NYUUKINKINGAKU119")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00011NYUUKINKINGAKU119")
 	private String NYUUKINKINGAKU1;
    /**
 	*	 JISSAINYUUKINJOUTAI1 実際入金状態

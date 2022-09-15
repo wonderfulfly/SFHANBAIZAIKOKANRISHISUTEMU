@@ -21,13 +21,13 @@ public class A011grdB18Entity {
 	*	 SUURYOU 数量
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00011SUURYOU1")
+	@Pattern(regexp = "^\\s*$|(^(0|\\+?[1-9][0-9]*){0,}$)?",message = "validate.msg_P00013SUURYOU1")
 	private String SUURYOU;
    /**
 	*	 HANBAITANKA 販売単価
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00011HANBAITANKA19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00013HANBAITANKA19")
 	private String HANBAITANKA;
    /**
 	*	 KAHEI 貨幣
@@ -37,25 +37,25 @@ public class A011grdB18Entity {
 	*	 HANBAIKINGAKU 販売金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00011HANBAIKINGAKU19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00013HANBAIKINGAKU19")
 	private String HANBAIKINGAKU;
    /**
 	*	 TSUKAMATSUNYUUKINGAKUJPY 仕入金額(JPY)
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00011TSUKAMATSUNYUUKINGAKUJPY19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00013TSUKAMATSUNYUUKINGAKUJPY19")
 	private String TSUKAMATSUNYUUKINGAKUJPY;
    /**
 	*	 TSUKAMATSUNYUUKINGAKURMB 仕入金額(RMB)
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00011TSUKAMATSUNYUUKINGAKURMB19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00013TSUKAMATSUNYUUKINGAKURMB19")
 	private String TSUKAMATSUNYUUKINGAKURMB;
    /**
 	*	 TSUKAMATSUNYUUKINGAKUUSD 仕入金額(USD)
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00011TSUKAMATSUNYUUKINGAKUUSD19")
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00013TSUKAMATSUNYUUKINGAKUUSD19")
 	private String TSUKAMATSUNYUUKINGAKUUSD;
    /**
 	*	 SHUKKOFURAGU 出庫フラグ
@@ -65,13 +65,13 @@ public class A011grdB18Entity {
 	*	 CHUUBUNSHONO2 注文書NOGIRD
 	*/
 
-	@NotBlank(message = "validate.msg_P00011CHUUBUNSHONO2")
+	@NotBlank(message = "validate.msg_P00013CHUUBUNSHONO2")
 	private String CHUUBUNSHONO2;
    /**
 	*	 CHUUBUNSHOMEISAINO 注文書明細NO
 	*/
 
-	@NotBlank(message = "validate.msg_P00011CHUUBUNSHOMEISAINO")
+	@NotBlank(message = "validate.msg_P00013CHUUBUNSHOMEISAINO")
 	private String CHUUBUNSHOMEISAINO;
    /**
 	*	 KUBUN 区分
