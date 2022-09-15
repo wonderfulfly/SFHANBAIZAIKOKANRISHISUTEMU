@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A004.A004KAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A004.A004KAISYAEntity" id="A004KAISYAEntityMap">
+		<id property="KAISHAID" column="KAISHAID" />
+		<result property="KAISHAMEI" column="KAISHAMEI" />
+		<result property="KAISHARYAKUSHOU" column="KAISHARYAKUSHOU" />
+		<result property="ADORESU" column="ADORESU" />
+		<result property="RENRAKUSAKI" column="RENRAKUSAKI" />
+		<result property="SHIHARAIKIGEN" column="SHIHARAIKIGEN" />
+		<result property="KAISHAKUBUN" column="KAISHAKUBUN" />
+	</resultMap>
+	<!-- null -->
+	<select id="A004InitDepthZero"  resultMap="A004KAISYAEntityMap">
+		SELECT KAISHAID,KAISHAMEI,KAISHARYAKUSHOU,ADORESU,RENRAKUSAKI,SHIHARAIKIGEN,KAISHAKUBUN FROM KAISYA
+			<where>
+				 1 = 1 
+				<if test="KAISHAID1 != null and KAISHAID1 != ''">
+					 AND KAISHAID  = #{KAISHAID1} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

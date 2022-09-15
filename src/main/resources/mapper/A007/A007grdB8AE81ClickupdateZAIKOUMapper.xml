@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A007.A007grdB8AE81ClickupdateZAIKOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A007.A007grdB8AE81ClickupdateZAIKOUEntity" id="A007grdB8AE81ClickupdateZAIKOUEntityMap">
+	</resultMap>
+	<!-- データ操作1:テーブル「在庫」の項目「在庫NO」が値<部品明細連番>のデータに対して,項目「出入庫状態」を文字列"0"に変更する -->
+	<update id="A007grdB8AE81ClickupdateZAIKOU" >
+		UPDATE ZAIKOU SET SHUTSUNYUUKOJOUTAI = '0'
+			<where>
+				 1 = 1 
+				<if test="ZAIKONO1 != null and ZAIKONO1 != ''">
+					 AND ZAIKONO  = #{ZAIKONO1} 
+				</if>
+			</where>
+	</update>
+</mapper>

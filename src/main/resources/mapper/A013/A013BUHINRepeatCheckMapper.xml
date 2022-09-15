@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013BUHINRepeatCheckMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013BUHINRepeatCheckEntity" id="A013BUHINRepeatCheckEntityMap">
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+	</resultMap>
+	<!-- null -->
+	<select id="A013BUHINRepeatCheckselectBUHIN"  resultMap="A013BUHINRepeatCheckEntityMap">
+		SELECT KOUJIKANRIBANGOU,CHUUBUNSHOMEISAINO,CHUUBUNSHONO FROM BUHIN
+			<where>
+				 1 = 1 
+				<if test="KOUJIKANRIBANGOU1 != null and KOUJIKANRIBANGOU1 != ''">
+					 AND KOUJIKANRIBANGOU  = #{KOUJIKANRIBANGOU1} 
+				</if>
+				<if test="BUHINCHUUBUNSHOMEISAINO != null and BUHINCHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{BUHINCHUUBUNSHOMEISAINO} 
+				</if>
+				<if test="BUHINCHUUBUNSHONO != null and BUHINCHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{BUHINCHUUBUNSHONO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

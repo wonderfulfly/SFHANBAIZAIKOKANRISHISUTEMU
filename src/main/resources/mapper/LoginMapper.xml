@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.LoginMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.LoginEntity" id="LoginEntityMap">
+		<id property="LOGINID" column="LOGINID" />
+		<result property="LOGINID" column="LOGINID" />
+		<result property="PASSWORD" column="PASSWORD" />
+		<result property="USER_EFF" column="USER_EFF" />
+		<result property="GROUPID" column="GROUPID" />
+		<result property="USERID" column="USERID" />
+	</resultMap>
+	<!--  -->
+	<select id="LoginInit" resultMap="LoginEntityMap" statementType = "STATEMENT">
+		SELECT ${LOGINID},${LOGINPASSWORD},${USER_EFF},${GROUPID},${USERID}  FROM ${LOGINTABLEID} WHERE ${WHRLOGINID} AND ${WHRLOGINPASSWORD}
+	</select>
+	<select id="LoginAdminInit" resultMap="LoginEntityMap">
+		SELECT LOGINID,PASSWORD FROM ADMIN_USER_TBL WHERE LOGINID = #{LOGINID} AND PASSWORD = #{PASSWORD}
+	</select>
+	<select id="getAdminByUsername" resultType="com.wonderrobot.sfhanbaizaikokanrishisutemu.security.LoginUser">
+	SELECT u.LOGINID as username, u.PASSWORD,
+	g.GROUP_ID
+	FROM ADMIN_USER_TBL u
+	LEFT JOIN wf_group_user_tbl g ON u.LOGINID = g.USERID
+	WHERE u.LOGINID = #{LOGINID}
+	</select>
+	<select id="getPageRightByGroup" resultType="com.wonderrobot.sfhanbaizaikokanrishisutemu.security.PageRight">
+	SELECT
+	HAVINGID, PAGEID, GROUPID, NORIGHTFLG, INSERTFLG, UPDATEFLG, DISPLAYFLG, DELETEFLG
+	FROM wf_page_right_tbl
+	WHERE GROUPID = #{GROUPID}
+	</select>
+</mapper>
+

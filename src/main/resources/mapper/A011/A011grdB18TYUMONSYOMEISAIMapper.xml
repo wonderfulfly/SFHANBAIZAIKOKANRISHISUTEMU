@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011grdB18TYUMONSYOMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011grdB18TYUMONSYOMEISAIEntity" id="A011grdB18TYUMONSYOMEISAIEntityMap">
+		<result property="KOUMOKU" column="KOUMOKU" />
+		<result property="SUURYOU" column="SUURYOU" />
+		<result property="HANBAITANKA" column="HANBAITANKA" />
+		<result property="HANBAIKINGAKU" column="HANBAIKINGAKU" />
+		<result property="TSUKAMATSUNYUUKINGAKUJPY" column="TSUKAMATSUNYUUKINGAKUJPY" />
+		<result property="TSUKAMATSUNYUUKINGAKURMB" column="TSUKAMATSUNYUUKINGAKURMB" />
+		<result property="TSUKAMATSUNYUUKINGAKUUSD" column="TSUKAMATSUNYUUKINGAKUUSD" />
+		<result property="SHUKKOFURAGU" column="SHUKKOFURAGU" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="KAHEI" column="KAHEI" />
+		<result property="KUBUN" column="KUBUN" />
+	</resultMap>
+	<!-- null -->
+	<select id="A011InitGrid"  resultMap="A011grdB18TYUMONSYOMEISAIEntityMap">
+		SELECT KOUMOKU,SUURYOU,HANBAITANKA,HANBAIKINGAKU,TSUKAMATSUNYUUKINGAKUJPY,TSUKAMATSUNYUUKINGAKURMB,TSUKAMATSUNYUUKINGAKUUSD,SHUKKOFURAGU,CHUUBUNSHONO,CHUUBUNSHOMEISAINO,KAHEI,KUBUN FROM TYUMONSYOMEISAI
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+			</where>
+		 ORDER BY CHUUBUNSHOMEISAINO asc
+		 LIMIT 50
+	</select>
+</mapper>

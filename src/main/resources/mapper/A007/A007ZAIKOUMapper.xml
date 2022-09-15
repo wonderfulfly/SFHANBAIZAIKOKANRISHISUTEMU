@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A007.A007ZAIKOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A007.A007ZAIKOUEntity" id="A007ZAIKOUEntityMap">
+		<id property="ZAIKONO" column="ZAIKONO" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="SHUTSUNYUUKOJIKAN" column="SHUTSUNYUUKOJIKAN" />
+		<result property="SHUTSUNYUUKOJOUTAI" column="SHUTSUNYUUKOJOUTAI" />
+		<result property="SHOUHINNO" column="SHOUHINNO" />
+		<result property="SHOUHINMEISHOU" column="SHOUHINMEISHOU" />
+		<result property="SHOUHINKATABAN" column="SHOUHINKATABAN" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="DAIRITENNO" column="DAIRITENNO" />
+		<result property="SHUKKANO" column="SHUKKANO" />
+		<result property="TAN_I" column="TAN_I" />
+		<result property="SUURYOU" column="SUURYOU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="DAIKINKINGAKU" column="DAIKINKINGAKU" />
+		<result property="ZEIGAKU" column="ZEIGAKU" />
+		<result property="GOUKEI" column="GOUKEI" />
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="BIKOU" column="BIKOU" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="HINBANNO" column="HINBANNO" />
+	</resultMap>
+</mapper>

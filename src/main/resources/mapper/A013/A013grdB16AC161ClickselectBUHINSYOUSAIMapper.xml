@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013grdB16AC161ClickselectBUHINSYOUSAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013grdB16AC161ClickselectBUHINSYOUSAIEntity" id="A013grdB16AC161ClickselectBUHINSYOUSAIEntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+	</resultMap>
+	<!-- データ操作4:テーブル「部品詳細」のデータの項目「注文書NO」を取得,条件は「注文書NO」が「注文書NO」,「注文書明細NO」が「注文書明細NO」,「工事管理番号」が値「工事管理番号」,「品番NO」が値「品番Nohide」 -->
+	<select id="A013grdB16AC161ClickselectBUHINSYOUSAI"  resultMap="A013grdB16AC161ClickselectBUHINSYOUSAIEntityMap">
+		SELECT CHUUBUNSHONO FROM BUHINSYOUSAI
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+				<if test="CHUUBUNSHOMEISAINO1 != null and CHUUBUNSHOMEISAINO1 != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{CHUUBUNSHOMEISAINO1} 
+				</if>
+				<if test="KOUJIKANRIBANGOU1 != null and KOUJIKANRIBANGOU1 != ''">
+					 AND KOUJIKANRIBANGOU  = #{KOUJIKANRIBANGOU1} 
+				</if>
+				<if test="HINBANNO != null and HINBANNO != ''">
+					 AND HINBANNO  = #{HINBANNO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

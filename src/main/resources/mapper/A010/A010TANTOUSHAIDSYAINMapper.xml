@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010TANTOUSHAIDSYAINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010TANTOUSHAIDSYAINEntity" id="A010TANTOUSHAIDSYAINEntityMap">
+		<result property="SHAINID" column="SHAINID" />
+		<result property="SHAINMEI" column="SHAINMEI" />
+	</resultMap>
+	<!-- null -->
+	<select id="A010TANTOUSHAIDdrp"  resultMap="A010TANTOUSHAIDSYAINEntityMap">
+		SELECT DISTINCT SHAINID,SHAINMEI FROM SYAIN
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

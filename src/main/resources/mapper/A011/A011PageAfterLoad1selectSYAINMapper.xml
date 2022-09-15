@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterLoad1selectSYAINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterLoad1selectSYAINEntity" id="A011PageAfterLoad1selectSYAINEntityMap">
+		<result property="YUUZAAKENGEN" column="YUUZAAKENGEN" />
+	</resultMap>
+	<!-- データ操作:テーブル「社員」のデータの項目「ユーザー権限」を取得,条件は「ログインID」が<ログインID> -->
+	<select id="A011PageAfterLoad1selectSYAIN"  resultMap="A011PageAfterLoad1selectSYAINEntityMap">
+		SELECT YUUZAAKENGEN FROM SYAIN
+			<where>
+				 1 = 1 
+				<if test="ROGUINID != null and ROGUINID != ''">
+					 AND ROGUINID  = #{ROGUINID} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

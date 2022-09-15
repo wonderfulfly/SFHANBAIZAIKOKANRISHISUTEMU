@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T7afterselectBUHINSYOUSAIRINJIHYOU2Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T7afterselectBUHINSYOUSAIRINJIHYOU2Entity" id="A013T7afterselectBUHINSYOUSAIRINJIHYOU2EntityMap">
+		<result property="HINMEI" column="HINMEI" />
+		<result property="SHANAIKOUJIBANGOU" column="SHANAIKOUJIBANGOU" />
+		<result property="KYAKUSAKIMEISHOU" column="KYAKUSAKIMEISHOU" />
+		<result property="HINBAN" column="HINBAN" />
+		<result property="ASENBURIRAIN" column="ASENBURIRAIN" />
+		<result property="KIKAIMEISHOU" column="KIKAIMEISHOU" />
+		<result property="BUHINMEISHOU" column="BUHINMEISHOU" />
+		<result property="SEISAKUSUU" column="SEISAKUSUU" />
+		<result property="TANTOUSHA" column="TANTOUSHA" />
+		<result property="MAISUU" column="MAISUU" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="KIBOUNOUKI" column="KIBOUNOUKI" />
+		<result property="TOUROKUSHAID" column="TOUROKUSHAID" />
+		<result property="HITSUYOU" column="HITSUYOU" />
+		<result property="TEHAI" column="TEHAI" />
+		<result property="KANRYOU" column="KANRYOU" />
+		<result property="TANTOUSHAID" column="TANTOUSHAID" />
+		<result property="SEISAKUSHA" column="SEISAKUSHA" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="KOUNYUUHIDZUKE" column="KOUNYUUHIDZUKE" />
+		<result property="NYUUKAYOTEIBI" column="NYUUKAYOTEIBI" />
+		<result property="NYUUKAHIDZUKE" column="NYUUKAHIDZUKE" />
+		<result property="SOUKOSUU1" column="SOUKOSUU1" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+	</resultMap>
+	<!-- データ操作9:テーブル「部品詳細臨時表」の「品名,社内工事番号,客先名称,品番,アセンブリライン,機械名称,部品名称,製作数,担当者,枚数,品番NO,希望納期,登録者ID,必要,手配,完了,担当者ID,製作者,購入単価,購入日付,入荷予定日,入荷日付,総個数1,小計」を取得,条件は「登録者ID」がログインID(ループ開始) -->
+	<select id="A013T7afterselectBUHINSYOUSAIRINJIHYOU2"  resultMap="A013T7afterselectBUHINSYOUSAIRINJIHYOU2EntityMap">
+		SELECT HINMEI,SHANAIKOUJIBANGOU,KYAKUSAKIMEISHOU,HINBAN,ASENBURIRAIN,KIKAIMEISHOU,BUHINMEISHOU,SEISAKUSUU,TANTOUSHA,MAISUU,HINBANNO,KIBOUNOUKI,TOUROKUSHAID,HITSUYOU,TEHAI,KANRYOU,TANTOUSHAID,SEISAKUSHA,KOUNYUUTANKA,KOUNYUUHIDZUKE,NYUUKAYOTEIBI,NYUUKAHIDZUKE,SOUKOSUU1,SHOUKEI FROM BUHINSYOUSAIRINJIHYOU
+			<where>
+				 1 = 1 
+				<if test="ROGUINID_RUUPUKAISHI_ != null and ROGUINID_RUUPUKAISHI_ != ''">
+					 AND TOUROKUSHAID  = #{ROGUINID_RUUPUKAISHI_} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

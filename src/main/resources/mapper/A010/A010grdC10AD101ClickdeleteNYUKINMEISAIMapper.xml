@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010grdC10AD101ClickdeleteNYUKINMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010grdC10AD101ClickdeleteNYUKINMEISAIEntity" id="A010grdC10AD101ClickdeleteNYUKINMEISAIEntityMap">
+		<result property="RESHIITONO" column="RESHIITONO" />
+	</resultMap>
+	<!-- データ操作:テーブル「入金明細」の項目「レシートNO」が<レシートNO>と一致するデータを削除する -->
+	<delete id="A010grdC10AD101ClickdeleteNYUKINMEISAI" >
+		DELETE FROM NYUKINMEISAI
+			<where>
+				 1 = 1 
+				<if test="NYUKIN_RESHIITONO != null and NYUKIN_RESHIITONO != ''">
+					 AND RESHIITONO  = #{NYUKIN_RESHIITONO} 
+				</if>
+			</where>
+	</delete>
+</mapper>

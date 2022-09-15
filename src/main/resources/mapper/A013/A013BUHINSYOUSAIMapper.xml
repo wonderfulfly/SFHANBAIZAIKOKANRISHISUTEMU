@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013BUHINSYOUSAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013BUHINSYOUSAIEntity" id="A013BUHINSYOUSAIEntityMap">
+		<id property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<id property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<id property="HINBANNO" column="HINBANNO" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="HINMEI" column="HINMEI" />
+		<result property="KOSUU" column="KOSUU" />
+		<result property="SOUKOSUU" column="SOUKOSUU" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="BIKOU" column="BIKOU" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="SEISAKUHINKUBUN" column="SEISAKUHINKUBUN" />
+		<result property="KIBOUTANKA" column="KIBOUTANKA" />
+		<result property="KIBOUNOUKI" column="KIBOUNOUKI" />
+		<result property="TANTOU" column="TANTOU" />
+		<result property="TEHAISAKI" column="TEHAISAKI" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="TEHAIBI" column="TEHAIBI" />
+		<result property="NYUUKAYOTEIBI" column="NYUUKAYOTEIBI" />
+		<result property="NYUUKABI" column="NYUUKABI" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="NYUUKOFURAGU" column="NYUUKOFURAGU" />
+		<result property="NYUUKOBANGOU" column="NYUUKOBANGOU" />
+		<result property="KAHEI" column="KAHEI" />
+		<result property="KAKOTANKA" column="KAKOTANKA" />
+		<result property="KAKUTEIKUBUN" column="KAKUTEIKUBUN" />
+		<result property="TOUROKUSHAID" column="TOUROKUSHAID" />
+		<result property="BIKOU1" column="BIKOU1" />
+		<result property="HITSUYOU" column="HITSUYOU" />
+		<result property="TEHAI" column="TEHAI" />
+		<result property="KANRYOU" column="KANRYOU" />
+		<result property="SOUKOSUU1" column="SOUKOSUU1" />
+		<result property="HINBANNO1" column="HINBANNO1" />
+	</resultMap>
+</mapper>

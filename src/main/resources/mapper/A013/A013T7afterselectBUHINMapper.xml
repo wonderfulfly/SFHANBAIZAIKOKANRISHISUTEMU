@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T7afterselectBUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T7afterselectBUHINEntity" id="A013T7afterselectBUHINEntityMap">
+		<result property="KAKUTEIKUBUN" column="KAKUTEIKUBUN" />
+	</resultMap>
+	<!-- データ操作2:テーブル「部品」の「確定区分」を取得,条件は「注文書NO」が画面項目「部品注文書NO」,且つ「注文書明細NO」が画面項目「部品注文書明細NO」,「確定区分」が"1" -->
+	<select id="A013T7afterselectBUHIN"  resultMap="A013T7afterselectBUHINEntityMap">
+		SELECT KAKUTEIKUBUN FROM BUHIN
+			<where>
+				 1 = 1 
+				<if test="BUHINCHUUBUNSHONO != null and BUHINCHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{BUHINCHUUBUNSHONO} 
+				</if>
+				<if test="BUHINCHUUBUNSHOMEISAINO != null and BUHINCHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{BUHINCHUUBUNSHOMEISAINO} 
+				</if>
+					 AND KAKUTEIKUBUN  = '1' 
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

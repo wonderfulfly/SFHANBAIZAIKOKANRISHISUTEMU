@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010grdC10TYUMONSYOMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010grdC10TYUMONSYOEntity" id="A010grdC10TYUMONSYOEntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="MITSUMORISHONO" column="MITSUMORISHONO" />
+		<result property="CHUUMONHIDZUKE" column="CHUUMONHIDZUKE" />
+		<result property="SHOUHINSOUGAKUJPY" column="SHOUHINSOUGAKUJPY" />
+		<result property="SHANAIKOUJIBANGOU" column="SHANAIKOUJIBANGOU" />
+		<result property="KYAKUSAKITANTOU" column="KYAKUSAKITANTOU" />
+		<result property="SHUTSUNYUUKOFURAGU" column="SHUTSUNYUUKOFURAGU" />
+		<result property="KYAKUSAKIID" column="KYAKUSAKIID" />
+		<result property="TANTOUSHAID" column="TANTOUSHAID" />
+	</resultMap>
+	<!-- null -->
+	<select id="A010InitGrid"  resultMap="A010grdC10TYUMONSYOEntityMap">
+		SELECT CHUUBUNSHONO,MITSUMORISHONO,CHUUMONHIDZUKE,SHOUHINSOUGAKUJPY,SHANAIKOUJIBANGOU,KYAKUSAKITANTOU,SHUTSUNYUUKOFURAGU,KYAKUSAKIID,TANTOUSHAID FROM TYUMONSYO
+		 ORDER BY CHUUBUNSHONO desc
+		 LIMIT 50
+	</select>
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6afterselectMITUMORIRINJIHYOU1Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6afterselectMITUMORIRINJIHYOU1Entity" id="A010W6afterselectMITUMORIRINJIHYOU1EntityMap">
+		<result property="GOLD" column="GOLD" />
+	</resultMap>
+	<!-- データ操作:「見積り臨時表」テーブルから「見積りNO,記録者ID」単位の「金額の合計」を取得,条件は「記録者ID」がログインID,且つ「貨幣」が"0"と一致 -->
+	<select id="A010W6afterselectMITUMORIRINJIHYOU1"  resultType="java.lang.Double">
+		SELECT SUM(GOLD) FROM MITUMORIRINJIHYOU
+			<where>
+				 1 = 1 
+				<if test="ROGUINID != null and ROGUINID != ''">
+					 AND KIROKUSHAID  = #{ROGUINID} 
+				</if>
+					 AND KAHEI  = '0' 
+			</where>
+		 GROUP BY MITSUMORINO,KIROKUSHAID
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

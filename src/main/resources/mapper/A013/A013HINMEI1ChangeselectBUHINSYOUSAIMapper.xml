@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013HINMEI1ChangeselectBUHINSYOUSAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013HINMEI1ChangeselectBUHINSYOUSAIEntity" id="A013HINMEI1ChangeselectBUHINSYOUSAIEntityMap">
+		<result property="KAKOTANKA" column="KAKOTANKA" />
+	</resultMap>
+	<!-- データ操作1:テーブル「部品詳細」のデータの項目「部品詳細.過去単価」を取得,条件は「品名」が「品名」,ソート順「過去単価」,件数範囲「0,3」(ループ開始) -->
+	<select id="A013HINMEI1ChangeselectBUHINSYOUSAI"  resultMap="A013HINMEI1ChangeselectBUHINSYOUSAIEntityMap">
+		SELECT KAKOTANKA FROM BUHINSYOUSAI
+			<where>
+				 1 = 1 
+				<if test="HINMEI != null and HINMEI != ''">
+					 AND HINMEI  = #{HINMEI} 
+				</if>
+			</where>
+		 ORDER BY KAKOTANKA ASC
+		 LIMIT 0,3
+	</select>
+</mapper>

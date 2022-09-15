@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6afterinsertTYUMONSYOMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6afterinsertTYUMONSYOMEISAIEntity" id="A010W6afterinsertTYUMONSYOMEISAIEntityMap">
+		<result property="MITSUMORINO" column="MITSUMORINO" />
+		<result property="KOUMOKU" column="KOUMOKU" />
+		<result property="SUURYOU" column="SUURYOU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="GOLD" column="GOLD" />
+		<result property="KAHEI" column="KAHEI" />
+	</resultMap>
+	<!-- データ操作:テーブル「注文書明細」にデータ登録,「注文書NO」が<注文書NO>,「注文書明細NO」が自動採番,「項目」が<項目>,「数量」が<数量>,「販売単価」が<単価>,「販売金額」が<金額>,「区分」が"0",「貨幣」が<貨幣> -->
+	<insert id="A010W6afterinsertTYUMONSYOMEISAI" >
+		INSERT INTO TYUMONSYOMEISAI (CHUUBUNSHONO,CHUUBUNSHOMEISAINO,KOUMOKU,SUURYOU,HANBAITANKA,HANBAIKINGAKU,KUBUN,KAHEI) VALUES (#{CHUUBUNSHONOautoNum},#{CHUUBUNSHOMEISAINOautoNum},#{MITUMORIRINJIHYOU_KOUMOKU},#{MITUMORIRINJIHYOU_SUURYOU},#{MITUMORIRINJIHYOU_PRICE},#{MITUMORIRINJIHYOU_GOLD},'0',#{MITUMORIRINJIHYOU_KAHEI})
+	</insert>
+</mapper>

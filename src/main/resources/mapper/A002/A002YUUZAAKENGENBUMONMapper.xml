@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A002.A002YUUZAAKENGENBUMONMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A002.A002YUUZAAKENGENBUMONEntity" id="A002YUUZAAKENGENBUMONEntityMap">
+		<result property="BUMONID" column="BUMONID" />
+		<result property="BUMONMEI" column="BUMONMEI" />
+	</resultMap>
+	<!-- null -->
+	<select id="A002YUUZAAKENGENdrp"  resultMap="A002YUUZAAKENGENBUMONEntityMap">
+		SELECT DISTINCT BUMONID,BUMONMEI FROM BUMON
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

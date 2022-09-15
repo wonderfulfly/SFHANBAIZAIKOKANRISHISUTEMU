@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T101ClickinsertZAIKOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T101ClickinsertZAIKOUEntity" id="A013T101ClickinsertZAIKOUEntityMap">
+		<result property="HINMEI" column="HINMEI" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="SOUKOSUU" column="SOUKOSUU" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="NYUUKABI" column="NYUUKABI" />
+	</resultMap>
+	<!-- データ操作5:テーブル「在庫」にデータ登録,「商品名称」が<品名>,「出入庫時間」が当日,「出入庫状態」が"0",「注文書NO」が<注文書NO>,「注文書明細NO」が<部品注文書明細NO>,「工事管理番号」が<工事管理番号>,「仕入先」が<仕入先>,「代金金額」が<小計>,「出荷NO」が「出荷NO」,「数量」が<総個数>,「在庫NO」が自動採番,「単価」が<購入単価>,「品番NO」が<品番NO> -->
+	<insert id="A013T101ClickinsertZAIKOU" >
+		INSERT INTO ZAIKOU (SHOUHINMEISHOU,SHUTSUNYUUKOJIKAN,SHUTSUNYUUKOJOUTAI,CHUUBUNSHONO,CHUUBUNSHOMEISAINO,KOUJIKANRIBANGOU,TSUKAMATSUNYUUSAKI,DAIKINKINGAKU,SHUKKANO,SUURYOU,ZAIKONO,PRICE,HINBANNO) VALUES (#{ay3_BUHINSYOUSAI_HINMEI},#{TOUJITSU},'0',#{ay3_BUHINSYOUSAI_CHUUBUNSHONO},#{BUHINCHUUBUNSHOMEISAINO},#{ay3_BUHINSYOUSAI_KOUJIKANRIBANGOU},#{ay3_BUHINSYOUSAI_TSUKAMATSUNYUUSAKI},#{ay3_BUHINSYOUSAI_SHOUKEI},#{SHUKKANO1},#{ay3_BUHINSYOUSAI_SOUKOSUU},#{ZAIKONOautoNum},#{ay3_BUHINSYOUSAI_KOUNYUUTANKA},#{ay3_BUHINSYOUSAI_HINBANNO})
+	</insert>
+</mapper>

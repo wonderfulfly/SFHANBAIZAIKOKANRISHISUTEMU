@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6afterinsertKAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6afterinsertKAISYAEntity" id="A010W6afterinsertKAISYAEntityMap">
+		<result property="KAISHAID" column="KAISHAID" />
+	</resultMap>
+	<!-- データ操作:テーブル「会社」にデータ登録,「会社ID」が自動採番,「会社名」が<客先> -->
+	<insert id="A010W6afterinsertKAISYA" >
+		INSERT INTO KAISYA (KAISHAID,KAISHAMEI) VALUES (#{KAISHAIDautoNum},#{MITUMORIRINJIHYOU_KYAKUSAKI})
+	</insert>
+</mapper>

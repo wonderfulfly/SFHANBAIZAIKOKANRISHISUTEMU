@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T7afterselectSYAINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T7afterselectSYAINEntity" id="A013T7afterselectSYAINEntityMap">
+		<result property="SHAINMEI" column="SHAINMEI" />
+	</resultMap>
+	<!-- データ操作8:テーブル「社員」の「社員名」を取得,条件は「社員ID」が<担当者> -->
+	<select id="A013T7afterselectSYAIN"  resultMap="A013T7afterselectSYAINEntityMap">
+		SELECT SHAINMEI FROM SYAIN
+			<where>
+				 1 = 1 
+				<if test="ay3_BUHINSYOUSAIRINJIHYOU_TANTOUSHA != null and ay3_BUHINSYOUSAIRINJIHYOU_TANTOUSHA != ''">
+					 AND SHAINID  = #{ay3_BUHINSYOUSAIRINJIHYOU_TANTOUSHA} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

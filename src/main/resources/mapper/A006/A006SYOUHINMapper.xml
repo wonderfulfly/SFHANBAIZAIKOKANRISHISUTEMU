@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A006.A006SYOUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A006.A006SYOUHINEntity" id="A006SYOUHINEntityMap">
+		<id property="SHOUHINNO" column="SHOUHINNO" />
+		<result property="SHOUHINMEISHOU" column="SHOUHINMEISHOU" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="NYUUKAHIDZUKE" column="NYUUKAHIDZUKE" />
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+		<result property="NYUUKOSUURYOU" column="NYUUKOSUURYOU" />
+		<result property="SHUKKOSUURYOU" column="SHUKKOSUURYOU" />
+	</resultMap>
+</mapper>

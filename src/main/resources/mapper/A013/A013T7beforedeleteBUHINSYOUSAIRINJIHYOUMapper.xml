@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T7beforedeleteBUHINSYOUSAIRINJIHYOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T7beforedeleteBUHINSYOUSAIRINJIHYOUEntity" id="A013T7beforedeleteBUHINSYOUSAIRINJIHYOUEntityMap">
+	</resultMap>
+	<!-- データ操作1:テーブル「部品詳細臨時表」の項目「登録者ID」がログインIDと一致するデータを削除する -->
+	<delete id="A013T7beforedeleteBUHINSYOUSAIRINJIHYOU" >
+		DELETE FROM BUHINSYOUSAIRINJIHYOU
+			<where>
+				 1 = 1 
+				<if test="ROGUINIDTOITCHISURUDEETAWOSAKUJOSURU != null and ROGUINIDTOITCHISURUDEETAWOSAKUJOSURU != ''">
+					 AND TOUROKUSHAID  = #{ROGUINIDTOITCHISURUDEETAWOSAKUJOSURU} 
+				</if>
+			</where>
+	</delete>
+</mapper>

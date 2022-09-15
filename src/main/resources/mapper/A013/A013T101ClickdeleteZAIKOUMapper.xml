@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T101ClickdeleteZAIKOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T101ClickdeleteZAIKOUEntity" id="A013T101ClickdeleteZAIKOUEntityMap">
+		<result property="HINMEI" column="HINMEI" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="SOUKOSUU" column="SOUKOSUU" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="NYUUKABI" column="NYUUKABI" />
+	</resultMap>
+	<!-- データ操作8:テーブル「在庫」の項目「注文書NO」が<注文書NO>,「注文書明細NO」が<注文書明細NO>と一致するデータを削除する -->
+	<delete id="A013T101ClickdeleteZAIKOU" >
+		DELETE FROM ZAIKOU
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+				<if test="CHUUBUNSHOMEISAINO1 != null and CHUUBUNSHOMEISAINO1 != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{CHUUBUNSHOMEISAINO1} 
+				</if>
+			</where>
+	</delete>
+</mapper>

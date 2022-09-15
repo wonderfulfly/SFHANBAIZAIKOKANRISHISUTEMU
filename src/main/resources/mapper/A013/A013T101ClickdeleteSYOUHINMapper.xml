@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T101ClickdeleteSYOUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T101ClickdeleteSYOUHINEntity" id="A013T101ClickdeleteSYOUHINEntityMap">
+		<result property="HINMEI" column="HINMEI" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="SOUKOSUU" column="SOUKOSUU" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="NYUUKABI" column="NYUUKABI" />
+	</resultMap>
+	<!-- データ操作7:テーブル「商品」の項目「商品NO」先頭一致<結合文字1>のデータを削除する -->
+	<delete id="A013T101ClickdeleteSYOUHIN" >
+		DELETE FROM SYOUHIN
+	</delete>
+</mapper>

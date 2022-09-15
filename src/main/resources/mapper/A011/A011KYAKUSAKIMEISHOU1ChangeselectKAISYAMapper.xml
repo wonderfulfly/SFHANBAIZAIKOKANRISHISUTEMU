@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011KYAKUSAKIMEISHOU1ChangeselectKAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011KYAKUSAKIMEISHOU1ChangeselectKAISYAEntity" id="A011KYAKUSAKIMEISHOU1ChangeselectKAISYAEntityMap">
+		<result property="ADORESU" column="ADORESU" />
+		<result property="RENRAKUSAKI" column="RENRAKUSAKI" />
+	</resultMap>
+	<!-- データ操作:テーブル「会社」のデータの項目「アドレス,連絡先」を取得,条件は「会社ID」が「客先名称」 -->
+	<select id="A011KYAKUSAKIMEISHOU1ChangeselectKAISYA"  resultMap="A011KYAKUSAKIMEISHOU1ChangeselectKAISYAEntityMap">
+		SELECT ADORESU,RENRAKUSAKI FROM KAISYA
+			<where>
+				 1 = 1 
+				<if test="KYAKUSAKIMEISHOU != null and KYAKUSAKIMEISHOU != ''">
+					 AND KAISHAID  = #{KYAKUSAKIMEISHOU} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

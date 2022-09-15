@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011W41ClickupdateTYUMONSYOMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011W41ClickupdateTYUMONSYOMEISAIEntity" id="A011W41ClickupdateTYUMONSYOMEISAIEntityMap">
+	</resultMap>
+	<!-- データ操作:テーブル「注文書明細」の項目「注文書NO」が「注文書NO」のデータに対して,項目「出庫フラグ」を文字列"0"に変更する -->
+	<update id="A011W41ClickupdateTYUMONSYOMEISAI" >
+		UPDATE TYUMONSYOMEISAI SET SHUKKOFURAGU = '0'
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+			</where>
+	</update>
+</mapper>

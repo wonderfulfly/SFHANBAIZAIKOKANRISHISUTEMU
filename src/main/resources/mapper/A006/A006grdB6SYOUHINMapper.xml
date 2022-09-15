@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A006.A006grdB6SYOUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A006.A006grdB6SYOUHINEntity" id="A006grdB6SYOUHINEntityMap">
+		<result property="SHOUHINMEISHOU" column="SHOUHINMEISHOU" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="NYUUKAHIDZUKE" column="NYUUKAHIDZUKE" />
+		<result property="PRICE" column="PRICE" />
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+		<result property="SHOUHINNO" column="SHOUHINNO" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+	</resultMap>
+	<!-- null -->
+	<select id="A006InitGrid"  resultMap="A006grdB6SYOUHINEntityMap">
+		SELECT SHOUHINMEISHOU,ZAISHITSU,NYUUKAHIDZUKE,PRICE,ZAIKOSUURYOU,SHOUHINNO,TSUKAMATSUNYUUSAKI FROM SYOUHIN
+		 ORDER BY SHOUHINNO asc
+		 LIMIT 50
+	</select>
+</mapper>

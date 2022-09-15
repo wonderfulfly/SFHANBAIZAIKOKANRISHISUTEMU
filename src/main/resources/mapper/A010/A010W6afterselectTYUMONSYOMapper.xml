@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6afterselectTYUMONSYOMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6afterselectTYUMONSYOEntity" id="A010W6afterselectTYUMONSYOEntityMap">
+		<result property="MITSUMORISHONO" column="MITSUMORISHONO" />
+	</resultMap>
+	<!-- データ操作:テーブル「注文書」の項目「見積書NO」を取得,条件は「見積書NO」が<見積りNO> -->
+	<select id="A010W6afterselectTYUMONSYO"  resultMap="A010W6afterselectTYUMONSYOEntityMap">
+		SELECT MITSUMORISHONO FROM TYUMONSYO
+			<where>
+				 1 = 1 
+				<if test="MITUMORIRINJIHYOU_MITSUMORINO != null and MITUMORIRINJIHYOU_MITSUMORINO != ''">
+					 AND MITSUMORISHONO  = #{MITUMORIRINJIHYOU_MITSUMORINO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

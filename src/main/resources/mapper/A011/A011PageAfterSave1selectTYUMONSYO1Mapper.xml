@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterSave1selectTYUMONSYO1Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterSave1selectTYUMONSYO1Entity" id="A011PageAfterSave1selectTYUMONSYO1EntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="SHANAIKOUJIBANGOU" column="SHANAIKOUJIBANGOU" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+	</resultMap>
+	<!-- データ操作6:テーブル「注文書,注文書明細」のデータの項目「注文書.注文書NO,注文書.社内工事番号,注文書明細.注文書明細NO」を取得,条件は「注文書.注文書NO」が「注文書NO」(ループ開始) -->
+	<select id="A011PageAfterSave1selectTYUMONSYO1"  resultMap="A011PageAfterSave1selectTYUMONSYO1EntityMap">
+		SELECT TYUMONSYO.CHUUBUNSHONO,TYUMONSYO.SHANAIKOUJIBANGOU,TYUMONSYOMEISAI.CHUUBUNSHOMEISAINO FROM TYUMONSYO LEFT JOIN TYUMONSYOMEISAI ON TYUMONSYO.CHUUBUNSHONO = TYUMONSYOMEISAI.CHUUBUNSHONO
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND TYUMONSYO.CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

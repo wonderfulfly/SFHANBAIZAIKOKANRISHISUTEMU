@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A006.A006Update19GridSaveMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A006.A006Update19GridSaveEntity" id="A006Update19GridSaveEntityMap">
+		<result property="SHOUHINMEISHOU" column="SHOUHINMEISHOU" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="NYUUKAHIDZUKE" column="NYUUKAHIDZUKE" />
+		<result property="PRICE" column="PRICE" />
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+		<result property="SHOUHINNO" column="SHOUHINNO" />
+	</resultMap>
+	<!-- null -->
+	<update id="A006Update19GridSaveData" >
+		UPDATE SYOUHIN SET SHOUHINMEISHOU = #{SHOUHINMEISHOU},ZAISHITSU = #{ZAISHITSU},TSUKAMATSUNYUUSAKI = #{TSUKAMATSUNYUUSAKI},NYUUKAHIDZUKE = #{NYUUKAHIDZUKE},PRICE = #{PRICE},ZAIKOSUURYOU = #{ZAIKOSUURYOU},SHOUHINNO = #{SHOUHINNO}
+			<where>
+				 1 = 1 
+				<if test="SHOUHINNO1 != null and SHOUHINNO1 != ''">
+					 AND SHOUHINNO  = #{SHOUHINNO1} 
+				</if>
+			</where>
+	</update>
+</mapper>

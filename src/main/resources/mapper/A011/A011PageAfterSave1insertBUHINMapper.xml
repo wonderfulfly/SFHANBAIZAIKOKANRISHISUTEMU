@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterSave1insertBUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterSave1insertBUHINEntity" id="A011PageAfterSave1insertBUHINEntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+	</resultMap>
+	<!-- データ操作8:テーブル「部品」にデータ登録,「注文書NO」が<注文書.注文書NO>,「工事管理番号」が<注文書.社内工事番号>,「注文書明細NO」が<注文書明細.注文書明細NO> -->
+	<insert id="A011PageAfterSave1insertBUHIN" >
+		INSERT INTO BUHIN (CHUUBUNSHONO,KOUJIKANRIBANGOU,CHUUBUNSHOMEISAINO) VALUES (#{ay6_TYUMONSYO_CHUUBUNSHONO},#{ay6_TYUMONSYO_SHANAIKOUJIBANGOU},#{ay6_TYUMONSYOMEISAI_CHUUBUNSHOMEISAINO})
+	</insert>
+</mapper>

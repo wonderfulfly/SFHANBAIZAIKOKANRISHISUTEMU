@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013grdB16AC161ClickupdateBUHINSYOUSAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013grdB16AC161ClickupdateBUHINSYOUSAIEntity" id="A013grdB16AC161ClickupdateBUHINSYOUSAIEntityMap">
+	</resultMap>
+	<!-- データ操作1:テーブル「部品詳細」の項目「注文書NO」が値「注文書NO」,項目「注文書明細NO」が値「注文書明細NO」,項目「工事管理番号」が値「工事管理番号」,項目「品番NO」が値「品番Nohide」のデータに対して,項目「確定区分」を"0"に変更する -->
+	<update id="A013grdB16AC161ClickupdateBUHINSYOUSAI" >
+		UPDATE BUHINSYOUSAI SET KAKUTEIKUBUN = '0'
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+				<if test="CHUUBUNSHOMEISAINO1 != null and CHUUBUNSHOMEISAINO1 != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{CHUUBUNSHOMEISAINO1} 
+				</if>
+				<if test="KOUJIKANRIBANGOU1 != null and KOUJIKANRIBANGOU1 != ''">
+					 AND KOUJIKANRIBANGOU  = #{KOUJIKANRIBANGOU1} 
+				</if>
+				<if test="HINBANNO != null and HINBANNO != ''">
+					 AND HINBANNO  = #{HINBANNO} 
+				</if>
+			</where>
+	</update>
+</mapper>

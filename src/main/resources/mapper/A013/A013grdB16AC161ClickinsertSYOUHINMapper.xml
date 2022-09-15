@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013grdB16AC161ClickinsertSYOUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013grdB16AC161ClickinsertSYOUHINEntity" id="A013grdB16AC161ClickinsertSYOUHINEntityMap">
+		<result property="HINMEI" column="HINMEI" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="SOUKOSUU" column="SOUKOSUU" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="NYUUKABI" column="NYUUKABI" />
+	</resultMap>
+	<!-- データ操作:テーブル「商品」にデータ登録,「商品NO」が<結合文字2>,「商品名称」が<品名>,「仕入先」が<仕入先>,「材質」が<材質>,「単価」が<購入単価>,「在庫数量」が<総個数>,「入荷日付」が<入荷日> -->
+	<insert id="A013grdB16AC161ClickinsertSYOUHIN" >
+		INSERT INTO SYOUHIN (SHOUHINNO,SHOUHINMEISHOU,TSUKAMATSUNYUUSAKI,ZAISHITSU,PRICE,ZAIKOSUURYOU,NYUUKAHIDZUKE) VALUES (#{KETSUGOUMOJI2},#{ay6_BUHINSYOUSAI_HINMEI},#{ay6_BUHINSYOUSAI_TSUKAMATSUNYUUSAKI},#{ay6_BUHINSYOUSAI_ZAISHITSU},#{ay6_BUHINSYOUSAI_KOUNYUUTANKA},#{ay6_BUHINSYOUSAI_SOUKOSUU},#{ay6_BUHINSYOUSAI_NYUUKABI})
+	</insert>
+</mapper>

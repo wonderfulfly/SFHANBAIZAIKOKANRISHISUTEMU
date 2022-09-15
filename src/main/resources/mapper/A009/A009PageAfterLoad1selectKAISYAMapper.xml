@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A009.A009PageAfterLoad1selectKAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A009.A009PageAfterLoad1selectKAISYAEntity" id="A009PageAfterLoad1selectKAISYAEntityMap">
+		<result property="SHIHARAIKIGEN" column="SHIHARAIKIGEN" />
+	</resultMap>
+	<!-- データ操作:テーブル「会社」のデータの項目「支払期限」を取得,条件は「会社ID」が画面項目の「客先」と一致 -->
+	<select id="A009PageAfterLoad1selectKAISYA"  resultMap="A009PageAfterLoad1selectKAISYAEntityMap">
+		SELECT SHIHARAIKIGEN FROM KAISYA
+			<where>
+				 1 = 1 
+				<if test="KYAKUSAKI != null and KYAKUSAKI != ''">
+					 AND KAISHAID  = #{KYAKUSAKI} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

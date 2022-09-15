@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011W41ClickselectZAIKOU1Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011W41ClickselectZAIKOU1Entity" id="A011W41ClickselectZAIKOU1EntityMap">
+		<result property="SHUTSUNYUUKOJOUTAI" column="SHUTSUNYUUKOJOUTAI" />
+	</resultMap>
+	<!-- データ操作:テーブル「在庫」のデータの項目「出入庫状態」を取得,条件は「注文書NO」が「注文書NO」,「出入庫状態」が"0" -->
+	<select id="A011W41ClickselectZAIKOU1"  resultMap="A011W41ClickselectZAIKOU1EntityMap">
+		SELECT SHUTSUNYUUKOJOUTAI FROM ZAIKOU
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+					 AND SHUTSUNYUUKOJOUTAI  = '0' 
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

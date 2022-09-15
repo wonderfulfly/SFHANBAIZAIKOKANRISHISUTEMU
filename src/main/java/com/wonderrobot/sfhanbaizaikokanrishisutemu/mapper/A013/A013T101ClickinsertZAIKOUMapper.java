@@ -1,0 +1,17 @@
+package com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013;
+
+
+import org.apache.ibatis.annotations.Param;
+
+/**
+ * @project
+ *     SF販売在庫管理システム
+ * @comment
+ *      id: A013T101ClickinsertZAIKOUMapper
+ * @version
+
+ */
+
+public interface A013T101ClickinsertZAIKOUMapper {
+	public int A013T101ClickinsertZAIKOU(@Param("ay3_BUHINSYOUSAI_HINMEI")String ay3_BUHINSYOUSAI_HINMEI, @Param("TOUJITSU")String TOUJITSU, @Param("ay3_BUHINSYOUSAI_CHUUBUNSHONO")String ay3_BUHINSYOUSAI_CHUUBUNSHONO, @Param("BUHINCHUUBUNSHOMEISAINO")String BUHINCHUUBUNSHOMEISAINO, @Param("ay3_BUHINSYOUSAI_KOUJIKANRIBANGOU")String ay3_BUHINSYOUSAI_KOUJIKANRIBANGOU, @Param("ay3_BUHINSYOUSAI_TSUKAMATSUNYUUSAKI")String ay3_BUHINSYOUSAI_TSUKAMATSUNYUUSAKI, @Param("ay3_BUHINSYOUSAI_SHOUKEI")double ay3_BUHINSYOUSAI_SHOUKEI, @Param("SHUKKANO1")String SHUKKANO1, @Param("ay3_BUHINSYOUSAI_SOUKOSUU")int ay3_BUHINSYOUSAI_SOUKOSUU, @Param("ZAIKONOautoNum")String ZAIKONOautoNum, @Param("ay3_BUHINSYOUSAI_KOUNYUUTANKA")double ay3_BUHINSYOUSAI_KOUNYUUTANKA, @Param("ay3_BUHINSYOUSAI_HINBANNO")String ay3_BUHINSYOUSAI_HINBANNO);
+}

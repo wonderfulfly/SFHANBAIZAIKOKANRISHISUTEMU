@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6afterselectMITUMORIRINJIHYOU3Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6afterselectMITUMORIRINJIHYOU3Entity" id="A010W6afterselectMITUMORIRINJIHYOU3EntityMap">
+		<result property="MITSUMORINO" column="MITSUMORINO" />
+		<result property="HIDZUKE" column="HIDZUKE" />
+		<result property="KYAKUSAKI" column="KYAKUSAKI" />
+		<result property="SAKUSEISHA" column="SAKUSEISHA" />
+		<result property="HINMEI" column="HINMEI" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="WARIBIKI" column="WARIBIKI" />
+		<result property="GOUKEI" column="GOUKEI" />
+		<result property="KYAKUSAKITANTOU" column="KYAKUSAKITANTOU" />
+	</resultMap>
+	<!-- データ操作:テーブル「見積り臨時表」の項目「見積りNO,日付,客先,作成者,品名,小計,割引,合計,客先担当」を取得,条件は「記録者ID」がログインID(ループ開始) -->
+	<select id="A010W6afterselectMITUMORIRINJIHYOU3"  resultMap="A010W6afterselectMITUMORIRINJIHYOU3EntityMap">
+		SELECT MITSUMORINO,HIDZUKE,KYAKUSAKI,SAKUSEISHA,HINMEI,SHOUKEI,WARIBIKI,GOUKEI,KYAKUSAKITANTOU FROM MITUMORIRINJIHYOU
+			<where>
+				 1 = 1 
+				<if test="ROGUINID_RUUPUKAISHI_ != null and ROGUINID_RUUPUKAISHI_ != ''">
+					 AND KIROKUSHAID  = #{ROGUINID_RUUPUKAISHI_} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

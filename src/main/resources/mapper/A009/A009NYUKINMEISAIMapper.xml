@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A009.A009NYUKINMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A009.A009NYUKINMEISAIEntity" id="A009NYUKINMEISAIEntityMap">
+		<id property="RESHIITONO" column="RESHIITONO" />
+		<id property="RESHIITOMEISAINO" column="RESHIITOMEISAINO" />
+		<result property="FURIDASHIZUMIWARIAI" column="FURIDASHIZUMIWARIAI" />
+		<result property="FURIDASHIZUMIHIDZUKE" column="FURIDASHIZUMIHIDZUKE" />
+		<result property="FURIDASHIZUMIKINGAKU" column="FURIDASHIZUMIKINGAKU" />
+		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
+		<result property="NYUUKINZUMIHIDZUKE" column="NYUUKINZUMIHIDZUKE" />
+		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
+		<result property="SHIHARAIHIDZUKE" column="SHIHARAIHIDZUKE" />
+		<result property="SHIHARAIWARIAI" column="SHIHARAIWARIAI" />
+	</resultMap>
+</mapper>

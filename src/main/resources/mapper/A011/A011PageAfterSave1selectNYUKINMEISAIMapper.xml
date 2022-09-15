@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterSave1selectNYUKINMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterSave1selectNYUKINMEISAIEntity" id="A011PageAfterSave1selectNYUKINMEISAIEntityMap">
+		<result property="FURIDASHIZUMIWARIAI" column="FURIDASHIZUMIWARIAI" />
+		<result property="FURIDASHIZUMIKINGAKU" column="FURIDASHIZUMIKINGAKU" />
+		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
+		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
+		<result property="RESHIITOMEISAINO" column="RESHIITOMEISAINO" />
+	</resultMap>
+	<!-- データ操作3:テーブル「入金明細」のデータの項目「振出済み割合,振出済み金額,入金済み割合,入金済み金額,レシート明細NO」を取得,条件は「レシートNO」が<レシートNO>（ループ開始） -->
+	<select id="A011PageAfterSave1selectNYUKINMEISAI"  resultMap="A011PageAfterSave1selectNYUKINMEISAIEntityMap">
+		SELECT FURIDASHIZUMIWARIAI,FURIDASHIZUMIKINGAKU,NYUUKINZUMIWARIAI,NYUUKINZUMIKINGAKU,RESHIITOMEISAINO FROM NYUKINMEISAI
+			<where>
+				 1 = 1 
+				<if test="ay2_TYUMONSYO_RESHIITONO != null and ay2_TYUMONSYO_RESHIITONO != ''">
+					 AND RESHIITONO  = #{ay2_TYUMONSYO_RESHIITONO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

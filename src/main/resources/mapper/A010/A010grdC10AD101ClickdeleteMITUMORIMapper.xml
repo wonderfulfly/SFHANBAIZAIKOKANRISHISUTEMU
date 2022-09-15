@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010grdC10AD101ClickdeleteMITUMORIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010grdC10AD101ClickdeleteMITUMORIEntity" id="A010grdC10AD101ClickdeleteMITUMORIEntityMap">
+		<result property="RESHIITONO" column="RESHIITONO" />
+	</resultMap>
+	<!-- データ操作:テーブル「見積り」の項目「見積書NO」が先頭一致画面項目「見積書NO」のデータを削除する -->
+	<delete id="A010grdC10AD101ClickdeleteMITUMORI" >
+		DELETE FROM MITUMORI
+			<where>
+				 1 = 1 
+				<if test="MITSUMORISHONO != null and MITSUMORISHONO != ''">
+					 AND MITSUMORISHONO  = #{MITSUMORISHONO} 
+				</if>
+			</where>
+	</delete>
+</mapper>

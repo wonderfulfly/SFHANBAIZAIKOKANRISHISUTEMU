@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.honnzonngosyoriselectBUHINSYOUSAI2Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.honnzonngosyoriselectBUHINSYOUSAI2Entity" id="honnzonngosyoriselectBUHINSYOUSAI2EntityMap">
+		<result property="SHOUKEI" column="SHOUKEI" />
+	</resultMap>
+	<!-- データ操作3:「部品詳細」テーブルから「貨幣」単位の「小計の合計」を取得,条件は「貨幣」が"2",「注文書NO」が「部品注文書NO」,「注文書明細NO」が「部品注文書明細NO」,「工事管理番号」が「工事管理番号」 -->
+	<select id="honnzonngosyoriselectBUHINSYOUSAI2"  resultType="java.lang.Double">
+		SELECT SUM(SHOUKEI) FROM BUHINSYOUSAI
+			<where>
+				 1 = 1 
+					 AND KAHEI  = '2' 
+				<if test="BUHINCHUUBUNSHONO != null and BUHINCHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{BUHINCHUUBUNSHONO} 
+				</if>
+				<if test="BUHINCHUUBUNSHOMEISAINO != null and BUHINCHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{BUHINCHUUBUNSHOMEISAINO} 
+				</if>
+				<if test="KOUJIKANRIBANGOU1 != null and KOUJIKANRIBANGOU1 != ''">
+					 AND KOUJIKANRIBANGOU  = #{KOUJIKANRIBANGOU1} 
+				</if>
+			</where>
+		 GROUP BY KAHEI
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

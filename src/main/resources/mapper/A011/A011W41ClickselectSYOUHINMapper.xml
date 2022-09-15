@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011W41ClickselectSYOUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011W41ClickselectSYOUHINEntity" id="A011W41ClickselectSYOUHINEntityMap">
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+	</resultMap>
+	<!-- データ操作:テーブル「商品」のデータの項目「在庫数量」を取得,条件は「商品NO」が<商品NO> -->
+	<select id="A011W41ClickselectSYOUHIN"  resultMap="A011W41ClickselectSYOUHINEntityMap">
+		SELECT ZAIKOSUURYOU FROM SYOUHIN
+			<where>
+				 1 = 1 
+				<if test="ay1_ZAIKOU_SHOUHINNO != null and ay1_ZAIKOU_SHOUHINNO != ''">
+					 AND SHOUHINNO  = #{ay1_ZAIKOU_SHOUHINNO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

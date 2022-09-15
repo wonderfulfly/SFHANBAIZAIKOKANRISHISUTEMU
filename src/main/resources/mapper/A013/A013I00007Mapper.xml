@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013I00007Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013I00007Entity" id="A013I00007EntityMap">
+		<result property="BIKOU" column="BIKOU" />
+		<result property="TEHAIBI" column="TEHAIBI" />
+		<result property="TOKUISAKI" column="TOKUISAKI" />
+		<result property="SHAINMEI1" column="SHAINMEI1" />
+		<result property="HINBAN" column="HINBAN" />
+		<result property="ASENBURIRAIN" column="ASENBURIRAIN" />
+		<result property="DANDANG" column="DANDANG" />
+		<result property="KOSUU" column="KOSUU" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="KIBOUNOUKI" column="KIBOUNOUKI" />
+		<result property="KIBOUTANKA" column="KIBOUTANKA" />
+		<result property="NYUUKAYOTEIBI" column="NYUUKAYOTEIBI" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="KIKAIMEISHOU" column="KIKAIMEISHOU" />
+		<result property="MAISUU" column="MAISUU" />
+		<result property="SEISAKUSUU" column="SEISAKUSUU" />
+		<result property="HIDZUKE" column="HIDZUKE" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="TEHAISAKI" column="TEHAISAKI" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="HINMEI" column="HINMEI" />
+		<result property="SEISAKUHINKUBUN" column="SEISAKUHINKUBUN" />
+		<result property="NYUUKABI" column="NYUUKABI" />
+		<result property="ZONGGESHU1" column="ZONGGESHU1" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="ZONGGESHU2" column="ZONGGESHU2" />
+		<result property="BUBUNMEISHOU" column="BUBUNMEISHOU" />
+	</resultMap>
+	<!-- null -->
+	<select id="A013AA71selectI00007FuncPrint"  resultMap="A013I00007EntityMap">
+		SELECT BIKOU,TEHAIBI,TOKUISAKI,SHAINMEI1,HINBAN,ASENBURIRAIN,DANDANG,KOSUU,SHOUKEI,KIBOUNOUKI,KIBOUTANKA,NYUUKAYOTEIBI,ZAISHITSU,KIKAIMEISHOU,MAISUU,SEISAKUSUU,HIDZUKE,KOUNYUUTANKA,CHUUBUNSHONO,KOUJIKANRIBANGOU,TEHAISAKI,CHUUBUNSHOMEISAINO,HINMEI,SEISAKUHINKUBUN,NYUUKABI,ZONGGESHU1,HINBANNO,ZONGGESHU2,BUBUNMEISHOU FROM I00007
+			<where>
+				 1 = 1 
+				<if test="BUHINCHUUBUNSHONO != null and BUHINCHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{BUHINCHUUBUNSHONO} 
+				</if>
+				<if test="BUHINCHUUBUNSHOMEISAINO != null and BUHINCHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{BUHINCHUUBUNSHOMEISAINO} 
+				</if>
+					 AND SEISAKUHINKUBUN  = '0' 
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011W41ClickselectZAIKOU3Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011W41ClickselectZAIKOU3Entity" id="A011W41ClickselectZAIKOU3EntityMap">
+		<result property="SHOUHINMEISHOU" column="SHOUHINMEISHOU" />
+		<result property="SHUTSUNYUUKOJIKAN" column="SHUTSUNYUUKOJIKAN" />
+		<result property="SHUTSUNYUUKOJOUTAI" column="SHUTSUNYUUKOJOUTAI" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="GOUKEI" column="GOUKEI" />
+		<result property="SHUKKANO" column="SHUKKANO" />
+		<result property="SUURYOU" column="SUURYOU" />
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="HINBANNO" column="HINBANNO" />
+	</resultMap>
+	<!-- データ操作1:テーブル「在庫」のデータの項目「商品名称,出入庫時間,出入庫状態,注文書明細NO,注文書NO,工事管理番号,仕入先,合計,出荷NO,数量,在庫数量,単価,品番NO」を取得,条件は「注文書NO」が「注文書NO」(ループ開始) -->
+	<select id="A011W41ClickselectZAIKOU3"  resultMap="A011W41ClickselectZAIKOU3EntityMap">
+		SELECT SHOUHINMEISHOU,SHUTSUNYUUKOJIKAN,SHUTSUNYUUKOJOUTAI,CHUUBUNSHOMEISAINO,CHUUBUNSHONO,KOUJIKANRIBANGOU,TSUKAMATSUNYUUSAKI,GOUKEI,SHUKKANO,SUURYOU,ZAIKOSUURYOU,PRICE,HINBANNO FROM ZAIKOU
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

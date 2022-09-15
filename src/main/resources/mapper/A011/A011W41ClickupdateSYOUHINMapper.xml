@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011W41ClickupdateSYOUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011W41ClickupdateSYOUHINEntity" id="A011W41ClickupdateSYOUHINEntityMap">
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+	</resultMap>
+	<!-- データ操作:テーブル「商品」の項目「商品NO」が値<商品NO>のデータに対して,項目「在庫数量」を文字列<在庫数量>に変更する -->
+	<update id="A011W41ClickupdateSYOUHIN" >
+		UPDATE SYOUHIN SET ZAIKOSUURYOU = #{SYOUHIN_ZAIKOSUURYOU}
+			<where>
+				 1 = 1 
+				<if test="ay1_ZAIKOU_SHOUHINNO != null and ay1_ZAIKOU_SHOUHINNO != ''">
+					 AND SHOUHINNO  = #{ay1_ZAIKOU_SHOUHINNO} 
+				</if>
+			</where>
+	</update>
+</mapper>

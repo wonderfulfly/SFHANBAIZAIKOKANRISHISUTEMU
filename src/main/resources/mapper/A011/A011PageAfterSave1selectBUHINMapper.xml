@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterSave1selectBUHINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterSave1selectBUHINEntity" id="A011PageAfterSave1selectBUHINEntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+	</resultMap>
+	<!-- データ操作7:テーブル「部品」のデータの項目「注文書NO」を取得,条件は「注文書NO」が<注文書.注文書NO>,「注文書明細NO」が<注文書明細.注文書明細NO> -->
+	<select id="A011PageAfterSave1selectBUHIN"  resultMap="A011PageAfterSave1selectBUHINEntityMap">
+		SELECT CHUUBUNSHONO FROM BUHIN
+			<where>
+				 1 = 1 
+				<if test="ay6_TYUMONSYO_CHUUBUNSHONO != null and ay6_TYUMONSYO_CHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{ay6_TYUMONSYO_CHUUBUNSHONO} 
+				</if>
+				<if test="ay6_TYUMONSYOMEISAI_CHUUBUNSHOMEISAINO != null and ay6_TYUMONSYOMEISAI_CHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{ay6_TYUMONSYOMEISAI_CHUUBUNSHOMEISAINO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

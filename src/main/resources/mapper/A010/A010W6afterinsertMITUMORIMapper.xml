@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6afterinsertMITUMORIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6afterinsertMITUMORIEntity" id="A010W6afterinsertMITUMORIEntityMap">
+		<result property="KAISHAID" column="KAISHAID" />
+	</resultMap>
+	<!-- データ操作:テーブル「見積り」にデータ登録,「見積書NO」が<見積りNO>,「日付」が<日付>,「顧客ID」が<客先>,「作成者」が<作成者>,「品名」が<品名>,「合計」が<合計> -->
+	<insert id="A010W6afterinsertMITUMORI" >
+		INSERT INTO MITUMORI (MITSUMORISHONO,HIDZUKE,KOKYAKUID,SAKUSEISHA,HINMEI,GOUKEI) VALUES (#{MITUMORIRINJIHYOU_MITSUMORINO},#{MITUMORIRINJIHYOU_HIDZUKE},#{MITUMORIRINJIHYOU_KYAKUSAKI},#{MITUMORIRINJIHYOU_SAKUSEISHA},#{MITUMORIRINJIHYOU_HINMEI},#{MITUMORIRINJIHYOU_GOUKEI})
+	</insert>
+</mapper>

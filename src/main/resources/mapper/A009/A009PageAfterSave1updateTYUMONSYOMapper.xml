@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A009.A009PageAfterSave1updateTYUMONSYOMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A009.A009PageAfterSave1updateTYUMONSYOEntity" id="A009PageAfterSave1updateTYUMONSYOEntityMap">
+		<result property="RESHIITONO" column="RESHIITONO" />
+	</resultMap>
+	<!-- データ操作2:テーブル「注文書」の項目「注文書NO」が値「注文書No」のデータに対して,項目「レシートNO」を<レシートNO>に変更する -->
+	<update id="A009PageAfterSave1updateTYUMONSYO" >
+		UPDATE TYUMONSYO SET RESHIITONO = #{ay1_NYUKIN_RESHIITONO}
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+			</where>
+	</update>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010H8grdC10SmartSearchMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010H8grdC10SmartSearchEntity" id="A010H8grdC10SmartSearchEntityMap">
+		<result property="A1CHUUBUNSHONO" column="A1CHUUBUNSHONO" />
+		<result property="A1MITSUMORISHONO" column="A1MITSUMORISHONO" />
+		<result property="A1CHUUMONHIDZUKE" column="A1CHUUMONHIDZUKE" />
+		<result property="A1SHOUHINSOUGAKUJPY" column="A1SHOUHINSOUGAKUJPY" />
+		<result property="A1SHANAIKOUJIBANGOU" column="A1SHANAIKOUJIBANGOU" />
+		<result property="A1KYAKUSAKIID" column="A1KYAKUSAKIID" />
+		<result property="A1SHUTSUNYUUKOFURAGU" column="A1SHUTSUNYUUKOFURAGU" />
+		<result property="A1TANTOUSHAID" column="A1TANTOUSHAID" />
+		<result property="A1KYAKUSAKITANTOU" column="A1KYAKUSAKITANTOU" />
+	</resultMap>
+	<!-- null -->
+	<select id="A010H8grdC10SmartSearch"  resultMap="A010H8grdC10SmartSearchEntityMap">
+		SELECT N1.A1CHUUBUNSHONO,N1.A1MITSUMORISHONO,N1.A1CHUUMONHIDZUKE,N1.A1SHOUHINSOUGAKUJPY,N1.A1SHANAIKOUJIBANGOU,N1.A1KYAKUSAKIID,N1.A1SHUTSUNYUUKOFURAGU,N1.A1TANTOUSHAID, '' nullAlsa0, '' nullAlsa1,N1.A1KYAKUSAKITANTOU, '' nullAlsa2 FROM (SELECT A1.CHUUBUNSHONO AS A1CHUUBUNSHONO ,A1.MITSUMORISHONO A1MITSUMORISHONO ,A1.CHUUMONHIDZUKE A1CHUUMONHIDZUKE ,A1.SHOUHINSOUGAKUJPY A1SHOUHINSOUGAKUJPY ,A1.SHANAIKOUJIBANGOU A1SHANAIKOUJIBANGOU ,A1.KYAKUSAKITANTOU A1KYAKUSAKITANTOU ,A1.SHUTSUNYUUKOFURAGU A1SHUTSUNYUUKOFURAGU ,A1.KYAKUSAKIID A1KYAKUSAKIID ,A1.TANTOUSHAID A1TANTOUSHAID FROM `TYUMONSYO` A1 WHERE 1=1 )N1<where>1=1 
+<if test="_ != null and _ != ''">
+AND   N1.A1CHUUMONHIDZUKE <![CDATA[ <= ]]>  #{_} 
+</if>
+<if test="CHUUMONBI != null and CHUUMONBI != ''">
+AND   N1.A1CHUUMONHIDZUKE <![CDATA[ >= ]]>  #{CHUUMONBI} 
+</if>
+<if test="CHUUMONNO != null and CHUUMONNO != ''">
+AND   N1.A1CHUUBUNSHONO LIKE CONCAT("%",#{CHUUMONNO},"%") 
+</if>
+<if test="KOUJIBANGOU != null and KOUJIBANGOU != ''">
+AND   N1.A1SHANAIKOUJIBANGOU LIKE CONCAT("%",#{KOUJIBANGOU},"%") 
+</if>
+<if test="KYAKUSAKIID != null and KYAKUSAKIID != ''">
+AND   N1.A1KYAKUSAKIID =  #{KYAKUSAKIID} 
+</if>
+<if test="MITSUMORINO != null and MITSUMORINO != ''">
+AND   N1.A1MITSUMORISHONO LIKE CONCAT("%",#{MITSUMORINO},"%") 
+</if>
+<if test="TANTOUSHAID != null and TANTOUSHAID != ''">
+AND   N1.A1TANTOUSHAID =  #{TANTOUSHAID} 
+</if>
+<if test="SHUKKOJOUTAI != null and SHUKKOJOUTAI != ''">
+AND   N1.A1SHUTSUNYUUKOFURAGU =  #{SHUKKOJOUTAI} 
+</if></where> ORDER BY  N1.A1CHUUBUNSHONO desc  LIMIT 50
+	</select>
+</mapper>

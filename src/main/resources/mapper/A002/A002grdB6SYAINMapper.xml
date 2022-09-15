@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A002.A002grdB6SYAINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A002.A002grdB6SYAINEntity" id="A002grdB6SYAINEntityMap">
+		<result property="SHAINID" column="SHAINID" />
+		<result property="SHAINMEI" column="SHAINMEI" />
+		<result property="DENWABANGOU" column="DENWABANGOU" />
+		<result property="KEITAIBANGOU" column="KEITAIBANGOU" />
+		<result property="EMAIL" column="EMAIL" />
+		<result property="LINE" column="LINE" />
+		<result property="ROGUINID" column="ROGUINID" />
+		<result property="YUUZAAKENGEN" column="YUUZAAKENGEN" />
+	</resultMap>
+	<!-- null -->
+	<select id="A002InitGrid"  resultMap="A002grdB6SYAINEntityMap">
+		SELECT SHAINID,SHAINMEI,DENWABANGOU,KEITAIBANGOU,EMAIL,LINE,ROGUINID,YUUZAAKENGEN FROM SYAIN
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

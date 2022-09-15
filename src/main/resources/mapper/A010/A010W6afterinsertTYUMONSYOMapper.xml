@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6afterinsertTYUMONSYOMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6afterinsertTYUMONSYOEntity" id="A010W6afterinsertTYUMONSYOEntityMap">
+		<result property="KAISHAID" column="KAISHAID" />
+	</resultMap>
+	<!-- データ操作:テーブル「注文書」にデータ登録,「注文書NO」が自動採番,「見積書NO」が<見積りNO>,「注文日付」が<日付>,「客先ID」が<会社ID2>,「商品総額JPY」が<JPY>,「担当者ID」が<作成者>,「品名」が<品名>,「見積金額」が<合計>,「客先担当」が<客先担当>,「商品総額RMB」が<RMB>,「商品総額USD」が<USD> -->
+	<insert id="A010W6afterinsertTYUMONSYO" >
+		INSERT INTO TYUMONSYO (CHUUBUNSHONO,MITSUMORISHONO,CHUUMONHIDZUKE,KYAKUSAKIID,SHOUHINSOUGAKUJPY,TANTOUSHAID,HINMEI,MITSUMORIKINGAKU,KYAKUSAKITANTOU,SHOUHINSOUGAKURMB,SHOUHINSOUGAKUUSD) VALUES (#{CHUUBUNSHONOautoNum},#{MITUMORIRINJIHYOU_MITSUMORINO},#{MITUMORIRINJIHYOU_HIDZUKE},#{KAISHAID2},#{JPY1},#{MITUMORIRINJIHYOU_SAKUSEISHA},#{MITUMORIRINJIHYOU_HINMEI},#{MITUMORIRINJIHYOU_GOUKEI},#{MITUMORIRINJIHYOU_KYAKUSAKITANTOU},#{RMB1},#{USD1})
+	</insert>
+</mapper>

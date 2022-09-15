@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T7afterselectBUHINSYOUSAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T7afterselectBUHINSYOUSAIEntity" id="A013T7afterselectBUHINSYOUSAIEntityMap">
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+	</resultMap>
+	<!-- データ操作10:「部品詳細」テーブルから「注文書明細NO」単位の「購入単価の合計」を取得,条件は「品名」が<品名>,ソート順「購入単価」,件数範囲「3」 -->
+	<select id="A013T7afterselectBUHINSYOUSAI"  resultType="java.lang.Double">
+		SELECT SUM(KOUNYUUTANKA) FROM BUHINSYOUSAI
+			<where>
+				 1 = 1 
+				<if test="ay9_BUHINSYOUSAIRINJIHYOU_HINMEI != null and ay9_BUHINSYOUSAIRINJIHYOU_HINMEI != ''">
+					 AND HINMEI  = #{ay9_BUHINSYOUSAIRINJIHYOU_HINMEI} 
+				</if>
+			</where>
+		 GROUP BY CHUUBUNSHOMEISAINO
+		 ORDER BY KOUNYUUTANKA ASC
+		 LIMIT 3
+	</select>
+</mapper>

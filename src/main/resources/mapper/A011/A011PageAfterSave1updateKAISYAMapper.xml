@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterSave1updateKAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterSave1updateKAISYAEntity" id="A011PageAfterSave1updateKAISYAEntityMap">
+		<result property="FURIDASHIZUMIWARIAI" column="FURIDASHIZUMIWARIAI" />
+		<result property="FURIDASHIZUMIKINGAKU" column="FURIDASHIZUMIKINGAKU" />
+		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
+		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
+		<result property="RESHIITOMEISAINO" column="RESHIITOMEISAINO" />
+	</resultMap>
+	<!-- データ操作5:テーブル「会社」の項目「会社ID」が「客先名称」のデータに対して,「アドレス」を「アドレス」,「連絡先」を「電話番号」に変更する -->
+	<update id="A011PageAfterSave1updateKAISYA" >
+		UPDATE KAISYA SET ADORESU = #{ADORESU1},RENRAKUSAKI = #{DENWABANGOU1}
+			<where>
+				 1 = 1 
+				<if test="KYAKUSAKIMEISHOU != null and KYAKUSAKIMEISHOU != ''">
+					 AND KAISHAID  = #{KYAKUSAKIMEISHOU} 
+				</if>
+			</where>
+	</update>
+</mapper>

@@ -1,0 +1,51 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
+spring:
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/view/
+    static-path-pattern: /static/**
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/databasename?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+    username: root
+    password: 123456
+
+  thymeleaf:
+    enabled: false
+    cache: false
+
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml,classpath*:mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.wonderrobot.sfhanbaizaikokanrishisutemu.
+
+logging:
+  level:
+    com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper: debug
+    org.springframework.boot.autoconfigure: error
+    
+init:
+  database:
+    enabled: false #initialize database
+    
+slow-sql-interceptor:
+  enabled: true
+  timeout: 10
+  mail-conf:
+    mailHost: 11
+    mailPort: 11
+    mailAccount: 11
+    mailPassword: 11
+

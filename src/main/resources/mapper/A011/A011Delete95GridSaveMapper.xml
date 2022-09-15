@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011Delete95GridSaveMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011Delete95GridSaveEntity" id="A011Delete95GridSaveEntityMap">
+	</resultMap>
+	<!-- null -->
+	<delete id="A011Delete95GridSaveData" >
+		DELETE FROM TYUMONSYOMEISAI
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO != null and CHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO} 
+				</if>
+				<if test="CHUUBUNSHOMEISAINO != null and CHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{CHUUBUNSHOMEISAINO} 
+				</if>
+			</where>
+	</delete>
+</mapper>

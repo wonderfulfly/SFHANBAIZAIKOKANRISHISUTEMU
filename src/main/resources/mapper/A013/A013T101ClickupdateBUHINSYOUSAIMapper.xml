@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T101ClickupdateBUHINSYOUSAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T101ClickupdateBUHINSYOUSAIEntity" id="A013T101ClickupdateBUHINSYOUSAIEntityMap">
+		<result property="HINMEI" column="HINMEI" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="ZAISHITSU" column="ZAISHITSU" />
+		<result property="SOUKOSUU" column="SOUKOSUU" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="NYUUKABI" column="NYUUKABI" />
+	</resultMap>
+	<!-- データ操作4:テーブル「部品詳細」の項目「注文書NO」が<注文書NO>,,「注文書明細NO」が「部品注文書明細NO」,「工事管理番号」が値「工事管理番号」,「品番NO」が値「品番Nohide」のデータに対して,項目「確定区分」を"1",「製作品区分」を「区分」,「品名」を「品名」,「品番NO1」を「品番NO」,「個数」を「個数」,「総個数」を「総個数」,「仕入先」を「仕入先」,「担当」を「担当」,「手配先」を「手配先」,「購入単価」を「購入単価」,「貨幣」を「貨幣」,「小計」を「小計」,「入荷日」を「入荷日付」,「手配日」を「購入日付」,「希望納期」を「希望納期」に変更する -->
+	<update id="A013T101ClickupdateBUHINSYOUSAI" >
+		UPDATE BUHINSYOUSAI SET KAKUTEIKUBUN = '1',SEISAKUHINKUBUN = #{SEISAKUHINKUBUN},HINMEI = #{HINMEI},HINBANNO1 = #{HINBANNO1},KOSUU = #{KOSUU1},SOUKOSUU = #{SOUKOSUU1},TSUKAMATSUNYUUSAKI = #{TSUKAMATSUNYUUSAKI},TANTOU = #{TANTOU},TEHAISAKI = #{TEHAISAKI},KOUNYUUTANKA = #{KOUNYUUTANKA1},KAHEI = #{KAHEI},SHOUKEI = #{SHOUKEI1},NYUUKABI = #{NYUUKABI},TEHAIBI = #{TEHAIBI},KIBOUNOUKI = #{KIBOUNOUKI}
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO1 != null and CHUUBUNSHONO1 != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO1} 
+				</if>
+				<if test="BUHINCHUUBUNSHOMEISAINO != null and BUHINCHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{BUHINCHUUBUNSHOMEISAINO} 
+				</if>
+				<if test="KOUJIKANRIBANGOU1 != null and KOUJIKANRIBANGOU1 != ''">
+					 AND KOUJIKANRIBANGOU  = #{KOUJIKANRIBANGOU1} 
+				</if>
+				<if test="HINBANNO != null and HINBANNO != ''">
+					 AND HINBANNO  = #{HINBANNO} 
+				</if>
+			</where>
+	</update>
+</mapper>

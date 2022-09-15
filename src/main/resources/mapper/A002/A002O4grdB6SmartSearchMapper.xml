@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A002.A002O4grdB6SmartSearchMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A002.A002O4grdB6SmartSearchEntity" id="A002O4grdB6SmartSearchEntityMap">
+		<result property="A1SHAINID" column="A1SHAINID" />
+		<result property="A1SHAINMEI" column="A1SHAINMEI" />
+		<result property="A1DENWABANGOU" column="A1DENWABANGOU" />
+		<result property="A1KEITAIBANGOU" column="A1KEITAIBANGOU" />
+		<result property="A1EMAIL" column="A1EMAIL" />
+		<result property="A1LINE" column="A1LINE" />
+		<result property="A1YUUZAAKENGEN" column="A1YUUZAAKENGEN" />
+		<result property="A1ROGUINID" column="A1ROGUINID" />
+	</resultMap>
+	<!-- null -->
+	<select id="A002O4grdB6SmartSearch"  resultMap="A002O4grdB6SmartSearchEntityMap">
+		SELECT N1.A1SHAINID,N1.A1SHAINMEI,N1.A1DENWABANGOU,N1.A1KEITAIBANGOU,N1.A1EMAIL,N1.A1LINE,N1.A1YUUZAAKENGEN, '' nullAlsa0,N1.A1ROGUINID FROM (SELECT A1.SHAINID AS A1SHAINID ,A1.ROGUINID AS A1ROGUINID ,A1.SHAINMEI A1SHAINMEI ,A1.DENWABANGOU A1DENWABANGOU ,A1.KEITAIBANGOU A1KEITAIBANGOU ,A1.EMAIL A1EMAIL ,A1.LINE A1LINE ,A1.YUUZAAKENGEN A1YUUZAAKENGEN FROM `SYAIN` A1 WHERE 1=1 )N1<where>1=1 
+<if test="SHAINID != null and SHAINID != ''">
+AND   N1.A1SHAINID =  #{SHAINID} 
+</if>
+<if test="SHAINMEI != null and SHAINMEI != ''">
+AND   N1.A1SHAINMEI =  #{SHAINMEI} 
+</if></where> ORDER BY 1  LIMIT 50
+	</select>
+</mapper>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A008.A008KYAKUSAKIIDKAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A008.A008KYAKUSAKIIDKAISYAEntity" id="A008KYAKUSAKIIDKAISYAEntityMap">
+		<result property="KAISHAID" column="KAISHAID" />
+		<result property="KAISHAMEI" column="KAISHAMEI" />
+	</resultMap>
+	<!-- null -->
+	<select id="A008KYAKUSAKIIDdrp"  resultMap="A008KYAKUSAKIIDKAISYAEntityMap">
+		SELECT DISTINCT KAISHAID,KAISHAMEI FROM KAISYA
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

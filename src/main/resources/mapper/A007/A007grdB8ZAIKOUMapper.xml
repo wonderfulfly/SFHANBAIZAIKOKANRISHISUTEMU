@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A007.A007grdB8ZAIKOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A007.A007grdB8ZAIKOUEntity" id="A007grdB8ZAIKOUEntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="ZAIKONO" column="ZAIKONO" />
+		<result property="SHOUHINMEISHOU" column="SHOUHINMEISHOU" />
+		<result property="SHUTSUNYUUKOJIKAN" column="SHUTSUNYUUKOJIKAN" />
+		<result property="SUURYOU" column="SUURYOU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="SHUKKANO" column="SHUKKANO" />
+		<result property="SHOUHINKATABAN" column="SHOUHINKATABAN" />
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+		<result property="SHOUHINNO" column="SHOUHINNO" />
+		<result property="SHUTSUNYUUKOJOUTAI" column="SHUTSUNYUUKOJOUTAI" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+	</resultMap>
+	<!-- null -->
+	<select id="A007InitGrid"  resultMap="A007grdB8ZAIKOUEntityMap">
+		SELECT CHUUBUNSHONO,CHUUBUNSHOMEISAINO,KOUJIKANRIBANGOU,ZAIKONO,SHOUHINMEISHOU,SHUTSUNYUUKOJIKAN,SUURYOU,PRICE,SHUKKANO,SHOUHINKATABAN,ZAIKOSUURYOU,SHOUHINNO,SHUTSUNYUUKOJOUTAI,TSUKAMATSUNYUUSAKI FROM ZAIKOU
+		 ORDER BY CHUUBUNSHONO desc,CHUUBUNSHOMEISAINO asc,ZAIKONO asc
+		 LIMIT 50
+	</select>
+</mapper>

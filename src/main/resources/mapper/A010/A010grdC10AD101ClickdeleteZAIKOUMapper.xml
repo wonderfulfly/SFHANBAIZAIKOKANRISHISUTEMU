@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010grdC10AD101ClickdeleteZAIKOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010grdC10AD101ClickdeleteZAIKOUEntity" id="A010grdC10AD101ClickdeleteZAIKOUEntityMap">
+		<result property="RESHIITONO" column="RESHIITONO" />
+	</resultMap>
+	<!-- データ操作:テーブル「在庫」の項目「注文書NO」が画面項目「注文書NO」と一致するデータを削除する -->
+	<delete id="A010grdC10AD101ClickdeleteZAIKOU" >
+		DELETE FROM ZAIKOU
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO != null and CHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO} 
+				</if>
+			</where>
+	</delete>
+</mapper>

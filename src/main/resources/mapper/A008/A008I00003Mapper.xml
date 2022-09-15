@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A008.A008I00003Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A008.A008I00003Entity" id="A008I00003EntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="KYAKUSAKIID" column="KYAKUSAKIID" />
+		<result property="SHOUHINSOUGAKUJPY" column="SHOUHINSOUGAKUJPY" />
+		<result property="TANTOUSHAID" column="TANTOUSHAID" />
+		<result property="CHUUMONHIDZUKE" column="CHUUMONHIDZUKE" />
+		<result property="SHIHARAIHIDZUKE" column="SHIHARAIHIDZUKE" />
+		<result property="FURIDASHIZUMIWARIAI" column="FURIDASHIZUMIWARIAI" />
+		<result property="FURIDASHIZUMIHIDZUKE" column="FURIDASHIZUMIHIDZUKE" />
+		<result property="FURIDASHIZUMIKINGAKU" column="FURIDASHIZUMIKINGAKU" />
+		<result property="NYUUKINWARIAI" column="NYUUKINWARIAI" />
+		<result property="NYUUKINGAKU" column="NYUUKINGAKU" />
+		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
+		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
+		<result property="MINYUUKINWARIAI" column="MINYUUKINWARIAI" />
+		<result property="USHUUSHOVIEW_MINYUUKINWARIAI13" column="USHUUSHOVIEW_MINYUUKINWARIAI13" />
+		<result property="SHUUSHOVIEW_MINYUUKINKINGAKU14" column="SHUUSHOVIEW_MINYUUKINKINGAKU14" />
+		<result property="MINYUUKINKINGAKU" column="MINYUUKINKINGAKU" />
+		<result property="RESHIITONO" column="RESHIITONO" />
+		<result property="SHANAIKOUJIBANGOU" column="SHANAIKOUJIBANGOU" />
+	</resultMap>
+</mapper>

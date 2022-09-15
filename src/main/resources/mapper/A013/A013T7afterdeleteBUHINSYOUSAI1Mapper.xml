@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013.A013T7afterdeleteBUHINSYOUSAI1Mapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013T7afterdeleteBUHINSYOUSAI1Entity" id="A013T7afterdeleteBUHINSYOUSAI1EntityMap">
+		<result property="HINMEI" column="HINMEI" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="SHANAIKOUJIBANGOU" column="SHANAIKOUJIBANGOU" />
+		<result property="KYAKUSAKIMEISHOU" column="KYAKUSAKIMEISHOU" />
+		<result property="HINBAN" column="HINBAN" />
+		<result property="ASENBURIRAIN" column="ASENBURIRAIN" />
+		<result property="KIKAIMEISHOU" column="KIKAIMEISHOU" />
+		<result property="BUHINMEISHOU" column="BUHINMEISHOU" />
+		<result property="SEISAKUSUU" column="SEISAKUSUU" />
+		<result property="TANTOUSHA" column="TANTOUSHA" />
+		<result property="MAISUU" column="MAISUU" />
+		<result property="HIDZUKE" column="HIDZUKE" />
+		<result property="HINBANNO" column="HINBANNO" />
+		<result property="KIBOUNOUKI" column="KIBOUNOUKI" />
+		<result property="TOUROKUSHAID" column="TOUROKUSHAID" />
+		<result property="BIKOU1" column="BIKOU1" />
+		<result property="HITSUYOU" column="HITSUYOU" />
+		<result property="TEHAI" column="TEHAI" />
+		<result property="KANRYOU" column="KANRYOU" />
+		<result property="TANTOUSHAID" column="TANTOUSHAID" />
+		<result property="SEISAKUSUU" column="SEISAKUSUU" />
+		<result property="KOUNYUUTANKA" column="KOUNYUUTANKA" />
+		<result property="KOUNYUUHIDZUKE" column="KOUNYUUHIDZUKE" />
+		<result property="NYUUKAYOTEIBI" column="NYUUKAYOTEIBI" />
+		<result property="NYUUKAHIDZUKE" column="NYUUKAHIDZUKE" />
+		<result property="SOUKOSUU1" column="SOUKOSUU1" />
+		<result property="SHOUKEI" column="SHOUKEI" />
+	</resultMap>
+	<!-- データ操作5:テーブル「部品詳細」の項目「注文書NO」が画面項目「部品注文書NO」,且つ「注文書明細NO」が画面項目「部品注文書明細NO」,且つ「確定区分」が空白のデータを削除する -->
+	<delete id="A013T7afterdeleteBUHINSYOUSAI1" >
+		DELETE FROM BUHINSYOUSAI
+			<where>
+				 1 = 1 
+				<if test="BUHINCHUUBUNSHONO != null and BUHINCHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{BUHINCHUUBUNSHONO} 
+				</if>
+				<if test="BUHINCHUUBUNSHOMEISAINO != null and BUHINCHUUBUNSHOMEISAINO != ''">
+					 AND CHUUBUNSHOMEISAINO  = #{BUHINCHUUBUNSHOMEISAINO} 
+				</if>
+				<if test="KUUHAKUNODEETAWOSAKUJOSURU != null and KUUHAKUNODEETAWOSAKUJOSURU != ''">
+					 AND KAKUTEIKUBUN  = #{KUUHAKUNODEETAWOSAKUJOSURU} 
+				</if>
+			</where>
+	</delete>
+</mapper>

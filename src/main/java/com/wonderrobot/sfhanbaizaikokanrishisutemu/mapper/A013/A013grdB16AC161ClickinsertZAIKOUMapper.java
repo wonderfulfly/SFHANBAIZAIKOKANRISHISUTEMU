@@ -1,0 +1,17 @@
+package com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A013;
+
+
+import org.apache.ibatis.annotations.Param;
+
+/**
+ * @project
+ *     SF販売在庫管理システム
+ * @comment
+ *      id: A013grdB16AC161ClickinsertZAIKOUMapper
+ * @version
+
+ */
+
+public interface A013grdB16AC161ClickinsertZAIKOUMapper {
+	public int A013grdB16AC161ClickinsertZAIKOU(@Param("ay6_BUHINSYOUSAI_HINMEI")String ay6_BUHINSYOUSAI_HINMEI, @Param("TOUJITSU")String TOUJITSU, @Param("ay6_BUHINSYOUSAI_CHUUBUNSHONO")String ay6_BUHINSYOUSAI_CHUUBUNSHONO, @Param("ay6_BUHINSYOUSAI_CHUUBUNSHOMEISAINO")String ay6_BUHINSYOUSAI_CHUUBUNSHOMEISAINO, @Param("ay6_BUHINSYOUSAI_KOUJIKANRIBANGOU")String ay6_BUHINSYOUSAI_KOUJIKANRIBANGOU, @Param("ay6_BUHINSYOUSAI_TSUKAMATSUNYUUSAKI")String ay6_BUHINSYOUSAI_TSUKAMATSUNYUUSAKI, @Param("ay6_BUHINSYOUSAI_SHOUKEI")double ay6_BUHINSYOUSAI_SHOUKEI, @Param("SHUKKANO1")String SHUKKANO1, @Param("ay6_BUHINSYOUSAI_SOUKOSUU")int ay6_BUHINSYOUSAI_SOUKOSUU, @Param("ZAIKONOautoNum")String ZAIKONOautoNum, @Param("ay6_BUHINSYOUSAI_KOUNYUUTANKA")double ay6_BUHINSYOUSAI_KOUNYUUTANKA, @Param("ay6_BUHINSYOUSAI_HINBANNO")String ay6_BUHINSYOUSAI_HINBANNO);
+}

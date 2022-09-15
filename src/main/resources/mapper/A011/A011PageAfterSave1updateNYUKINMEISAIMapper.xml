@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterSave1updateNYUKINMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterSave1updateNYUKINMEISAIEntity" id="A011PageAfterSave1updateNYUKINMEISAIEntityMap">
+		<result property="FURIDASHIZUMIWARIAI" column="FURIDASHIZUMIWARIAI" />
+		<result property="FURIDASHIZUMIKINGAKU" column="FURIDASHIZUMIKINGAKU" />
+		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
+		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
+		<result property="RESHIITOMEISAINO" column="RESHIITOMEISAINO" />
+	</resultMap>
+	<!-- データ操作4:テーブル「入金明細」の項目「レシート明細NO」が値<レシート明細NO>のデータに対して,項目「入金済み割合」を<入金済み割合>に変更する -->
+	<update id="A011PageAfterSave1updateNYUKINMEISAI" >
+		UPDATE NYUKINMEISAI SET NYUUKINZUMIWARIAI = #{ay3_NYUKINMEISAI_NYUUKINZUMIWARIAI}
+			<where>
+				 1 = 1 
+				<if test="ay3_NYUKINMEISAI_RESHIITOMEISAINO != null and ay3_NYUKINMEISAI_RESHIITOMEISAINO != ''">
+					 AND RESHIITOMEISAINO  = #{ay3_NYUKINMEISAI_RESHIITOMEISAINO} 
+				</if>
+			</where>
+	</update>
+</mapper>

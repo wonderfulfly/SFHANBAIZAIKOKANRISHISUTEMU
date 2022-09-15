@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A007.A007Y61ClickselectZAIKOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A007.A007Y61ClickselectZAIKOUEntity" id="A007Y61ClickselectZAIKOUEntityMap">
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="CHUUBUNSHOMEISAINO" column="CHUUBUNSHOMEISAINO" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="ZAIKONO" column="ZAIKONO" />
+		<result property="TSUKAMATSUNYUUSAKI" column="TSUKAMATSUNYUUSAKI" />
+		<result property="SHOUHINMEISHOU" column="SHOUHINMEISHOU" />
+		<result property="SHUTSUNYUUKOJIKAN" column="SHUTSUNYUUKOJIKAN" />
+		<result property="SUURYOU" column="SUURYOU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="SHUTSUNYUUKOJOUTAI" column="SHUTSUNYUUKOJOUTAI" />
+		<result property="DAIKINKINGAKU" column="DAIKINKINGAKU" />
+		<result property="SHUKKANO" column="SHUKKANO" />
+		<result property="SHOUHINKATABAN" column="SHOUHINKATABAN" />
+		<result property="ZAIKOSUURYOU" column="ZAIKOSUURYOU" />
+		<result property="SHOUHINNO" column="SHOUHINNO" />
+	</resultMap>
+	<!-- データ操作1:テーブル「在庫」によるフィールド「注文書NO,注文書明細NO,工事管理番号,在庫NO,仕入先,商品名称,出入庫時間,数量,単価,出入庫状態,代金金額,出荷NO,商品型番,在庫数量,商品NO」を取得,条件はフィールド「注文書NO」が画面項目「注文書No」,フィールド「商品名称」が画面項目「部品名」,フィールド「在庫NO」が画面項目「在庫NO」,フィールド「工事管理番号」が画面項目「社内工事番号」 -->
+	<select id="A007Y61ClickselectZAIKOU"  resultMap="A007Y61ClickselectZAIKOUEntityMap">
+		SELECT CHUUBUNSHONO,CHUUBUNSHOMEISAINO,KOUJIKANRIBANGOU,ZAIKONO,TSUKAMATSUNYUUSAKI,SHOUHINMEISHOU,SHUTSUNYUUKOJIKAN,SUURYOU,PRICE,SHUTSUNYUUKOJOUTAI,DAIKINKINGAKU,SHUKKANO,SHOUHINKATABAN,ZAIKOSUURYOU,SHOUHINNO FROM ZAIKOU
+			<where>
+				 1 = 1 
+				<if test="CHUUBUNSHONO != null and CHUUBUNSHONO != ''">
+					 AND CHUUBUNSHONO  = #{CHUUBUNSHONO} 
+				</if>
+				<if test="BUHINMEI != null and BUHINMEI != ''">
+					 AND SHOUHINMEISHOU  = #{BUHINMEI} 
+				</if>
+				<if test="ZAIKONO != null and ZAIKONO != ''">
+					 AND ZAIKONO  = #{ZAIKONO} 
+				</if>
+				<if test="SHANAIKOUJIBANGOU != null and SHANAIKOUJIBANGOU != ''">
+					 AND KOUJIKANRIBANGOU  = #{SHANAIKOUJIBANGOU} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

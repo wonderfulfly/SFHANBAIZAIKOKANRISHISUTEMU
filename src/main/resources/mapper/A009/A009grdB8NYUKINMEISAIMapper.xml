@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A009.A009grdB8NYUKINMEISAIMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A009.A009grdB8NYUKINMEISAIEntity" id="A009grdB8NYUKINMEISAIEntityMap">
+		<result property="SHIHARAIHIDZUKE" column="SHIHARAIHIDZUKE" />
+		<result property="SHIHARAIWARIAI" column="SHIHARAIWARIAI" />
+		<result property="FURIDASHIZUMIHIDZUKE" column="FURIDASHIZUMIHIDZUKE" />
+		<result property="FURIDASHIZUMIKINGAKU" column="FURIDASHIZUMIKINGAKU" />
+		<result property="FURIDASHIZUMIWARIAI" column="FURIDASHIZUMIWARIAI" />
+		<result property="NYUUKINZUMIHIDZUKE" column="NYUUKINZUMIHIDZUKE" />
+		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
+		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
+		<result property="RESHIITOMEISAINO" column="RESHIITOMEISAINO" />
+		<result property="RESHIITONO" column="RESHIITONO" />
+	</resultMap>
+	<!-- null -->
+	<select id="A009InitGrid"  resultMap="A009grdB8NYUKINMEISAIEntityMap">
+		SELECT SHIHARAIHIDZUKE,SHIHARAIWARIAI,FURIDASHIZUMIHIDZUKE,FURIDASHIZUMIKINGAKU,FURIDASHIZUMIWARIAI,NYUUKINZUMIHIDZUKE,NYUUKINZUMIKINGAKU,NYUUKINZUMIWARIAI,RESHIITOMEISAINO,RESHIITONO FROM NYUKINMEISAI
+			<where>
+				 1 = 1 
+				<if test="RYOUSHUUSHONO != null and RYOUSHUUSHONO != ''">
+					 AND RESHIITONO  = #{RYOUSHUUSHONO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

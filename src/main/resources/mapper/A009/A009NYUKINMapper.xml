@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A009.A009NYUKINMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A009.A009NYUKINEntity" id="A009NYUKINEntityMap">
+		<id property="RESHIITONO" column="RESHIITONO" />
+		<result property="CHUUBUNSHONO" column="CHUUBUNSHONO" />
+		<result property="KYAKUSAKIID" column="KYAKUSAKIID" />
+		<result property="NYUUKINKINGAKU" column="NYUUKINKINGAKU" />
+		<result property="CHUUMONHIDZUKE" column="CHUUMONHIDZUKE" />
+		<result property="NYUUKINYOTEIHIDZUKE" column="NYUUKINYOTEIHIDZUKE" />
+		<result property="JISSAINYUUKINJOUTAI" column="JISSAINYUUKINJOUTAI" />
+		<result property="JISSAINYUUKINHIDZUKE" column="JISSAINYUUKINHIDZUKE" />
+		<result property="FURIKOMIKAISHAID" column="FURIKOMIKAISHAID" />
+		<result property="TANTOUSHAID" column="TANTOUSHAID" />
+		<result property="FURIDASHIZUMIWARIAI" column="FURIDASHIZUMIWARIAI" />
+		<result property="FURIDASHIHIDZUKE" column="FURIDASHIHIDZUKE" />
+		<result property="FURIDASHIZUMIKINGAKU" column="FURIDASHIZUMIKINGAKU" />
+		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
+		<result property="NYUUKINZUMIHIDZUKE" column="NYUUKINZUMIHIDZUKE" />
+		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
+		<result property="KANTOKU" column="KANTOKU" />
+	</resultMap>
+	<!-- null -->
+	<select id="A009InitDepthZero"  resultMap="A009NYUKINEntityMap">
+		SELECT KYAKUSAKIID,TANTOUSHAID,RESHIITONO,CHUUBUNSHONO,KANTOKU,CHUUMONHIDZUKE,NYUUKINKINGAKU,JISSAINYUUKINJOUTAI FROM NYUKIN
+			<where>
+				 1 = 1 
+				<if test="RYOUSHUUSHONO != null and RYOUSHUUSHONO != ''">
+					 AND RESHIITONO  = #{RYOUSHUUSHONO} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

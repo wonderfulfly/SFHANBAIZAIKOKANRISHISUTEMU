@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A011.A011PageAfterLoad1selectBUMONMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011PageAfterLoad1selectBUMONEntity" id="A011PageAfterLoad1selectBUMONEntityMap">
+		<result property="BUMONMEI" column="BUMONMEI" />
+	</resultMap>
+	<!-- データ操作:テーブル「M_部門」のデータの項目「部門名」を取得,条件は「部門ID」が<ユーザー権限> -->
+	<select id="A011PageAfterLoad1selectBUMON"  resultMap="A011PageAfterLoad1selectBUMONEntityMap">
+		SELECT BUMONMEI FROM BUMON
+			<where>
+				 1 = 1 
+				<if test="SYAIN_YUUZAAKENGEN != null and SYAIN_YUUZAAKENGEN != ''">
+					 AND BUMONID  = #{SYAIN_YUUZAAKENGEN} 
+				</if>
+			</where>
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>
