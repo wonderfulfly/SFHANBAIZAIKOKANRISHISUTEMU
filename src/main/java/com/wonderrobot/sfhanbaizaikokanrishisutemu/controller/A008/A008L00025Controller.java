@@ -14,23 +14,23 @@ import com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A009.A009NYUKINEntity;
  * @project
  *     SF販売在庫管理システム
  * @comment
- *      class: A008L00012Controller
+ *      class: A008L00025Controller
  *      Page: 
  * @version
  */
 
 @Controller
-public class A008L00012Controller {
+public class A008L00025Controller {
 
 	/**
-	 * link name:入金管理検索_入金管理詳細 , link id:L00012
+	 * link name:入金管理検索_入金管理詳細 , link id:L00025
 	 * from:P00010入金管理検索 , to:P00011入金管理詳細
 	 * 
 	 * @return url to
 	 * 
 	 */
-	@RequestMapping("L00012.do")
-	public String L00012(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("L00025.do")
+	public String L00025(HttpServletRequest request, HttpServletResponse response) {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		String CHUUBUNSHONO1 = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("CHUUBUNSHONO1")));
 		String RESHIITONO = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("RYOUSHUUSHONO")));

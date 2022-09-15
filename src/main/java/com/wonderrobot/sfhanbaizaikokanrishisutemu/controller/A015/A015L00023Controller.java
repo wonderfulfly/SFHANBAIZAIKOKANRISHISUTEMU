@@ -1,4 +1,4 @@
-package com.wonderrobot.sfhanbaizaikokanrishisutemu.controller.A002;
+package com.wonderrobot.sfhanbaizaikokanrishisutemu.controller.A015;
 import com.wonderfulfly.core.util.StringUtil;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,27 +13,27 @@ import com.wonderfulfly.core.util.log.LoggerUtil;
  * @project
  *     SF販売在庫管理システム
  * @comment
- *      class: A002L00001Controller
+ *      class: A015L00023Controller
  *      Page: 
  * @version
  */
 
 @Controller
-public class A002L00001Controller {
+public class A015L00023Controller {
 
 	/**
-	 * link name:社員検索_社員 , link id:L00001
-	 * from:P00002社員検索 , to:P00001社員
+	 * link name:会社検索_会社 , link id:L00023
+	 * from:P00006会社検索 , to:P00005会社
 	 * 
 	 * @return url to
 	 * 
 	 */
-	@RequestMapping("L00001.do")
-	public String L00001(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("L00023.do")
+	public String L00023(HttpServletRequest request, HttpServletResponse response) {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		request.setAttribute("mode", "2");
 		request.setAttribute("actflg", "1");
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": end");
-		return "A001";
+		return "A004";
 	}
 }

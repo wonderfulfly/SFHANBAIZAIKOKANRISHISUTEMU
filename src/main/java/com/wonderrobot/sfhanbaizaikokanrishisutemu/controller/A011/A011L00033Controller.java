@@ -14,23 +14,23 @@ import com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A013.A013BUHINEntity;
  * @project
  *     SF販売在庫管理システム
  * @comment
- *      class: A011L00017Controller
+ *      class: A011L00033Controller
  *      Page: 
  * @version
  */
 
 @Controller
-public class A011L00017Controller {
+public class A011L00033Controller {
 
 	/**
-	 * link name:注文管理詳細_部品管理画面 , link id:L00017
+	 * link name:注文管理詳細_部品管理画面 , link id:L00033
 	 * from:P00013注文管理詳細 , to:P00014部品管理画面
 	 * 
 	 * @return url to
 	 * 
 	 */
-	@RequestMapping("L00017.do")
-	public String L00017(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("L00033.do")
+	public String L00033(HttpServletRequest request, HttpServletResponse response) {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		String CHUUBUNSHONO1 = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("BUHINCHUUBUNSHONO")));
 		String CHUUBUNSHOMEISAINO = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("BUHINCHUUBUNSHOMEISAINO")));

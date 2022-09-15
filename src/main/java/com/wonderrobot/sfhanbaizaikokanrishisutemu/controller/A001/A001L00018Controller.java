@@ -13,23 +13,23 @@ import com.wonderfulfly.core.util.log.LoggerUtil;
  * @project
  *     SF販売在庫管理システム
  * @comment
- *      class: A001L00011Controller
+ *      class: A001L00018Controller
  *      Page: 
  * @version
  */
 
 @Controller
-public class A001L00011Controller {
+public class A001L00018Controller {
 
 	/**
-	 * link name:社員_社員検索 , link id:L00011
+	 * link name:社員_社員検索 , link id:L00018
 	 * from:P00001社員 , to:P00002社員検索
 	 * 
 	 * @return url to
 	 * 
 	 */
-	@RequestMapping("L00011.do")
-	public String L00011(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("L00018.do")
+	public String L00018(HttpServletRequest request, HttpServletResponse response) {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		request.setAttribute("mode", "1");
 		request.setAttribute("actflg", "2");

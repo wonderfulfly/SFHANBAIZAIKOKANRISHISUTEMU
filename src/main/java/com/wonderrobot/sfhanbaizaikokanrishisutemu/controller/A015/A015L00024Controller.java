@@ -7,32 +7,37 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.wonderfulfly.core.util.log.LoggerUtil;
+import com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A004.A004KAISYAEntity;
 
 
 /**
  * @project
  *     SF販売在庫管理システム
  * @comment
- *      class: A015L00005Controller
+ *      class: A015L00024Controller
  *      Page: 
  * @version
  */
 
 @Controller
-public class A015L00005Controller {
+public class A015L00024Controller {
 
 	/**
-	 * link name:会社検索_会社 , link id:L00005
+	 * link name:会社検索_会社 , link id:L00024
 	 * from:P00006会社検索 , to:P00005会社
 	 * 
 	 * @return url to
 	 * 
 	 */
-	@RequestMapping("L00005.do")
-	public String L00005(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("L00024.do")
+	public String L00024(HttpServletRequest request, HttpServletResponse response) {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
-		request.setAttribute("mode", "2");
-		request.setAttribute("actflg", "1");
+		String KAISHAID1 = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("KAISHAID1")));
+		A004KAISYAEntity KAISYA = new A004KAISYAEntity();
+		KAISYA.setKAISHAID(KAISHAID1);
+		request.setAttribute("KAISYA", KAISYA);
+		request.setAttribute("mode", "1");
+		request.setAttribute("actflg", "2");
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": end");
 		return "A004";
 	}

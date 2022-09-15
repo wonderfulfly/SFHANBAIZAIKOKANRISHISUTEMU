@@ -7,32 +7,37 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.wonderfulfly.core.util.log.LoggerUtil;
+import com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A003.A003BUMONEntity;
 
 
 /**
  * @project
  *     SF販売在庫管理システム
  * @comment
- *      class: A014L00003Controller
+ *      class: A014L00022Controller
  *      Page: 
  * @version
  */
 
 @Controller
-public class A014L00003Controller {
+public class A014L00022Controller {
 
 	/**
-	 * link name:部門検索_部門 , link id:L00003
+	 * link name:部門検索_部門 , link id:L00022
 	 * from:P00004部門検索 , to:P00003部門
 	 * 
 	 * @return url to
 	 * 
 	 */
-	@RequestMapping("L00003.do")
-	public String L00003(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("L00022.do")
+	public String L00022(HttpServletRequest request, HttpServletResponse response) {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
-		request.setAttribute("mode", "2");
-		request.setAttribute("actflg", "1");
+		String BUMONID1 = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("BUMONID1")));
+		A003BUMONEntity BUMON = new A003BUMONEntity();
+		BUMON.setBUMONID(BUMONID1);
+		request.setAttribute("BUMON", BUMON);
+		request.setAttribute("mode", "1");
+		request.setAttribute("actflg", "2");
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": end");
 		return "A003";
 	}

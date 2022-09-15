@@ -1,4 +1,4 @@
-package com.wonderrobot.sfhanbaizaikokanrishisutemu.controller.A011;
+package com.wonderrobot.sfhanbaizaikokanrishisutemu.controller.A009;
 import com.wonderfulfly.core.util.StringUtil;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -7,42 +7,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.wonderfulfly.core.util.log.LoggerUtil;
-import com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A009.A009NYUKINEntity;
+import com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A011.A011TYUMONSYOEntity;
 
 
 /**
  * @project
  *     SF販売在庫管理システム
  * @comment
- *      class: A011L00009Controller
+ *      class: A009L00027Controller
  *      Page: 
  * @version
  */
 
 @Controller
-public class A011L00009Controller {
+public class A009L00027Controller {
 
 	/**
-	 * link name:注文管理詳細_入金管理詳細 , link id:L00009
-	 * from:P00013注文管理詳細 , to:P00011入金管理詳細
+	 * link name:入金管理詳細_注文管理詳細 , link id:L00027
+	 * from:P00011入金管理詳細 , to:P00013注文管理詳細
 	 * 
 	 * @return url to
 	 * 
 	 */
-	@RequestMapping("L00009.do")
-	public String L00009(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("L00027.do")
+	public String L00027(HttpServletRequest request, HttpServletResponse response) {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
-		String RESHIITONO = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("RYOUSHUUSHONO")));
 		String CHUUBUNSHONO1 = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("CHUUBUNSHONO1")));
-		String fixValue = "1";
-		A009NYUKINEntity NYUKIN = new A009NYUKINEntity();
-		NYUKIN.setRESHIITONO(RESHIITONO);
-		NYUKIN.setCHUUBUNSHONO(CHUUBUNSHONO1);
-		request.setAttribute("KYANSERUFURAGU", fixValue);
-		request.setAttribute("NYUKIN", NYUKIN);
+		A011TYUMONSYOEntity TYUMONSYO = new A011TYUMONSYOEntity();
+		TYUMONSYO.setCHUUBUNSHONO(CHUUBUNSHONO1);
+		request.setAttribute("TYUMONSYO", TYUMONSYO);
 		request.setAttribute("mode", "1");
 		request.setAttribute("actflg", "2");
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": end");
-		return "A009";
+		return "A011";
 	}
 }
