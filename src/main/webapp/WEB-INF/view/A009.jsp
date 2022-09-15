@@ -505,8 +505,8 @@ return true;
 /*処理終了。*/
 }
 
-//*** Func Name: F20220915200001205 ***
-function F20220915200001205(o){
+//*** Func Name: F20220915201217758 ***
+function F20220915201217758(o){
   var row = getGridRowIndex(o,"rowseq");
 /*Grid項目「B8」の項目「入金済み金額」/(界面項目「入金金額」*画面項目「支払割合」/数字「100」)*数字「100」*/
 var result = 0;
@@ -524,8 +524,8 @@ $('#NYUUKINZUMIWARIAI_'+row).blur();
 
 }
 
-//*** Func Name: F20220915200001225 ***
-function F20220915200001225(o){
+//*** Func Name: F20220915201217776 ***
+function F20220915201217776(o){
   var row = getGridRowIndex(o,"rowseq");
 /*Grid項目「B8」の項目「振出済み金額」/界面項目「入金金額」*数字「100」*/
 var result = 0;
@@ -542,7 +542,7 @@ $('#FURIDASHIZUMIWARIAI_'+row).val(result);
 $('#FURIDASHIZUMIWARIAI_'+row).blur();
 
 }
-function S120220915200001205(){var intRow = getObj("RowGrid61").value;
+function S120220915201217758(){var intRow = getObj("RowGrid61").value;
 for (var row = 1;row <= intRow; row++) {
 /*Grid項目「B8」の項目「入金済み金額」/(界面項目「入金金額」*画面項目「支払割合」/数字「100」)*数字「100」*/
 var result = 0;
@@ -560,7 +560,7 @@ $('#NYUUKINZUMIWARIAI_'+row).blur();
 
 }
 }
-function S120220915200001225(){var intRow = getObj("RowGrid61").value;
+function S120220915201217776(){var intRow = getObj("RowGrid61").value;
 for (var row = 1;row <= intRow; row++) {
 /*Grid項目「B8」の項目「振出済み金額」/界面項目「入金金額」*数字「100」*/
 var result = 0;
@@ -643,11 +643,11 @@ function DoBeforeSave() {
 
 function doLinkTrans57(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00026.do?","0","","","","_self","","0","1467","368");
+ pageLinkTranfer("L00040.do?","0","","","","_self","","0","1467","368");
 }
 function doLinkTrans59(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00027.do?","0","","CHUUBUNSHONO1,","CHUUBUNSHONO1,","_self","","0","1157","3455");
+ pageLinkTranfer("L00041.do?","0","","CHUUBUNSHONO1,","CHUUBUNSHONO1,","_self","","0","1157","3455");
 }
 
 function inputDataCheck(){
@@ -1338,12 +1338,12 @@ SF販売在庫管理システム
 <tbody>
 <tr style='display:none' id ='rowseq0'><td align='right' class='g3 l' _colid=0><input style='float:left;' type=checkbox id='Grid61delchk0' name='Grid61delchk0'>0<input type=hidden width=0px id='Grid61flg0' name='Grid61flg0'></td>
 <td class='g2 o' _colid=1 style ='vertical-align:middle;'><div style="overflow:hidden;"><input type=text name=SHIHARAIHIDZUKE_0 id=SHIHARAIHIDZUKE_0 data-bind='value: SHIHARAIHIDZUKE' value='' class='editable calendar' _subid=63 _itemname='支払日付' _gid='Grid61' _gflg='Grid61flg0' onChange ='getObj("SHIHARAIHIDZUKE_0").value=this.value;dateFormatChange($(this),"支払日付");cs($(this),"rowseq","Grid61flg","0");'  style='width:107px;height:29px; padding:0 2px;text-align:center;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;z-index:1;' placeHolder=''></div></td>
-<td class='g1 o' _colid=2 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='SHIHARAIWARIAI_0'  name='SHIHARAIWARIAI_0'  class='editable' style='width:150px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;'  _subid='65'  _itemname='支払割合'  _rge='2'  type='text'  onChange ='getObj("SHIHARAIWARIAI_0").value=this.value;F20220915200001205($(this));cs($(this),"rowseq","Grid61flg","0");'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
+<td class='g1 o' _colid=2 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='SHIHARAIWARIAI_0'  name='SHIHARAIWARIAI_0'  class='editable' style='width:150px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;'  _subid='65'  _itemname='支払割合'  _rge='2'  type='text'  onChange ='getObj("SHIHARAIWARIAI_0").value=this.value;F20220915201217758($(this));cs($(this),"rowseq","Grid61flg","0");'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
 <td class='g2 o' _colid=3 style ='vertical-align:middle;'><div style="overflow:hidden;"><input type=text name=FURIDASHIZUMIHIDZUKE_0 id=FURIDASHIZUMIHIDZUKE_0 data-bind='value: FURIDASHIZUMIHIDZUKE' value='' class='editable calendar' _subid=67 _itemname='領収書発行日' _gid='Grid61' _gflg='Grid61flg0' onChange ='getObj("FURIDASHIZUMIHIDZUKE_0").value=this.value;dateFormatChange($(this),"領収書発行日");cs($(this),"rowseq","Grid61flg","0");'  style='width:101px;height:29px; padding:0 2px;text-align:center;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;z-index:1;' placeHolder=''></div></td>
-<td class='g3 o' _colid=4 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='FURIDASHIZUMIKINGAKU_0'  name='FURIDASHIZUMIKINGAKU_0'  class='editable' style='width:147px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='69'  _itemname='振出済み金額'  _ire='###,###,##0.##'  _rge='1'  type='text'  onChange ='getObj("FURIDASHIZUMIKINGAKU_0").value=this.value;F20220915200001225($(this));cs($(this),"rowseq","Grid61flg","0");'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
+<td class='g3 o' _colid=4 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='FURIDASHIZUMIKINGAKU_0'  name='FURIDASHIZUMIKINGAKU_0'  class='editable' style='width:147px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='69'  _itemname='振出済み金額'  _ire='###,###,##0.##'  _rge='1'  type='text'  onChange ='getObj("FURIDASHIZUMIKINGAKU_0").value=this.value;F20220915201217776($(this));cs($(this),"rowseq","Grid61flg","0");'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
 <td class='g1 o' _colid=5 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='FURIDASHIZUMIWARIAI_0'  name='FURIDASHIZUMIWARIAI_0'  class='readonly' readOnly style='width:100px;height:31px; text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;'  _subid='71'  _itemname='振出済み%'  _rge='1' onblur='changeSpecHtml(this);' type='text'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
 <td class='g2 o' _colid=6 style ='vertical-align:middle;'><div style="overflow:hidden;"><input type=text name=NYUUKINZUMIHIDZUKE_0 id=NYUUKINZUMIHIDZUKE_0 data-bind='value: NYUUKINZUMIHIDZUKE' value='' class='editable calendar' _subid=73 _itemname='入金済み日付' _gid='Grid61' _gflg='Grid61flg0' onChange ='getObj("NYUUKINZUMIHIDZUKE_0").value=this.value;dateFormatChange($(this),"入金済み日付");cs($(this),"rowseq","Grid61flg","0");'  style='width:149px;height:29px; padding:0 2px;text-align:center;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;z-index:1;' placeHolder=''></div></td>
-<td class='g3 o' _colid=7 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='NYUUKINZUMIKINGAKU_0'  name='NYUUKINZUMIKINGAKU_0'  class='editable' style='width:90px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='75'  _itemname='入金済み金額'  _ire='###,###,##0.##'  _rge='1'  type='text'  onChange ='getObj("NYUUKINZUMIKINGAKU_0").value=this.value;F20220915200001205($(this));cs($(this),"rowseq","Grid61flg","0");'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
+<td class='g3 o' _colid=7 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='NYUUKINZUMIKINGAKU_0'  name='NYUUKINZUMIKINGAKU_0'  class='editable' style='width:90px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='75'  _itemname='入金済み金額'  _ire='###,###,##0.##'  _rge='1'  type='text'  onChange ='getObj("NYUUKINZUMIKINGAKU_0").value=this.value;F20220915201217758($(this));cs($(this),"rowseq","Grid61flg","0");'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
 <td class='g3 o' _colid=8 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='NYUUKINZUMIWARIAI_0'  name='NYUUKINZUMIWARIAI_0'  class='readonly' readOnly style='width:141px;height:31px; text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='77'  _itemname='入金済み%'  _rge='1' onblur='changeSpecHtml(this);' type='text'  _gid='Grid61'  _gflg='Grid61flg0' ></div></td>
 <td style ='display:none' width='0px' _colid=9><input id='RESHIITOMEISAINO_0'  name='RESHIITOMEISAINO_0'  value='[自動採番]'  _k='1'  type='hidden' ></div></td>
 <td style ='display:none' width='0px' _colid=10><input id='RESHIITONO1_0'  name='RESHIITONO1_0'  _k='1'  type='hidden' ></div></td></tr></tbody></table></div>
@@ -1353,7 +1353,7 @@ SF販売在庫管理システム
 <div id="dragB15"  style="position:absolute;top:24px;left:923px;text-align:left;width:143px;height:34px;z-index:1;" class='userDiv' _ckf='0'><input id='CHUUBUNSHONO1'  name='CHUUBUNSHONO1'  value='${requestScope.NYUKIN.getCHUUBUNSHONO()}' data-bind='value: CHUUBUNSHONO1' class='readonly' readOnly style='width:143px;height:34px;padding:0 2px;text-align:left;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;'  _subid='15'  _itemname='注文書NO' onblur='changeSpecHtml(this);' type='text'  tabindex='8'></div>
 <div id="dragB27"  style="position:absolute;top:82px;left:171px;text-align:left;width:152px;height:34px;z-index:1;" class='userDiv' _ckf='0'><select id=KANTOKU1 name=KANTOKU1 data-bind="options:KANTOKU1,selectedOption: KANTOKU1_selected, optionsValue: 'KANTOKU1_optionValue', optionsText: 'KANTOKU1_optionText'"  _req=0 class='editable chosen_dropdownlist_style ' _subid=27 _itemname='監督' style='width:152px;height:32px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;' tabindex='14'><option value ='${requestScope.NYUKIN.getKANTOKU()}' selected>${requestScope.NYUKIN.getKANTOKU()}</option></select></div>
 <div id="dragB31"  style="position:absolute;top:82px;left:427px;text-align:left;width:149px;height:34px;z-index:1;" class='userDiv' _ckf='0'><input type=text name=CHUUMONHIDZUKE1 id=CHUUMONHIDZUKE1 data-bind='value: CHUUMONHIDZUKE1' value='' class='readonly' readOnly _subid=31 _itemname='注文日付' onChange ='getObj("CHUUMONHIDZUKE1").value=this.value;dateFormatChange($(this),"注文日付");'  style='width:149px;height:32px;padding:0 2px;text-align:left;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;' tabindex='16' placeHolder=''></div>
-<div id="dragB35"  style="position:absolute;top:82px;left:679px;text-align:left;width:151px;height:34px;z-index:1;" class='userDiv' _ckf='0'><input id='NYUUKINKINGAKU1'  name='NYUUKINKINGAKU1'  value='${requestScope.NYUKIN.getNYUUKINKINGAKU()}' data-bind='value: NYUUKINKINGAKU1' class='editable' style='width:151px;height:34px;padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='35'  _itemname='入金金額'  _ire='###,###,##0'  _rge='1'  type='text'  onChange ='if (SF.isServerExecute()) {getObj("NYUUKINKINGAKU1").value=this.value;S120220915200001205();S120220915200001225();}'  tabindex='18'></div>
+<div id="dragB35"  style="position:absolute;top:82px;left:679px;text-align:left;width:151px;height:34px;z-index:1;" class='userDiv' _ckf='0'><input id='NYUUKINKINGAKU1'  name='NYUUKINKINGAKU1'  value='${requestScope.NYUKIN.getNYUUKINKINGAKU()}' data-bind='value: NYUUKINKINGAKU1' class='editable' style='width:151px;height:34px;padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='35'  _itemname='入金金額'  _ire='###,###,##0'  _rge='1'  type='text'  onChange ='if (SF.isServerExecute()) {getObj("NYUUKINKINGAKU1").value=this.value;S120220915201217758();S120220915201217776();}'  tabindex='18'></div>
 <div id="dragB39"  style="position:absolute;top:82px;left:923px;text-align:left;width:143px;height:34px;z-index:1;" class='userDiv' _ckf='0'><select id=JISSAINYUUKINJOUTAI1 name=JISSAINYUUKINJOUTAI1 _req=0 class='editable chosen_dropdownlist_style ' _subid=39 _itemname='実際入金状態' style='width:143px;height:32px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;' tabindex='20'><option value ='${requestScope.NYUKIN.getJISSAINYUUKINJOUTAI()}' selected>${requestScope.NYUKIN.getJISSAINYUUKINJOUTAI()}</option></select></div>
    </div>
    

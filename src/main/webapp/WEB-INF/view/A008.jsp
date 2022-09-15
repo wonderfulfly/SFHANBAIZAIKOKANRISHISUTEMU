@@ -468,7 +468,7 @@ function DoBeforeSave() {
 
 function doLinkTrans55(o){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00025.do?","1",o,"CHUUBUNSHONO1,RYOUSHUUSHONO,","CHUUBUNSHONO1_,RESHIITONO_,","_self","","0","1133","340");
+ pageLinkTranfer("L00039.do?","1",o,"CHUUBUNSHONO1,RYOUSHUUSHONO,","CHUUBUNSHONO1_,RESHIITONO_,","_self","","0","1133","340");
 }
 
 function inputDataCheck(){
