@@ -63,11 +63,6 @@ public class A008Entity {
     private String MINYUUKIN;
 
     /**
-     *     MINYUUKINKINGAKU 未入金金額
-     */
-    private double MINYUUKINKINGAKU;
-
-    /**
      *     MINYUUKINWARIAI 未入金%
      */
     private String MINYUUKINWARIAI;
@@ -111,6 +106,11 @@ public class A008Entity {
      *     SHOUHINSOUGAKUJPY 契約金額
      */
     private double SHOUHINSOUGAKUJPY;
+
+    /**
+     *     SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額
+     */
+    private double SHUUSHOVIEW_MINYUUKINKINGAKU14;
 
     /**
      *     TANTOUSHAID 担当者
@@ -299,24 +299,6 @@ public class A008Entity {
     }
 
     /**
-     * MINYUUKINKINGAKU 未入金金額 Set
-     *
-     * @param MINYUUKINKINGAKU 未入金金額
-     */
-    public void setMINYUUKINKINGAKU(double MINYUUKINKINGAKU) {
-        this.MINYUUKINKINGAKU = MINYUUKINKINGAKU;
-    }
-
-    /**
-     * MINYUUKINKINGAKU 未入金金額 Get
-     *
-     * @return MINYUUKINKINGAKU 未入金金額
-    */
-    public double getMINYUUKINKINGAKU() {
-        return this.MINYUUKINKINGAKU;
-    }
-
-    /**
      * MINYUUKINWARIAI 未入金% Set
      *
      * @param MINYUUKINWARIAI 未入金%
@@ -476,6 +458,24 @@ public class A008Entity {
     */
     public double getSHOUHINSOUGAKUJPY() {
         return this.SHOUHINSOUGAKUJPY;
+    }
+
+    /**
+     * SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額 Set
+     *
+     * @param SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額
+     */
+    public void setShuushoviewMinyuukinkingaku14(double SHUUSHOVIEW_MINYUUKINKINGAKU14) {
+        this.SHUUSHOVIEW_MINYUUKINKINGAKU14 = SHUUSHOVIEW_MINYUUKINKINGAKU14;
+    }
+
+    /**
+     * SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額 Get
+     *
+     * @return SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額
+    */
+    public double getShuushoviewMinyuukinkingaku14() {
+        return this.SHUUSHOVIEW_MINYUUKINKINGAKU14;
     }
 
     /**

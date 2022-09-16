@@ -51,7 +51,7 @@ public class A013AA71Service {
 		excelDataBean.setFooterCenter("%page% / %numPages%");
 		PrintByFunction excelPrint = new PrintByFunction();
 		excelPrint.setExcelDataBean(excelDataBean);
-		outFileID = excelPrint.print("製作部品List.xlsx", "20220916_170423374.xlsx", jsonObj);
+		outFileID = excelPrint.print("製作部品List.xlsx", "20220916_172917172.xlsx", jsonObj);
 		return outFileID;
 
 	}

@@ -80,11 +80,11 @@ public class A008grdB8Entity {
 	*/
 	private String MINYUUKINWARIAI;
    /**
-	*	 MINYUUKINKINGAKU 未入金金額
+	*	 SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額
 	*/
 
-	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010MINYUUKINKINGAKU19")
-	private String MINYUUKINKINGAKU;
+	@Pattern(regexp = "^\\s*$|(^\\d+(\\.\\d+)?$)?",message = "validate.msg_P00010SHUUSHOVIEW_MINYUUKINKINGAKU1419")
+	private String SHUUSHOVIEW_MINYUUKINKINGAKU14;
    /**
 	*	 RESHIITONO レシートNO
 	*/
@@ -334,21 +334,21 @@ public class A008grdB8Entity {
 	}
 
    /**
-	* MINYUUKINKINGAKU 未入金金額を設定
+	* SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額を設定
 	*
-	* @param MINYUUKINKINGAKU 未入金金額
+	* @param SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額
 	*/
-	public void setMINYUUKINKINGAKU(String MINYUUKINKINGAKU) {
-		this.MINYUUKINKINGAKU = MINYUUKINKINGAKU;
+	public void setSHUUSHOVIEW_MINYUUKINKINGAKU14(String SHUUSHOVIEW_MINYUUKINKINGAKU14) {
+		this.SHUUSHOVIEW_MINYUUKINKINGAKU14 = SHUUSHOVIEW_MINYUUKINKINGAKU14;
 	}
 
    /**
-	* MINYUUKINKINGAKU 未入金金額を取得
+	* SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額を取得
 	*
-	* @return MINYUUKINKINGAKU 未入金金額
+	* @return SHUUSHOVIEW_MINYUUKINKINGAKU14 未入金金額
 	*/
-	public String getMINYUUKINKINGAKU() {
-		return this.MINYUUKINKINGAKU;
+	public String getSHUUSHOVIEW_MINYUUKINKINGAKU14() {
+		return this.SHUUSHOVIEW_MINYUUKINKINGAKU14;
 	}
 
    /**

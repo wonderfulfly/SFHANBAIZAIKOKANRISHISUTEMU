@@ -68,7 +68,7 @@ public class A008I6grdB8SmartSearchService {
 				selMap.put("I00003_NYUUKINZUMIWARIAI", StringUtil.changeNullToBlank(A008I6grdB8SmartSearchEntity_i.getA1NYUUKINZUMIWARIAI()));
 				selMap.put("I00003_NYUUKINZUMIKINGAKU", StringUtil.changeNullToBlank(A008I6grdB8SmartSearchEntity_i.getA1NYUUKINZUMIKINGAKU()));
 				selMap.put("I00003_MINYUUKINWARIAI", StringUtil.changeNullToBlank(A008I6grdB8SmartSearchEntity_i.getA1MINYUUKINWARIAI()));
-				selMap.put("I00003_MINYUUKINKINGAKU", StringUtil.changeNullToBlank(A008I6grdB8SmartSearchEntity_i.getA1MINYUUKINKINGAKU()));
+				selMap.put("I00003_SHUUSHOVIEW_MINYUUKINKINGAKU14", StringUtil.changeNullToBlank(A008I6grdB8SmartSearchEntity_i.getA1SHUUSHOVIEW_MINYUUKINKINGAKU14()));
 				selMap.put("I00003_RESHIITONO", StringUtil.changeNullToBlank(A008I6grdB8SmartSearchEntity_i.getA1RESHIITONO()));
 				selMap.put("I00003_CHUUBUNSHONO", StringUtil.changeNullToBlank(A008I6grdB8SmartSearchEntity_i.getA1CHUUBUNSHONO()));
 				A008I6grdB8SmartSearchEntityAy.add(selMap);
