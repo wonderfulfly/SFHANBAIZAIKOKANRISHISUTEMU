@@ -16,8 +16,9 @@
 		<result property="NYUUKINZUMIWARIAI" column="NYUUKINZUMIWARIAI" />
 		<result property="NYUUKINZUMIKINGAKU" column="NYUUKINZUMIKINGAKU" />
 		<result property="MINYUUKINWARIAI" column="MINYUUKINWARIAI" />
-		<result property="MINYUUKINKINGAKU" column="MINYUUKINKINGAKU" />
+		<result property="USHUUSHOVIEW_MINYUUKINWARIAI13" column="USHUUSHOVIEW_MINYUUKINWARIAI13" />
 		<result property="SHUUSHOVIEW_MINYUUKINKINGAKU14" column="SHUUSHOVIEW_MINYUUKINKINGAKU14" />
+		<result property="MINYUUKINKINGAKU" column="MINYUUKINKINGAKU" />
 		<result property="RESHIITONO" column="RESHIITONO" />
 		<result property="SHANAIKOUJIBANGOU" column="SHANAIKOUJIBANGOU" />
 	</resultMap>

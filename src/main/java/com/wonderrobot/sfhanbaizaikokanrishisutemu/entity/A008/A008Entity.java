@@ -63,11 +63,6 @@ public class A008Entity {
     private String MINYUUKIN;
 
     /**
-     *     MINYUUKINWARIAI 未入金%
-     */
-    private String MINYUUKINWARIAI;
-
-    /**
      *     NYUUKINGAKU 未振出金額
      */
     private double NYUUKINGAKU;
@@ -116,6 +111,11 @@ public class A008Entity {
      *     TANTOUSHAID 担当者
      */
     private String TANTOUSHAID;
+
+    /**
+     *     USHUUSHOVIEW_MINYUUKINWARIAI13 未入金%
+     */
+    private String USHUUSHOVIEW_MINYUUKINWARIAI13;
 
 
     /**
@@ -299,24 +299,6 @@ public class A008Entity {
     }
 
     /**
-     * MINYUUKINWARIAI 未入金% Set
-     *
-     * @param MINYUUKINWARIAI 未入金%
-     */
-    public void setMINYUUKINWARIAI(String MINYUUKINWARIAI) {
-        this.MINYUUKINWARIAI = MINYUUKINWARIAI;
-    }
-
-    /**
-     * MINYUUKINWARIAI 未入金% Get
-     *
-     * @return MINYUUKINWARIAI 未入金%
-    */
-    public String getMINYUUKINWARIAI() {
-        return this.MINYUUKINWARIAI;
-    }
-
-    /**
      * NYUUKINGAKU 未振出金額 Set
      *
      * @param NYUUKINGAKU 未振出金額
@@ -494,6 +476,24 @@ public class A008Entity {
     */
     public String getTANTOUSHAID() {
         return this.TANTOUSHAID;
+    }
+
+    /**
+     * USHUUSHOVIEW_MINYUUKINWARIAI13 未入金% Set
+     *
+     * @param USHUUSHOVIEW_MINYUUKINWARIAI13 未入金%
+     */
+    public void setUshuushoviewMinyuukinwariai13(String USHUUSHOVIEW_MINYUUKINWARIAI13) {
+        this.USHUUSHOVIEW_MINYUUKINWARIAI13 = USHUUSHOVIEW_MINYUUKINWARIAI13;
+    }
+
+    /**
+     * USHUUSHOVIEW_MINYUUKINWARIAI13 未入金% Get
+     *
+     * @return USHUUSHOVIEW_MINYUUKINWARIAI13 未入金%
+    */
+    public String getUshuushoviewMinyuukinwariai13() {
+        return this.USHUUSHOVIEW_MINYUUKINWARIAI13;
     }
 
 }

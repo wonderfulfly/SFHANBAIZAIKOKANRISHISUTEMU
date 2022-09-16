@@ -1834,7 +1834,7 @@ public class A008Q2PrintService {
 			templateFilePath = SpringPropertiesUtil.getPrint_template_file_path();
 			ext = ".xlsx";
 			outFileID = getOutFileID("領収書VIEW", timeStamp, 0, ext);
-			templateID = "20220916_172913915.xlsx";
+			templateID = "20220916_202056247.xlsx";
 			TemplateFileFullPath = System.getProperty("user.dir") + templateFilePath + "/" + templateID;
 			file = new File(TemplateFileFullPath);
 			if (file.exists()) {
