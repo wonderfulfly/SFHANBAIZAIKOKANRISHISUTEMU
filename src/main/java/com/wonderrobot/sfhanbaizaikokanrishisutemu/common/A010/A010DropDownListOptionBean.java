@@ -49,7 +49,7 @@ public class A010DropDownListOptionBean {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		try {
 			
-			if ("P00012".equals(pageID)) {
+			if ("A010".equals(pageID)) {
 				if ("55".equals(subID)) {
 					returnVal = A010KYAKUSAKIID1(selectedVaule);
 				} else if ("57".equals(subID)) {

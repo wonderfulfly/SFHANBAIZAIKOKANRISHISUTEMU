@@ -42,21 +42,21 @@ public class A015GridDataConstant {
 		sBuffer.append("<td class='g1 o' _colid=7 style ='vertical-align:middle;'><div style=\"overflow:hidden;\"><select id=KAISHAKUBUN_9999999 name=KAISHAKUBUN_9999999 data-bind='value: KAISHAKUBUN' _req=0 disabled _subid=27 _itemname='会社区分' _gid='Grid13' _gflg='Grid13flg9999999' onChange ='getObj(\"KAISHAKUBUN_9999999\").value=this.value;cs($(this),\"rowseq\",\"Grid13flg\",\"0\");'  style='width:91px;height:27px;font-size:14px;color:#000000;font-weight:normal;'>WFC#ROW_DROPDOWNLIST_OPTIONS#WFC27WFC#ROW_DROPDOWNLIST_OPTIONS#WFC</select></div></td>");
 		sBuffer.append("<td class='g1 o' _colid=8><div style=\"overflow:hidden;\"><input id='grdB6W6_9999999'  name='grdB6W6_9999999'  value='編集'   _subid='29'  _itemname='編集'  type='button'  _gid='Grid13'  _gflg='Grid13flg9999999'  onclick='doLinkTrans29($(this));'  _sf_class='button_red'></div></td>");
 		map.put("13", sBuffer.toString());
-		GridDataRowTDMap.put("P00006", map);
+		GridDataRowTDMap.put("A015", map);
 
 		//GridRowStartTDMap data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<td class='g3 l' _colid=0><input style='float:left;' type=hidden id='Grid13delchkWFC#ROW_COUNT#WFC' name='Grid13delchkWFC#ROW_COUNT#WFC'>WFC#ROW_COUNT#WFC<input type=hidden id='Grid13flgWFC#ROW_COUNT#WFC' name='Grid13flgWFC#ROW_COUNT#WFC'></td>");
 		map.put("13", sBuffer.toString());
-		GridRowStartTDMap.put("P00006", map);
+		GridRowStartTDMap.put("A015", map);
 
 		//Grid title data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<input type='hidden' name='initRowGrid13' id='initRowGrid13' value='9999999'><input type='hidden' name='RowGrid13' id='RowGrid13' value='9999999'><table id='Grid13' name ='Grid13' ><thead><tr><th style='text-align:center;'>No.</th><th style='overflow:hidden;text-align:center;'>会社ID</th><th style='overflow:hidden;text-align:center;'>会社名</th><th style='overflow:hidden;text-align:center;'>会社略称</th><th style='overflow:hidden;text-align:center;'>アドレス</th><th style='overflow:hidden;text-align:center;'>連絡先</th><th style='overflow:hidden;text-align:center;'>支払期限</th><th style='overflow:hidden;text-align:center;'>会社区分</th><th style='overflow:hidden;text-align:center;'>編集</th></tr></thead>");
 		map.put("13", sBuffer.toString());
-		GridTitleItemMap.put("P00006", map);
+		GridTitleItemMap.put("A015", map);
 
 		//Grid zero row data map
 		map = new HashMap<String, String>();
@@ -71,7 +71,7 @@ public class A015GridDataConstant {
 		sBuffer.append("<td class='g1 o' _colid=7 style ='vertical-align:middle;'><div style=\"overflow:hidden;\"><select id=KAISHAKUBUN_0 name=KAISHAKUBUN_0 data-bind='value: KAISHAKUBUN' _req=0 disabled _subid=27 _itemname='会社区分' _gid='Grid13' _gflg='Grid13flg0' onChange ='getObj(\"KAISHAKUBUN_0\").value=this.value;cs($(this),\"rowseq\",\"Grid13flg\",\"0\");'  style='width:91px;height:27px;font-size:14px;color:#000000;font-weight:normal;'>WFC#ROW_DROPDOWNLIST_OPTIONS#WFC27WFC#ROW_DROPDOWNLIST_OPTIONS#WFC</select></div></td>");
 		sBuffer.append("<td class='g1 o' _colid=8><div style=\"overflow:hidden;\"><input id='grdB6W6_0'  name='grdB6W6_0'  value='編集'   _subid='29'  _itemname='編集'  type='button'  _gid='Grid13'  _gflg='Grid13flg0'  onclick='doLinkTrans29($(this));'  _sf_class='button_red'></div></td></tr>");
 		map.put("13", sBuffer.toString());
-		GridRowZeroMap.put("P00006", map);
+		GridRowZeroMap.put("A015", map);
 
 		//Grid item map
 		mapList = new HashMap<String, ArrayList<ItemBean>>();
@@ -152,12 +152,12 @@ public class A015GridDataConstant {
 		itemBean.TableID = "";
 		itemBean.FieldID = "";
 		itemBean.ReadOnly = "0";
-		itemBean.RelData = "L00038";
+		itemBean.RelData = "A015A004u";
 		itemBean.DefaultValue = "";
 		itemBean.DbFlg = "1";
 		beanList.add(itemBean);
 		mapList.put("13", beanList);
-		GridItemSubIDMap.put("P00006", mapList);
+		GridItemSubIDMap.put("A015", mapList);
 	}
 
 	/**

@@ -269,7 +269,7 @@
 		<repository>
 			<id>maven-group</id>
 			<name>My Maven Group Repository</name>
-			<url>http://47.104.183.10/repository/maven-public/</url>
+			<url>http://maven.saasforce.jp/repository/maven-public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>

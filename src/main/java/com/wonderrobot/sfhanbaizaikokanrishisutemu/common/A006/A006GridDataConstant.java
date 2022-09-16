@@ -41,21 +41,21 @@ public class A006GridDataConstant {
 		sBuffer.append("<td class='g3 o' _colid=6 style ='vertical-align:middle;'><div style=\"overflow:hidden;\"><input id='ZAIKOSUURYOU_9999999'  name='ZAIKOSUURYOU_9999999'  value='WFC#COLUMN_VALUE#WFC31WFC#COLUMN_VALUE#WFC'  class='readonly' readOnly style='width:79px;height:31px; text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='31'  _itemname='購買数量'  _rge='1' onblur='changeSpecHtml(this);' type='text'  _gid='Grid19'  _gflg='Grid19flg9999999' ></div></td>");
 		sBuffer.append("<td style ='display:none' width='0px' _colid=7><input id='SHOUHINNO_9999999'  name='SHOUHINNO_9999999'  value='WFC#COLUMN_VALUE#WFC33WFC#COLUMN_VALUE#WFC'  _k='1'  type='hidden' ></div></td>");
 		map.put("19", sBuffer.toString());
-		GridDataRowTDMap.put("P00008", map);
+		GridDataRowTDMap.put("A006", map);
 
 		//GridRowStartTDMap data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<td class='g3 l' _colid=0><input style='float:left;' type=hidden id='Grid19delchkWFC#ROW_COUNT#WFC' name='Grid19delchkWFC#ROW_COUNT#WFC'>WFC#ROW_COUNT#WFC<input type=hidden id='Grid19flgWFC#ROW_COUNT#WFC' name='Grid19flgWFC#ROW_COUNT#WFC'></td>");
 		map.put("19", sBuffer.toString());
-		GridRowStartTDMap.put("P00008", map);
+		GridRowStartTDMap.put("A006", map);
 
 		//Grid title data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<input type='hidden' name='initRowGrid19' id='initRowGrid19' value='9999999'><input type='hidden' name='RowGrid19' id='RowGrid19' value='9999999'><table id='Grid19' name ='Grid19' ><thead><tr><th style='text-align:center;'>No.</th><th style='overflow:hidden;text-align:center;'>商品名称</th><th style='overflow:hidden;text-align:center;'>材質</th><th style='overflow:hidden;text-align:center;'>仕入先</th><th style='overflow:hidden;text-align:center;'>入荷日付</th><th style='overflow:hidden;text-align:center;'>単価</th><th style='overflow:hidden;text-align:center;'>購買数量</th><th style='display:none'>商品NO</th></tr></thead>");
 		map.put("19", sBuffer.toString());
-		GridTitleItemMap.put("P00008", map);
+		GridTitleItemMap.put("A006", map);
 
 		//Grid zero row data map
 		map = new HashMap<String, String>();
@@ -69,7 +69,7 @@ public class A006GridDataConstant {
 		sBuffer.append("<td class='g3 o' _colid=6 style ='vertical-align:middle;'><div style=\"overflow:hidden;\"><input id='ZAIKOSUURYOU_0'  name='ZAIKOSUURYOU_0'  class='readonly' readOnly style='width:79px;height:31px; text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='31'  _itemname='購買数量'  _rge='1' onblur='changeSpecHtml(this);' type='text'  _gid='Grid19'  _gflg='Grid19flg0' ></div></td>");
 		sBuffer.append("<td style ='display:none' width='0px' _colid=7><input id='SHOUHINNO_0'  name='SHOUHINNO_0'  value='[自動採番]'  _k='1'  type='hidden' ></div></td></tr>");
 		map.put("19", sBuffer.toString());
-		GridRowZeroMap.put("P00008", map);
+		GridRowZeroMap.put("A006", map);
 
 		//Grid item map
 		mapList = new HashMap<String, ArrayList<ItemBean>>();
@@ -145,7 +145,7 @@ public class A006GridDataConstant {
 		itemBean.DbFlg = "0";
 		beanList.add(itemBean);
 		mapList.put("19", beanList);
-		GridItemSubIDMap.put("P00008", mapList);
+		GridItemSubIDMap.put("A006", mapList);
 	}
 
 	/**

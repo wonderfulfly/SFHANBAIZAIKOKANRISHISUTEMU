@@ -37,21 +37,21 @@ public class A014GridDataConstant {
 		sBuffer.append("<td class='g1 o' _colid=2 style ='vertical-align:middle;'><div style=\"overflow:hidden;\"><input id='BUMONMEI1_9999999'  name='BUMONMEI1_9999999'  value='WFC#COLUMN_VALUE#WFC17WFC#COLUMN_VALUE#WFC'  class='readonly' readOnly style='width:250px;height:31px; text-align:left;font-size:14px;color:#000000;font-weight:normal;'  _subid='17'  _itemname='部門名' onblur='changeSpecHtml(this);' type='text'  _gid='Grid13'  _gflg='Grid13flg9999999' ></div></td>");
 		sBuffer.append("<td class='g1 o' _colid=3><div style=\"overflow:hidden;\"><input id='grdC6R6_9999999'  name='grdC6R6_9999999'  value='編集'   _subid='19'  _itemname='編集'  type='button'  _gid='Grid13'  _gflg='Grid13flg9999999'  onclick='doLinkTrans19($(this));'  _sf_class='button_red'></div></td>");
 		map.put("13", sBuffer.toString());
-		GridDataRowTDMap.put("P00004", map);
+		GridDataRowTDMap.put("A014", map);
 
 		//GridRowStartTDMap data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<td class='g3 l' _colid=0><input style='float:left;' type=hidden id='Grid13delchkWFC#ROW_COUNT#WFC' name='Grid13delchkWFC#ROW_COUNT#WFC'>WFC#ROW_COUNT#WFC<input type=hidden id='Grid13flgWFC#ROW_COUNT#WFC' name='Grid13flgWFC#ROW_COUNT#WFC'></td>");
 		map.put("13", sBuffer.toString());
-		GridRowStartTDMap.put("P00004", map);
+		GridRowStartTDMap.put("A014", map);
 
 		//Grid title data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<input type='hidden' name='initRowGrid13' id='initRowGrid13' value='9999999'><input type='hidden' name='RowGrid13' id='RowGrid13' value='9999999'><table id='Grid13' name ='Grid13' ><thead><tr><th style='text-align:center;'>No.</th><th style='overflow:hidden;text-align:center;'>部門ID</th><th style='overflow:hidden;text-align:center;'>部門名</th><th style='overflow:hidden;text-align:center;'>編集</th></tr></thead>");
 		map.put("13", sBuffer.toString());
-		GridTitleItemMap.put("P00004", map);
+		GridTitleItemMap.put("A014", map);
 
 		//Grid zero row data map
 		map = new HashMap<String, String>();
@@ -61,7 +61,7 @@ public class A014GridDataConstant {
 		sBuffer.append("<td class='g1 o' _colid=2 style ='vertical-align:middle;'><div style=\"overflow:hidden;\"><input id='BUMONMEI1_0'  name='BUMONMEI1_0'  class='readonly' readOnly style='width:250px;height:31px; text-align:left;font-size:14px;color:#000000;font-weight:normal;'  _subid='17'  _itemname='部門名' onblur='changeSpecHtml(this);' type='text'  _gid='Grid13'  _gflg='Grid13flg0' ></div></td>");
 		sBuffer.append("<td class='g1 o' _colid=3><div style=\"overflow:hidden;\"><input id='grdC6R6_0'  name='grdC6R6_0'  value='編集'   _subid='19'  _itemname='編集'  type='button'  _gid='Grid13'  _gflg='Grid13flg0'  onclick='doLinkTrans19($(this));'  _sf_class='button_red'></div></td></tr>");
 		map.put("13", sBuffer.toString());
-		GridRowZeroMap.put("P00004", map);
+		GridRowZeroMap.put("A014", map);
 
 		//Grid item map
 		mapList = new HashMap<String, ArrayList<ItemBean>>();
@@ -92,12 +92,12 @@ public class A014GridDataConstant {
 		itemBean.TableID = "";
 		itemBean.FieldID = "";
 		itemBean.ReadOnly = "0";
-		itemBean.RelData = "L00036";
+		itemBean.RelData = "A014A003u";
 		itemBean.DefaultValue = "";
 		itemBean.DbFlg = "1";
 		beanList.add(itemBean);
 		mapList.put("13", beanList);
-		GridItemSubIDMap.put("P00004", mapList);
+		GridItemSubIDMap.put("A014", mapList);
 	}
 
 	/**

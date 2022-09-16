@@ -448,11 +448,11 @@ function DoBeforeSave() {
 
 function doLinkTrans9(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00037.do?","0","","","","_self","","0","705","384");
+ pageLinkTranfer("A015A004i.do?","0","","","","_self","","0","705","384");
 }
 function doLinkTrans29(o){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00038.do?","1",o,"KAISHAID1,","KAISHAID1_,","_self","","0","705","384");
+ pageLinkTranfer("A015A004u.do?","1",o,"KAISHAID1,","KAISHAID1_,","_self","","0","705","384");
 }
 
 function inputDataCheck(){

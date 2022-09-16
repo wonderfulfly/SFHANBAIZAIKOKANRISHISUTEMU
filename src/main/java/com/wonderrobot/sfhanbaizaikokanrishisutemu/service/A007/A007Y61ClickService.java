@@ -131,11 +131,11 @@ public class A007Y61ClickService {
 				ay1.add(selMap);
 			}
 		}
-		returnVal = A007GridDataConstant.getGridStrSet(ay1, "P00009", "19", 10, 1);
+		returnVal = A007GridDataConstant.getGridStrSet(ay1, "A007", "19", 10, 1);
 		jsonObj.setScript("r", "setGrid19();$('div#_ingrid_Grid19_0_b').find('input:button').button();setCalendar();");
 		jsonObj.setHtml("dragB19", returnVal);
 		jsonObj.setReturnID("h", "dragB19");
-		A007GridDataConstant.setGridDataToSession("P00009", "19", ay1, request);
+		A007GridDataConstant.setGridDataToSession("A007", "19", ay1, request);
 		//関数「PageDefaultSet」を実行する
 		jsonObj.setScript("r", "PageDefaultSet();");
 

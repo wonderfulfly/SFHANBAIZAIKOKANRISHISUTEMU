@@ -49,7 +49,7 @@ public class LoginController {
 
 	@RequestMapping("login.do")
 	@Log
-	public void newLogin(@RequestParam("userid") String userid, @RequestParam("pwd") String pwd, HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public void newLogin(@RequestParam("userid") String userid, @RequestParam("pwd") String pwd, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		// User authentication
 		Authentication authentication = null;
 		try {
@@ -89,26 +89,22 @@ public class LoginController {
 
 		JSONWFCObject jsonObj = new JSONWFCObject();
 		String returnVal = null;
-//		try{
-			if(StringUtil.isNullOrBlank(userid)) {
-				jsonObj.setScript(JsonConstant.JSONID_RUN_SCRIPT, "alert('IDを入力してください。');");
-			} else if(StringUtil.isNullOrBlank(pwd)){
-				jsonObj.setScript(JsonConstant.JSONID_RUN_SCRIPT, "alert('パスワードを入力してください。');");
-			} else {
-				// loginidを設定
-				LoginService.setLoginid(userid);
-				// passwordを設定
-				LoginService.setPassword(pwd);
-				// sessionを設定
-				LoginService.setSession(session);
-				returnVal = LoginService.doLogin();		
-				if (returnVal.equals("1")) {
-					jsonObj.setScript(JsonConstant.JSONID_RUN_SCRIPT, "location.href='turnToA010.do'");
-				}		
-			}
-//		} catch(Exception e){
-//			LoggerUtil.error(Thread.currentThread().getStackTrace()[1].getMethodName()+":", e);
-//		}
+		if(StringUtil.isNullOrBlank(userid)) {
+			jsonObj.setScript(JsonConstant.JSONID_RUN_SCRIPT, "alert('IDを入力してください。');");
+		} else if(StringUtil.isNullOrBlank(pwd)){
+			jsonObj.setScript(JsonConstant.JSONID_RUN_SCRIPT, "alert('パスワードを入力してください。');");
+		} else {
+			// loginidを設定
+			LoginService.setLoginid(userid);
+			// passwordを設定
+			LoginService.setPassword(pwd);
+			// sessionを設定
+			LoginService.setSession(session);
+			returnVal = LoginService.doLogin();		
+			if (returnVal.equals("1")) {
+				jsonObj.setScript(JsonConstant.JSONID_RUN_SCRIPT, "location.href='turnToA010.do'");
+			}		
+		}
 		response.getWriter().print(jsonObj.toJSONString());
 	}
 

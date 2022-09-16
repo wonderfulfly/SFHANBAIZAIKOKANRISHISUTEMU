@@ -86,12 +86,12 @@ public class A010H8grdC10SmartSearchService {
 		}
 		String returnVal = null;
 		
-		returnVal = A010GridDataConstant.getGridStrSet(A010H8grdC10SmartSearchEntityAy, "P00012", "43", 50, 1);
+		returnVal = A010GridDataConstant.getGridStrSet(A010H8grdC10SmartSearchEntityAy, "A010", "43", 50, 1);
 		jsonObj.setScript("r", "setGrid43();$('div#_ingrid_Grid43_0_b').find('input:button').button();setCalendar();");
 		jsonObj.setHtml("dragB43", returnVal);
 		jsonObj.setReturnID("h", "dragB43");
 		
-		A010GridDataConstant.setGridDataToSession("P00012", "43", A010H8grdC10SmartSearchEntityAy, request);
+		A010GridDataConstant.setGridDataToSession("A010", "43", A010H8grdC10SmartSearchEntityAy, request);
 
 	}
 }

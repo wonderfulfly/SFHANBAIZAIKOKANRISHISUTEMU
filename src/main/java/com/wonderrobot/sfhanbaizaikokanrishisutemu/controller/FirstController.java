@@ -75,6 +75,14 @@ public class FirstController {
 		return "A015";
 	}
 	/**
+	 * A005を遷移 method
+	 * 
+	 */
+	@RequestMapping("A005.do")
+	public String A005Page() {
+		return "A005";
+	}
+	/**
 	 * A006を遷移 method
 	 * 
 	 */

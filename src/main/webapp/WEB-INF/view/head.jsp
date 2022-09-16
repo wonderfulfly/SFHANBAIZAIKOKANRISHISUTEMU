@@ -48,6 +48,7 @@ i.menu_fa {
 </li>
 <li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='データインタフェース' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>データインタフェース</a>
 <ul style="display:none;">
+  <li ><a href='A005.do?PageID=P00007&init=0' onclick='clearSession=true;' target='_self' title='データインタフェース' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>データインタフェース</a></li>
 </ul><!--DDD8-0-->
 </li>
 <li class="lvlone" style='width: 16.6667%;'><a class="menu-title" href="#" title='商品管理' style='width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>商品管理</a>

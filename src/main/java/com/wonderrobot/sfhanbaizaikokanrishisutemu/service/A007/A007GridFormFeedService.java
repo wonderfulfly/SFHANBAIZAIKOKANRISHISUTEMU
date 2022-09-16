@@ -22,7 +22,7 @@ public class A007GridFormFeedService {
 	public void A007GridFormFeed(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		HttpSession session = request.getSession();
 		String returnVal = "";
-		String pageID = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("pageID")));
+		String pageID = "A007";
 		String subID = StringUtil.changeNullToBlank(StringUtil.escapeSQLTags(request.getParameter("subID")));
 		String recognID = session.getId();
 		ArrayList<LinkedHashMap<String, String>> alGridData = null;

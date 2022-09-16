@@ -129,12 +129,12 @@ public class A006InitService {
 		}
 		String returnVal = null;
 		
-		returnVal = A006GridDataConstant.getGridStrSet(A006grdB6SYOUHINEntityAy, "P00008", "19", 20, 1);
+		returnVal = A006GridDataConstant.getGridStrSet(A006grdB6SYOUHINEntityAy, "A006", "19", 20, 1);
 		jsonObj.setScript("r", "setGrid19();$('div#_ingrid_Grid19_0_b').find('input:button').button();setCalendar();");
 		jsonObj.setHtml("dragB19", returnVal);
 		jsonObj.setReturnID("h", "dragB19");
 		
-		A006GridDataConstant.setGridDataToSession("P00008", "19", A006grdB6SYOUHINEntityAy, request);
+		A006GridDataConstant.setGridDataToSession("A006", "19", A006grdB6SYOUHINEntityAy, request);
 
 	}
 

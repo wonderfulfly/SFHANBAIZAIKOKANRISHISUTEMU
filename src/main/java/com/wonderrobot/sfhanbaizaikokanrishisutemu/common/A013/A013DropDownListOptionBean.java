@@ -45,7 +45,7 @@ public class A013DropDownListOptionBean {
 		LoggerUtil.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + ": start");
 		try {
 			
-			if ("P00014".equals(pageID)) {
+			if ("A013".equals(pageID)) {
 				if ("115".equals(subID)) {
 					returnVal = A013TANTOU(selectedVaule);
 				} else if ("121".equals(subID)) {

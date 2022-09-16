@@ -472,11 +472,11 @@ function DoBeforeSave() {
 
 function doLinkTrans37(){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00042.do?","0","","","","_self","","0","1157","3455");
+ pageLinkTranfer("A010A011i.do?","0","","","","_self","","0","1157","3455");
 }
 function doLinkTrans61(o){ SF.setServerExecute(true);
 
- pageLinkTranfer("L00043.do?","1",o,"CHUUBUNSHONO1,","CHUUBUNSHONO_,","_self","","0","1157","3455");
+ pageLinkTranfer("A010A011u.do?","1",o,"CHUUBUNSHONO1,","CHUUBUNSHONO_,","_self","","0","1157","3455");
 }
 
 function inputDataCheck(){

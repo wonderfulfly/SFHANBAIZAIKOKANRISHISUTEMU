@@ -46,21 +46,21 @@ public class A010GridDataConstant {
 		sBuffer.append("<td style ='display:none' width='0px' _colid=11><input id='KYAKUSAKITANTOU_9999999'  name='KYAKUSAKITANTOU_9999999'  value='WFC#COLUMN_VALUE#WFC67WFC#COLUMN_VALUE#WFC'  type='hidden' ></div></td>");
 		sBuffer.append("<td class='g1 o' _colid=12><div style=\"overflow:hidden;\"><input id='grdC10AD10_9999999'  name='grdC10AD10_9999999'  value='削除確認'  type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false);getObj(\"grdC10AD10_9999999\").value=this.value;ajaxDoAddExeJs(\"A010grdC10AD101Click\",null,null,$(this));}'  _gid='Grid43'  _gflg='Grid43flg9999999'  class='btn04' _sf_class='btn04'></div></td>");
 		map.put("43", sBuffer.toString());
-		GridDataRowTDMap.put("P00012", map);
+		GridDataRowTDMap.put("A010", map);
 
 		//GridRowStartTDMap data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<td class='g3 l' _colid=0><input style='float:left;' type=hidden id='Grid43delchkWFC#ROW_COUNT#WFC' name='Grid43delchkWFC#ROW_COUNT#WFC'>WFC#ROW_COUNT#WFC<input type=hidden id='Grid43flgWFC#ROW_COUNT#WFC' name='Grid43flgWFC#ROW_COUNT#WFC'></td>");
 		map.put("43", sBuffer.toString());
-		GridRowStartTDMap.put("P00012", map);
+		GridRowStartTDMap.put("A010", map);
 
 		//Grid title data map
 		map = new HashMap<String, String>();
 		sBuffer.setLength(0);
 		sBuffer.append("<input type='hidden' name='initRowGrid43' id='initRowGrid43' value='9999999'><input type='hidden' name='RowGrid43' id='RowGrid43' value='9999999'><table id='Grid43' name ='Grid43' ><thead><tr><th style='text-align:center;'>No.</th><th style='overflow:hidden;text-align:center;'>注文書NO*</th><th style='overflow:hidden;text-align:center;'>見積書NO</th><th style='overflow:hidden;text-align:center;'>注文日付</th><th style='overflow:hidden;text-align:center;'>商品総額</th><th style='overflow:hidden;text-align:center;'>社内工事番号</th><th style='overflow:hidden;text-align:center;'>客先</th><th style='overflow:hidden;text-align:center;'>出入庫状態</th><th style='overflow:hidden;text-align:center;'>担当者</th><th style='overflow:hidden;text-align:center;'>編集</th><th style='overflow:hidden;text-align:center;'>削除</th><th style='display:none'>客先担当</th><th style='display:none'>削除確認</th></tr></thead>");
 		map.put("43", sBuffer.toString());
-		GridTitleItemMap.put("P00012", map);
+		GridTitleItemMap.put("A010", map);
 
 		//Grid zero row data map
 		map = new HashMap<String, String>();
@@ -79,7 +79,7 @@ public class A010GridDataConstant {
 		sBuffer.append("<td style ='display:none' width='0px' _colid=11><input id='KYAKUSAKITANTOU_0'  name='KYAKUSAKITANTOU_0'  type='hidden' ></div></td>");
 		sBuffer.append("<td class='g1 o' _colid=12><div style=\"overflow:hidden;\"><input id='grdC10AD10_0'  name='grdC10AD10_0'  value='削除確認'  type='button'  onClick ='if (SF.isServerExecute()) {SF.setServerExecute(false);getObj(\"grdC10AD10_0\").value=this.value;ajaxDoAddExeJs(\"A010grdC10AD101Click\",null,null,$(this));}'  _gid='Grid43'  _gflg='Grid43flg0'  class='btn04' _sf_class='btn04'></div></td></tr>");
 		map.put("43", sBuffer.toString());
-		GridRowZeroMap.put("P00012", map);
+		GridRowZeroMap.put("A010", map);
 
 		//Grid item map
 		mapList = new HashMap<String, ArrayList<ItemBean>>();
@@ -170,7 +170,7 @@ public class A010GridDataConstant {
 		itemBean.TableID = "";
 		itemBean.FieldID = "";
 		itemBean.ReadOnly = "0";
-		itemBean.RelData = "L00043";
+		itemBean.RelData = "A010A011u";
 		itemBean.DefaultValue = "";
 		itemBean.DbFlg = "1";
 		beanList.add(itemBean);
@@ -205,7 +205,7 @@ public class A010GridDataConstant {
 		itemBean.DbFlg = "1";
 		beanList.add(itemBean);
 		mapList.put("43", beanList);
-		GridItemSubIDMap.put("P00012", mapList);
+		GridItemSubIDMap.put("A010", mapList);
 	}
 
 	/**
