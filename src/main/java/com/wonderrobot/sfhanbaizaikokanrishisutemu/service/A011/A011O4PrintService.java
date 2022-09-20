@@ -1694,7 +1694,7 @@ public class A011O4PrintService {
 			templateFilePath = SpringPropertiesUtil.getPrint_template_file_path();
 			ext = ".xlsx";
 			outFileID = getOutFileID("社内工事番号", timeStamp, 0, ext);
-			templateID = "20220920_124353865.xlsx";
+			templateID = "社内工事番号.xlsx";
 			TemplateFileFullPath = System.getProperty("user.dir") + templateFilePath + "/" + templateID;
 			file = new File(TemplateFileFullPath);
 			if (file.exists()) {
