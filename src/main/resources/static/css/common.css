@@ -1,0 +1,55 @@
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td {
+	margin: 0;
+	padding: 0;
+	border-spacing:0px !important;
+	border-collapse:0px;
+	outline:medium;
+}
+input[type="text"],input[type="password"] {
+  -webkit-appearance: none;
+}
+/*A*/
+a{
+	text-decoration:none;
+}
+*{ font-family:"Microsoft YaHei UI","Microsoft YaHei","微软雅黑","WenQuanYi Micro Hei","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3",sans-serif;}
+
+a:hover{
+	text-decoration:none;
+}
+/*img*/
+img{ border:0 none; vertical-align:middle; max-width:100%;}
+/*li*/
+ul,li{list-style-type:none;}
+/*浮动*/
+.fl{
+	float:left;
+	display:inline;
+}
+.fr{
+	float:right;
+	display:inline;
+}
+.clr:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	line-height: 0;
+}
+.clr {
+	zoom: 1;
+}
+img{boder:0;}
+a{blr:expression(this.onFocus=this.close());}
+a{blr:expression(this.onFocus=this.blur());}
+a:focus { -moz-outline-style: none; }
+a:focus { outline: none; }
+
+.wap_show{display:none;}
+.marB20{ margin-bottom:20px;}
+.padB20{ padding-bottom:20px !important;}
+.tac{ text-align:center;}
+.tal{ text-align:left;}
+.marT20{ margin-top:20px;}
