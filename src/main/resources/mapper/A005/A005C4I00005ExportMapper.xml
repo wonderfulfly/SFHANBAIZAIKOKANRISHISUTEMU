@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A005.A005C4I00005ExportMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A005.A005C4I00005ExportEntity" id="A005C4I00005ExportEntityMap">
+		<result property="NYUUKOTSUKI" column="NYUUKOTSUKI" />
+		<result property="NYUUKOBI" column="NYUUKOBI" />
+		<result property="KARIKATASUURYOU" column="KARIKATASUURYOU" />
+		<result property="KASHIKATASUURYOU" column="KASHIKATASUURYOU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="KARIKATAKINGAKU" column="KARIKATAKINGAKU" />
+		<result property="KASHIKATAKINGAKU" column="KASHIKATAKINGAKU" />
+		<result property="KOUJIKANRIBANGOU" column="KOUJIKANRIBANGOU" />
+		<result property="SEISAKUHINKUBUN" column="SEISAKUHINKUBUN" />
+	</resultMap>
+	<!-- null -->
+	<select id="A005C4I00005Export"  resultMap="A005C4I00005ExportEntityMap">
+		SELECT NYUUKOTSUKI,NYUUKOBI,KARIKATASUURYOU,KASHIKATASUURYOU,PRICE,DATE_FORMAT(KARIKATAKINGAKU, '%Y-%m-%d %H:%i:%s'),DATE_FORMAT(KASHIKATAKINGAKU, '%Y-%m-%d %H:%i:%s'),KOUJIKANRIBANGOU,SEISAKUHINKUBUN FROM I00005
+	</select>
+</mapper>

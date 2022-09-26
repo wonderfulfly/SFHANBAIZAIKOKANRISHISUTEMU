@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010DropDownListOption55KAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010DropDownListOption55KAISYAEntity" id="A010DropDownListOption55KAISYAEntityMap">
+		<result property="KAISHAID" column="KAISHAID" />
+		<result property="KAISHAMEI" column="KAISHAMEI" />
+		<result property="KAISHARYAKUSHOU" column="KAISHARYAKUSHOU" />
+		<result property="ADORESU" column="ADORESU" />
+		<result property="RENRAKUSAKI" column="RENRAKUSAKI" />
+		<result property="SHIHARAIKIGEN" column="SHIHARAIKIGEN" />
+		<result property="KAISHAKUBUN" column="KAISHAKUBUN" />
+	</resultMap>
+	<!-- null -->
+	<select id="KAISYA55KAISHAIDKAISHAMEIdrp"  resultMap="A010DropDownListOption55KAISYAEntityMap">
+		SELECT KAISHAID,KAISHAMEI,KAISHARYAKUSHOU,ADORESU,RENRAKUSAKI,SHIHARAIKIGEN,KAISHAKUBUN FROM KAISYA
+		 ORDER BY 1 
+		 LIMIT 50
+	</select>
+</mapper>

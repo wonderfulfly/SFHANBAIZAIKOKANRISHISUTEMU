@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A010.A010W6insertMITUMORIRINJIHYOUMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A010.A010W6insertMITUMORIRINJIHYOUEntity" id="A010W6insertMITUMORIRINJIHYOUEntityMap">
+		<result property="HIDZUKE" column="HIDZUKE" />
+		<result property="KYAKUSAKI" column="KYAKUSAKI" />
+		<result property="KYAKUSAKITANTOU" column="KYAKUSAKITANTOU" />
+		<result property="MITSUMORINO" column="MITSUMORINO" />
+		<result property="SAKUSEISHA" column="SAKUSEISHA" />
+		<result property="HINMEI" column="HINMEI" />
+		<result property="BANGOU" column="BANGOU" />
+		<result property="KOUMOKU" column="KOUMOKU" />
+		<result property="SUURYOU" column="SUURYOU" />
+		<result property="PRICE" column="PRICE" />
+		<result property="GOLD" column="GOLD" />
+		<result property="KAHEI" column="KAHEI" />
+		<result property="KIROKUSHAID" column="KIROKUSHAID" />
+	</resultMap>
+	<!-- null -->
+	<insert id="A010W6insertMITUMORIRINJIHYOU" >
+		INSERT INTO MITUMORIRINJIHYOU (HIDZUKE,KYAKUSAKI,KYAKUSAKITANTOU,MITSUMORINO,SAKUSEISHA,HINMEI,BANGOU,KOUMOKU,SUURYOU,PRICE,GOLD,KAHEI,KIROKUSHAID) VALUES (#{HIDZUKE},#{KYAKUSAKI},#{KYAKUSAKITANTOU},#{MITSUMORINO},#{SAKUSEISHA},#{HINMEI},#{BANGOU},#{KOUMOKU},#{SUURYOU},#{PRICE},#{GOLD},#{KAHEI},#{KIROKUSHAID})
+	</insert>
+</mapper>

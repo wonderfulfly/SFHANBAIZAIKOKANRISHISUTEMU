@@ -1,0 +1,219 @@
+/* ====================================================================
+初期化
+==================================================================== */
+body,div,pre,p,blockquote,
+form,fieldset,input,textarea,select,option,
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+table,th,td,embed,object {
+	margin: 0;
+	padding: 0;
+}
+
+
+table {border-spacing:0;}
+* html table {border-collapse:collapse;}
+*:first-child+html table {border-collapse:collapse;}
+caption,th {text-align:left; font-weight:normal;}
+table,th,td,img {border:0;}
+img,input {vertical-align:middle;}
+q:before,q:after {content:'';}
+ul {list-style: none;}
+a img{
+    border:none;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,ul,li,form,input,textarea,button,table,tr,th,td,article,aside,footer,header,hgroup,nav,section,section{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+img {max-width: 100%;height: auto;}
+a img{
+background:none!important;
+}
+
+a:hover img{
+opacity:0.6;
+filter:alpha(opacity=60);
+-ms-filter: "alpha( opacity=50 )";
+}
+
+/*====================================================================*/
+
+
+body {
+	font-family: "メイリオ", Meiryo,sans-serif, "Open Sans", "Helvetica Neue", Helvetica, "Arial", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN";
+	background: #eee;
+	text-align: justify;
+}
+body {
+	background-image: url(../images/ai_bg.png);
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-position: 50% 50%;
+  background-attachment:fixed; 
+}
+
+
+
+p {
+	padding-bottom: 0.4em;
+	line-height: 1.4em;
+}
+a {
+	text-decoration: none;
+	color: #0066CC;
+}
+a:hover {
+	text-decoration: underline !important;
+	color: #0066CC;
+}
+a:link{
+	color: #0066CC;
+	text-decoration: none;
+}
+a:visited {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+.inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+.inner:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/**/
+#main-visual {
+	background: #0a5aaf;
+	overflow: hidden;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.contents-top {
+	margin-top: 100px;
+	background-color: #0a5aaf;
+}
+/*-- TOPへ戻る ------------------------*/
+.pageTop {
+	display: none;
+	position: relative;
+}
+.pageTop a {
+	position: fixed;
+	bottom: 10px;
+	right: 21px;
+	display: block;
+	width: 62px;
+	height: 67px;
+	background: url(../images/return.png) no-repeat center top;
+	text-indent: -9999px;
+}
+.pageTop:hover {  
+    opacity: 0.4;  
+    filter: alpha(opacity=60);  
+}
+
+/*装飾*/
+/*スペース*/
+.upm5 {margin-top: 5%;}
+
+.botm3 {margin-bottom: 3%;}
+.botm5 {margin-bottom: 5%;}
+.botm10 {margin-bottom: 10%;}
+.botm15 {margin-bottom: 15%;}
+
+/*フォントサイズ*/
+.font70 {font-size: 70%;}
+.font80 {font-size: 80%;}
+.font90 {font-size: 90%;}
+.font100 {font-size: 100%;}
+.font110 {font-size: 110%;}
+.font120 {font-size: 120%;}
+.font140 {font-size: 140%;}
+.font180 {font-size: 180%;}
+.font200 {font-size: 200%;}
+.font240 {font-size: 240%;}
+.font300 {font-size: 300%;}
+
+/*カラー*/
+.bgf2 {background-color: #f2f2f2;}
+.bgcc {background-color: #ccc;}
+.bg00 {background-color: #000;}
+.bgff {background-color: #FFF;}
+.bgc0eaf2 {background-color: #c0eaf2;}
+.bgfdecc6 {background-color: #fdecc6;}
+
+/*フロート*/
+.flot_c{text-align: center;margin-right: auto;margin-left: auto;}
+.flot_l {margin-bottom: 3%;float: left;margin-right: 3%;}
+.flot_r {margin-bottom: 3%;float: right;margin-left: 3%;}
+.txt_r {text-align: right;}
+
+/*下揃え*/
+
+
+
+/* フッター */
+footer {
+	background-color: rgba( 34, 34, 34, 0.55 );
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+footer a {
+	color: #666;
+	text-decoration: none;
+}
+.copyright {
+	background-color: #000;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 20px;
+	color: #999;
+	margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 1199px) {
+body {font-size: 90%;}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.contents-top {margin-top: 65px;}
+	.inner {
+		width: 100%;
+		padding: 0 20px;
+	}
+	#global-nav ul li a {
+		padding: 0 20px;
+	}
+	#top-head.fixed #global-nav ul li a {
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+.contents-top {height: auto;}
+
+}

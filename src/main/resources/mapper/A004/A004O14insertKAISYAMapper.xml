@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A004.A004O14insertKAISYAMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A004.A004O14insertKAISYAEntity" id="A004O14insertKAISYAEntityMap">
+		<result property="KAISHAMEI" column="KAISHAMEI" />
+		<result property="KAISHARYAKUSHOU" column="KAISHARYAKUSHOU" />
+		<result property="ADORESU" column="ADORESU" />
+		<result property="RENRAKUSAKI" column="RENRAKUSAKI" />
+		<result property="SHIHARAIKIGEN" column="SHIHARAIKIGEN" />
+		<result property="KAISHAKUBUN" column="KAISHAKUBUN" />
+		<result property="KAISHAID" column="KAISHAID" />
+	</resultMap>
+	<!-- null -->
+	<insert id="A004O14insertKAISYA" >
+		INSERT INTO KAISYA (KAISHAMEI,KAISHARYAKUSHOU,ADORESU,RENRAKUSAKI,SHIHARAIKIGEN,KAISHAKUBUN,KAISHAID) VALUES (#{KAISHAMEI},#{KAISHARYAKUSHOU},#{ADORESU},#{RENRAKUSAKI},#{SHIHARAIKIGEN},#{KAISHAKUBUN},#{KAISHAID})
+	</insert>
+</mapper>

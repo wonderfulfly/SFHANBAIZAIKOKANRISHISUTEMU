@@ -1,0 +1,38 @@
+
+table.ui-datepicker-calendar tbody td:first-child a.ui-state-default{
+    color: #F00;
+}
+table.ui-datepicker-calendar tbody td:last-child a.ui-state-default {
+    color: #00F;
+}
+.ui-datepicker .ui-widget-content {
+  background: white;
+  border: 0;
+}
+.ui-datepicker {
+	background-color:#006699;
+	color: #FFF;
+}
+.ui-datepicker .ui-datepicker-header .ui-icon {
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+}
+.ui-datepicker-header {
+	background-color:#006699 !important;
+	color: #FFF;
+}
+.ui-datepicker-header{  
+    border-radius: 0px;
+    -webkit-border-radius: 0px; 
+    -moz-border-radius: 0px;
+}
+
+table.ui-datepicker-calendar {
+	background-color:#fff;}
+table.ui-datepicker-calendar th{
+	background-color: #32a3cf;
+	color: #FFF;
+}
+
+
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wonderrobot.sfhanbaizaikokanrishisutemu.mapper.A006.A006Delete19GridSaveMapper">
+	<resultMap type="com.wonderrobot.sfhanbaizaikokanrishisutemu.entity.A006.A006Delete19GridSaveEntity" id="A006Delete19GridSaveEntityMap">
+	</resultMap>
+	<!-- null -->
+	<delete id="A006Delete19GridSaveData" >
+		DELETE FROM SYOUHIN
+			<where>
+				 1 = 1 
+				<if test="SHOUHINNO != null and SHOUHINNO != ''">
+					 AND SHOUHINNO  = #{SHOUHINNO} 
+				</if>
+			</where>
+	</delete>
+</mapper>
