@@ -1137,6 +1137,7 @@ SF販売在庫管理システム
 <td class='g3 o' _colid=5 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='PRICE_0'  name='PRICE_0'  class='editable' style='width:83px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='29'  _itemname='単価'  _ire='0.00'  _rge='1'  type='text'  _gid='Grid19'  _gflg='Grid19flg0' ></div></td>
 <td class='g3 o' _colid=6 style ='vertical-align:middle;'><div style="overflow:hidden;"><input id='ZAIKOSUURYOU_0'  name='ZAIKOSUURYOU_0'  class='editable' style='width:79px;height:31px; padding:0 2px;text-align:right;padding-right:2px;vertical-align:middle;font-size:14px;color:#000000;font-weight:normal;ime-mode:disabled;'  _subid='31'  _itemname='購買数量'  _rge='1'  type='text'  _gid='Grid19'  _gflg='Grid19flg0' ></div></td>
 <td style ='display:none' width='0px' _colid=7><input id='SHOUHINNO_0'  name='SHOUHINNO_0'  value='[自動採番]'  _k='1'  type='hidden' ></div></td></tr></tbody></table></div>
+<div id="dragB34"  style="position:absolute;top:127px;left:1029px;text-align:left;display:none;width:130px;height:30px;z-index:3;" class='userDiv' _ckf='0'><input id='btn34'  name='btn34'  value='test'  style='width:130px;height:30px;padding:0 2px;padding:0 2px;text-align:center;font-size:12px;font-weight:normal;display:none;' type='button'  tabindex='17'></div>
    </div>
    
   <UL id=imgMenu class=contextMenu style="display:none">
